@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta author="hejin">
+	<title>登录</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
+</head>
+<body>
+	<nav class="nav-bar">
+		<img class="logo" src="img/render-logo.png">
+		<ul class="nav-right">
+			<li>
+				<a href="">帮助</a>
+				<i class="iconfont icon-bangzhu"></i>
+			</li>
+			<li>
+				<a href="">下载</a>
+				<i class="iconfont icon-xiazai"></i>
+			</li>
+			<li id="login-href">
+				<a href="javascript:">登录</a>
+				<i class="iconfont icon-denglu"></i>
+			</li>
+		</ul>
+	</nav>
+
+	<section class="login">
+		<h3>
+			<span id="login-button">登录</span>
+		</h3>
+		<hr class="hr">
+		<form action="" class="login-form form-horizontal" method="post" id="login" name="login">
+			<div class="user-login form-group">
+				<label class="col-lg-3 col-md-3 col-sm-3 control-label">账号</label>
+				<i class="iconfont icon-zhanghao"></i>
+				<div class="col-lg-7 col-md-7 col-sm-7">
+					<input type="text" id="username" name="username" autocomplete="on" placeholder="请输入账号" class="form-control" required>
+				</div>
+			</div>
+			<div class="user-login form-group">
+				<label class="col-lg-3 col-md-3 col-sm-3 control-label">密码</label>
+				<i class="iconfont icon-mima"></i>
+				<div class="col-lg-7 col-md-7 col-sm-7">
+					<input type="password" id="password" name="password" placeholder="请输入密码" autocomplete="off" class="form-control" required>
+				</div>
+			</div>
+			<div class="form-group box-area">
+				<input type="checkbox" id="remember">记住密码
+				<input type="checkbox" id="autologin">自动登录
+			</div>
+			
+			<div class="button form-group">
+				<input type="button" id="loginbtn" value="登录" class="btn btn-info login-btn">
+			</div>
+		</form>
+	    </section>
+
+
+
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/login.js"></script>
+	</html>

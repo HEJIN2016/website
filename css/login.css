@@ -1,0 +1,384 @@
+/*登陆-注册页css
+create by HeJin on 2017-06-28
+*/
+html,body{
+	width: 100%;
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#63B8FF),to(#007FFF));
+    background: url('../img/bgblue.jpg');
+    background-size: cover;
+    height: 100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Microsoft YaHei';
+	box-sizing: border-box;
+}
+
+ul li{
+	list-style: none;
+}
+
+a:link{
+text-decoration:none;
+}
+
+a:visited{
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:none;
+}
+
+a:active{
+text-decoration:none;
+}
+/*body{
+	background: #ededed ;
+}*/
+
+/*导航栏*/
+nav.nav-bar{
+	width: 100%;
+	height: 55px;
+	background: #02A6BC;
+	/*position: fixed;
+	top: 0;
+	left: 0;*/
+	/*background: #2C3144;*/
+	/*box-shadow: 0 3px 3px #CCD1DA;*/
+}
+
+nav.nav-bar .logo{
+	height: 55px;
+	float: left; 
+	
+}
+
+nav.nav-bar .nav-right{
+	float: right;
+	height: 100%;
+	border: 0;
+	font: 14px/55px 'Microsoft YaHei';
+	color: #fff;
+}
+
+nav.nav-bar .nav-right>li{
+	width: 70px;
+	float: left;
+	height: 100%;
+	padding: 0 2px;
+	text-align: center;
+	cursor: pointer;
+}
+
+nav.nav-bar .nav-right>li:hover{
+	background: #02899b;
+}
+
+nav.nav-bar .nav-right>li a{
+	position: relative;
+	color: #fff;
+	padding-right: 2px;
+}
+
+nav.nav-bar .nav-right>li>i{
+	font-size: 13px;
+}
+/*nav.nav-bar .nav-right>li a:hover{
+	color: #02a6bc;
+}*/
+
+
+/*注册表单section*/
+
+section {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+section h3{
+	font-size: 22px;
+	font-weight: 700;
+	color: #333;
+	margin-bottom: 30px;
+}
+
+section p{
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+}
+
+section >div{
+	padding-bottom: 5px;
+}
+
+section >.top{
+	padding-top: 15px;
+}
+
+section  div:nth-of-type(6){
+	position: relative;
+}
+
+section  .user-input input.code{
+	position: absolute;
+	right: 16px;
+	top: 2px;
+	width: 120px;
+	height: 30px;
+	background: #F2F2F2;
+	color: #333;
+	/*box-sizing: border-box;*/
+	line-height: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+
+section  .user-input .alert-words{
+	display: none;
+	margin: 14px 0 0 0;
+	background: #D9EDF7;
+	color: #66709B;
+	width: 255px;
+	height: 30px;
+	border: 1px solid #BCE8F1;
+	border-radius: 4px;
+	line-height: 30px;
+	text-indent: 10px;
+}
+
+section  .read-area{
+	text-align: center;
+	padding-top: 15px;
+}
+
+section  .check-area{
+	position: relative;
+	width: 254px;
+	background: #E8E8E8;
+	border: 1px solid #E8E8E8;
+	border-right: none;
+	height: 34px;
+	line-height: 34px;
+	margin-left: 120px;
+	text-align: center;
+	position: relative;
+	padding-bottom: 0;
+}
+
+form#login{
+	margin-top:53px;
+}
+
+section  .check-area .left-area{
+	position: absolute;
+	width: 0;
+	height: 32px;
+	top: 0;
+	left: 0;
+	background: #FFB90F;
+	z-index: 100;
+}
+
+section  .check-area .drag{
+	width: 35px;
+	height: 32px;
+	line-height: 32px;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #fff;
+	color: #ccc;
+	border: 1px solid #ccc;
+	cursor: move;
+	z-index: 1000;
+}
+
+section  .check-area .drag-text{
+	position: absolute;
+	top: 0;
+	left: -20px;
+	z-index: 500;
+	width: 340px;
+	height: 100%;
+	text-align: center;
+}
+
+section  .user-button{
+    padding-top: 20px;
+}
+
+section  .user-button input[type='button']{
+	text-align: center;
+	color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    width: 220px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    cursor: not-allowed;
+}
+
+section .user-input input.code:active{
+	border: 1px solid #fff;
+}
+/*login页css*/
+
+section.login{
+	width: 540px;
+	/*height: 360px;*/
+	margin: 6% auto;
+	border: 1px solid #eee;
+    background: #fcfcfc;
+    padding: 30px 40px;
+    position: relative;
+    z-index: 0;
+}
+
+section h3{
+	font-size: 20px;
+	font-weight: 700;
+	color: #333;
+	margin-bottom: 30px;
+}
+
+section h3 span{
+	cursor: pointer;
+	padding: 10px;
+}
+
+section h3 span:first-child{
+    padding: 10px;
+	color: #5bc0de;
+}
+
+section.login form>div{
+	margin-top: 20px;
+	position: relative;
+}
+
+section.login form .user-login i{
+	position: absolute;
+	top: 5px;
+	left: 30%;
+	font-size: 17px;
+	color: #777;
+	z-index: 1;
+}
+
+section.login form .user-login input,
+section.login form .user-login select{
+	display: block;
+	background: #fff;
+	color: #000;
+	padding: 6px 28px;
+}
+
+section.login form .user-login:nth-of-type(3) i{
+	top: 7px; 
+}
+
+section.login form .function a{
+	padding: 0;
+	float: right;
+}
+
+section.login form .function span,
+section.login form .function a{
+	padding-right: 83px;
+	font: 14px/1.4 'Microsoft Yahei';
+}
+
+section.login form .box-area{
+	padding-left: 78px;
+}
+
+section.login form .box-area input:last-child{
+	margin-left: 20px;
+}
+
+section.login form .login-btn{
+	width: 316px;
+	margin-left: 76px;
+	display: block;
+}
+input[type="checkbox"] {
+	margin: 4px 5px 0 0;
+	vertical-align: top;
+}
+section .forget-psd{
+	color: #12a1ff;
+	font-size: 12px;
+	float: right;
+	margin-right: 75px;
+}
+section .hr{
+	width: 479px;
+	position: absolute;
+	display: block;
+	background-color: #eee;
+	z-index: 1;
+	top: 67px;
+    left: 0;
+}
+/*section.login form .user-login label{
+	display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+section.login form .user-login input,
+section.login form .user-login select{
+	width: 400px;
+	display: block;
+	height: 30px;
+	border: 1px solid #ccc;
+	background: #fff;
+	color: #000;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+section.login form .user-login input{
+    padding: 0 30px;
+    width: 340px;
+}
+
+section.login form .function span,
+section.login form .function a{
+	padding-right: 20px;
+	font: 14px/1.4 'Microsoft Yahei';
+}
+
+
+
+section.login form  .button input{
+	text-align: center;
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+    width: 160px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    cursor: pointer;
+}
+
+section.login form .button #loginbtn{
+    float: left;
+}
+section.login form .button #register{
+    float: right;
+}*/
+
