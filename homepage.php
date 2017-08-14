@@ -10,7 +10,8 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
-	<link rel="stylesheet" type="text/css" href="css/bootstrap-table.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
 </head>
 <body>
 	<nav class="nav-bar">
@@ -123,7 +124,7 @@
 		</div>
 
 		<div class="data-text">
-			<table data-toggle="table"  data-pagination="true"   id="news-table">
+			<table data-toggle="table"    id="news-table">
 
 			</table>
 
@@ -242,40 +243,45 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/bootstrap-table.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<!--<script src="js/bootstrap-table.min.js"></script>-->
+<script src="js/bootstrap-table.js"></script>
 <script src="js/home.js"></script>
 <script src="js/all.js"></script>
-<!--<script type="text/javascript" src="third-party/template.min.js"></script>-->
-<!--<script type="text/javascript" charset="utf-8" src="umeditor.config.js"></script>-->
-<!--<script type="text/javascript" charset="utf-8" src="umeditor.min.js"></script>-->
-<!--<script type="text/javascript" src="lang/zh-cn/zh-cn.js"></script>-->
+<!--<script src="third-party/template.min.js"></script>-->
+<!--<script charset="utf-8" src="umeditor.config.js"></script>-->
+<!--<script charset="utf-8" src="umeditor.min.js"></script>-->
+<!--<script src="lang/zh-cn/zh-cn.js"></script>-->
+<!--<script src="js/editor.js"></script>-->
 <script>
     var newsObject;
+    var datas;
     $.ajax({
-		url: 'data.php',
-		methods: 'POST',
+        url: 'data.php',
+        type: 'POST',
         async: false
     })
-		.done(function(data){
+        .done(function(data){
             newsObject = jQuery.parseJSON(data);
             for(var i = 0;i < arrayCount(newsObject);i++){
                 newsObject[i].firstline = getString(newsObject[i].content,25) + '...';
             }
             datas = $.parseJSON(JSON.stringify(newsObject));
-		})
-		.fail(function(){
-		    console.log('error!');
-		});
+            console.log('success');
+        })
+        .fail(function(){
+            console.log('error!');
+        });
 
     $("#news-table").bootstrapTable({
-		height: 451,
         columns:[{
             field: 'state',
 			checkbox: true
 		},{
             field: 'number',
             title: '编号',
-			align: 'center'
+			align: 'center',
+            width: 48
         },{
             field: 'title',
             title: '标题'
@@ -296,12 +302,7 @@
             title: '操作',
 			align: 'center',
 			formatter: function(value,row,index){
-                return ['<a href="javascript:"  class="editor" title="编辑" data-toggle="modal" data-target="#editor-news"><i class="iconfont icon-bianji"></i></a>\n','<a href="javascript:" title="删除" data-toggle="modal" data-target="#delete-news"><i class="iconfont icon-shanchu"></i></a>'].join('');
-			},
-			events: {
-			    'click .editor': function(e,value,row,index){
-			        console.log('123');
-				}
+                return ['<a href="#"  class="editor" title="编辑" data-toggle="modal" data-target="#editor-news"><i class="iconfont icon-bianji"></i></a>\n','<a href="#" title="删除" data-toggle="modal" data-target="#delete-news" class="delete"><i class="iconfont icon-shanchu"></i></a>'].join('');
 			}
 		}],
         data: datas

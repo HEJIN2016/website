@@ -49,7 +49,7 @@ $("#loginbtn").click(function(event) {
 		console.log($("#username").val());
 		console.log(data);
 		if (data==1) {
-			window.location.href="../homepage.php";
+			window.location.href="homepage.php";
 		}
 		else {
 			alert('登录失败');
