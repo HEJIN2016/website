@@ -49,7 +49,11 @@ $("#loginbtn").click(function(event) {
 		console.log($("#username").val());
 		console.log(data);
 		if (data==1) {
+<<<<<<< HEAD
 			window.location.href="homepage.php";
+=======
+			window.location.href="./homepage.html";
+>>>>>>> parent of 2c89f3c... editor
 		}
 		else {
 			alert('登录失败');
