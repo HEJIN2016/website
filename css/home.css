@@ -371,12 +371,12 @@ aside.menu .menu-list li ul li{
 
 .center-page .data-text tbody tr td{
 	text-align: left;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 }
 
 .center-page .data-text tr th{
 	text-align: center;
-	white-space: nowrap;
+	/*white-space: nowrap;*/
 }
 
 .center-page .data-text tbody tr td i{
