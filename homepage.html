@@ -10,12 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/home.css">
 	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
-<<<<<<< HEAD
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-table.min.css">
-=======
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.11.1/bootstrap-table.min.css">
->>>>>>> d20d99af5d440f1c58178ef3a842ebab86e7d6ac
 </head>
 <body>
 	<nav class="nav-bar">
@@ -128,11 +123,7 @@
 		</div>
 
 		<div class="data-text">
-<<<<<<< HEAD
 			<table data-toggle="table"  data-pagination="true"   id="news-table">
-=======
-			<table data-toggle="table"    id="news-table">
->>>>>>> d20d99af5d440f1c58178ef3a842ebab86e7d6ac
 
 			</table>
 
@@ -197,30 +188,14 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<<<<<<< HEAD
 <script src="js/bootstrap-table.min.js"></script>
 <script src="js/home.js"></script>
 <script src="js/all.js"></script>
-=======
-<!-- Latest compiled and minified JavaScript -->
-<!--<script src="js/bootstrap-table.min.js"></script>-->
-<script src="js/bootstrap-table.js"></script>
-<script src="js/home.js"></script>
-<script src="js/all.js"></script>
-<<<<<<< HEAD:homepage.php
-<!--<script src="third-party/template.min.js"></script>-->
-<!--<script charset="utf-8" src="umeditor.config.js"></script>-->
-<!--<script charset="utf-8" src="umeditor.min.js"></script>-->
-<!--<script src="lang/zh-cn/zh-cn.js"></script>-->
-<!--<script src="js/editor.js"></script>-->
-=======
->>>>>>> d20d99af5d440f1c58178ef3a842ebab86e7d6ac
 <script type="text/javascript" src="js/home.js"></script>
 <script type="text/javascript" src="third-party/template.min.js"></script>
 <script type="text/javascript" charset="utf-8" src="umeditor.config.js"></script>
 <script type="text/javascript" charset="utf-8" src="umeditor.min.js"></script>
 <script type="text/javascript" src="lang/zh-cn/zh-cn.js"></script>
-<<<<<<< HEAD
 <script>
     var newsObject;
     $.ajax({
@@ -229,24 +204,11 @@
         async: false
     })
 		.done(function(data){
-=======
->>>>>>> parent of 2c89f3c... editor:homepage.html
-<script>
-    var newsObject;
-    var datas;
-    $.ajax({
-        url: 'data.php',
-        type: 'POST',
-        async: false
-    })
-        .done(function(data){
->>>>>>> d20d99af5d440f1c58178ef3a842ebab86e7d6ac
             newsObject = jQuery.parseJSON(data);
             for(var i = 0;i < arrayCount(newsObject);i++){
                 newsObject[i].firstline = getString(newsObject[i].firstline,15) + '...';
             }
             datas = $.parseJSON(JSON.stringify(newsObject));
-<<<<<<< HEAD
 		})
 		.fail(function(){
 		    console.log('error!');
@@ -254,31 +216,13 @@
 
     $("#news-table").bootstrapTable({
 		height: 441,
-=======
-            console.log('success');
-        })
-        .fail(function(){
-            console.log('error!');
-        });
-
-    $("#news-table").bootstrapTable({
-<<<<<<< HEAD:homepage.php
-=======
-		height: 441,
->>>>>>> parent of 2c89f3c... editor:homepage.html
->>>>>>> d20d99af5d440f1c58178ef3a842ebab86e7d6ac
         columns:[{
             field: 'state',
 			checkbox: true
 		},{
             field: 'number',
             title: '编号',
-<<<<<<< HEAD
 			align: 'center'
-=======
-			align: 'center',
-            width: 48
->>>>>>> d20d99af5d440f1c58178ef3a842ebab86e7d6ac
         },{
             field: 'title',
             title: '标题'
@@ -299,15 +243,7 @@
             title: '操作',
 			align: 'center',
 			formatter: function(value,row,index){
-<<<<<<< HEAD
                 return ['<a href="javascript:" title="编辑" data-toggle="modal" data-target="#editor-news"><i class="iconfont icon-bianji"></i></a>\n','<a href="javascript:" title="删除" data-toggle="modal" data-target="#delete-news"><i class="iconfont icon-shanchu"></i></a>'].join('');
-=======
-<<<<<<< HEAD:homepage.php
-                return ['<a href="#"  class="editor" title="编辑" data-toggle="modal" data-target="#editor-news"><i class="iconfont icon-bianji"></i></a>\n','<a href="#" title="删除" data-toggle="modal" data-target="#delete-news" class="delete"><i class="iconfont icon-shanchu"></i></a>'].join('');
-=======
-                return ['<a href="javascript:" title="编辑" data-toggle="modal" data-target="#editor-news"><i class="iconfont icon-bianji"></i></a>\n','<a href="javascript:" title="删除" data-toggle="modal" data-target="#delete-news"><i class="iconfont icon-shanchu"></i></a>'].join('');
->>>>>>> parent of 2c89f3c... editor:homepage.html
->>>>>>> d20d99af5d440f1c58178ef3a842ebab86e7d6ac
 			}
 		}],
         data: datas
