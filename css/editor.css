@@ -95,3 +95,19 @@ h1{
     -moz-box-shadow: none;
     box-shadow: none;
 }
+
+.edui-container img{
+    width: 200px;
+}
+.edui-body-container{
+    height: 400px;
+    text-align: center;
+}
+.edui-body-container p{
+    text-align: left;
+    text-indent: 28px;
+    font-size: 14px;
+}
+.edui-container {
+    top: 70px;
+}

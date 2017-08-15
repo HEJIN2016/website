@@ -300,7 +300,8 @@ aside.menu .menu-list li ul li{
 .center-page .select-text{
 	text-align: center;
 	word-wrap: break-word;
-	margin-top: 25px;
+	margin-top: 31px;
+	float: left;
 }
 
 .center-page .select-text>span{
@@ -345,7 +346,7 @@ aside.menu .menu-list li ul li{
 }
 
 .center-page .select-text{
-	padding: 10px 20px 35px 50px;
+	padding: 10px 20px 30px 50px;
 }
 
 .center-page .select-text .button-area{
@@ -418,6 +419,10 @@ aside.menu .menu-list li ul li{
 	top: 150px;
 }
 
+.topmodal{
+	top: 100px;
+}
+
 .row{
 	margin: 0;
 }
@@ -433,4 +438,29 @@ table#news-table thead th:last-child > div {
 	width: 300px;
 	overflow: hidden;
 	text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1400px){
+	.center-page .data-text {
+		padding: 30px 20px;
+	}
+}
+.tabletd{
+	max-width: 150px;
+}
+
+#news-table{
+	overflow-x: hidden;
+}
+.fixed-table-body {
+	overflow-x: hidden!important;
+}
+tbody tr td{
+	text-overflow: ellipsis!important;
+	overflow: hidden!important;
+}
+@media screen and (max-width: 1300px){
+	#news-table{
+		overflow-x: scroll;
+	}
 }
