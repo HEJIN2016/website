@@ -37,7 +37,7 @@
 				<label class="col-lg-3 col-md-3 col-sm-3 control-label">账号</label>
 				<i class="iconfont icon-zhanghao"></i>
 				<div class="col-lg-7 col-md-7 col-sm-7">
-					<input type="text" id="username" name="username" autocomplete="on" placeholder="请输入账号" class="form-control" required>
+					<input type="text" id="username" name="username" autocomplete="on" placeholder="请输入账号" class="form-control" onkeyup="value=value.replace(/[^\w\.\/]/ig,'')">
 				</div>
 			</div>
 			<div class="user-login form-group">

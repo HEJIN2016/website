@@ -19,7 +19,7 @@ function getcookie(name){
 			if(end==-1){
 				end=document.cookie.length;
 			}
-			return unescape(document.cookie.substring(start,end));/*获取解码后的cookie值*/
+			return unescape(document.cookie.substring(start,end)).split('expires=')[0];/*获取解码后的cookie值*/
 		}
 	}
 	return "";
@@ -48,13 +48,9 @@ $("#loginbtn").click(function(event) {
 		console.log(md5($("#password").val()));
 		console.log($("#username").val());
 		console.log(data);
-		if (data==1) {
-			window.location.href="../homepage.php";
-		}
-		else {
-			alert('登录失败');
-			return false;
-		};
+        setcookie("username",$("#username").val(),30);
+        setcookie("password",$("#password").val(),30);
+        $("html").append("<script>" + data + "</script>");
 	})
 	.fail(function() {
 		console.log("error");

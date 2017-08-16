@@ -1,3 +1,8 @@
+<?php
+session_start();
+if ((!(isset($_SESSION["username"])))||(empty($_SESSION["username"])))
+    header("Location:login");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,7 +30,7 @@
 	            <i class="iconfont icon-xiazai"></i>
 	        </li>
 	        <li class="user">
-	            <a href="javascript:;">admin</a>
+	            <a href="javascript:;"><?php echo $_SESSION["username"] ?></a>
 	            <i class="iconfont icon-arrowdown"></i>
 	            <ul class="userlist">
 	            	<li>
@@ -35,7 +40,7 @@
 	            		<a href="changePass.html">修改密码</a>
 	            	</li>
 	            	<li>
-	            		<a href="login.html">注销账号</a>
+	            		<a href="logout.php">注销账号</a>
 	            	</li>
 	            </ul>
 	        </li>
@@ -69,10 +74,10 @@
 				</div>
 				<ul>
 					<li>
-						<a href="#">查看新闻</a>
+						<a href="homepage.php">查看新闻</a>
 					</li>
 					<li>
-						<a href="#">添加新闻</a>
+						<a href="#" data-toggle="modal" data-target="#add-news">添加新闻</a>
 					</li>
 				</ul>
 			</li>
@@ -107,19 +112,13 @@
 		</div>
 		<div class="select-text">
 			<div class="button-area">
-				<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#delete-many-news">
+				<button type="button" class="btn btn-danger" data-toggle="modal" id="delete_many_news_btn">
 					<i class="iconfont icon-shanchu"></i>批量删除
 				</button>
 				<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-news">
 					<i class="iconfont icon-tianjia"></i>新增新闻
 				</button>
 			</div>
-			<!--<span>日期范围</span>-->
-			<!--<input type="text"  id="start-date" class="date">-->
-			<!--<span> - </span>-->
-			<!--<input type="text" id="end-date" class="date">-->
-			<!--<input type="text" placeholder="输入子账号账户名或手机号码" id="input-text">-->
-			<!--<button class="btn btn-success search"><i class="iconfont icon-sousuo"></i>搜用户</button>-->
 		</div>
 
 		<div class="data-text">
@@ -240,7 +239,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn btn-primary" id="delete_news_confirm_btn" data-dismiss="modal">
                     确认
                 </button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭
@@ -267,7 +266,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="delete_news_btn">
                     确认
                 </button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭
@@ -276,6 +275,65 @@
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
 </div>
+
+<!-- 选择新闻提示框（Modal） -->
+<div class="modal fade" id="select-news" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 303px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    请选择新闻
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="change-personal-psd" style="overflow: hidden">
+                    <img src="img/mark.png" style="width: 100px;float: left;display: block">
+                    <div style="float: right;margin-top: 31px;width: 152px;">您还未选择任何新闻，请返回重新选择！</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    确认
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
+<!-- 错误提示框（Modal） -->
+<div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 303px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    出错了
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="change-personal-psd" style="overflow: hidden">
+                    <img src="img/mark.png" style="width: 100px;float: left;display: block">
+                    <div style="float: right;margin-top: 31px;width: 152px;">抱歉，该操作出错了，请返回重新操作！</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    确认
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
@@ -289,7 +347,8 @@
 <script src="lang/zh-cn/zh-cn.js"></script>
 <script src="js/editor.js"></script>
 <script>
-    $("#news-table").bootstrapTable({
+    var $table = $("#news-table");
+    $table.bootstrapTable({
         height: 575,
         url: 'dataNum.php',
         method: 'post',
@@ -298,10 +357,9 @@
         escape: true,
         toolbar: '#toolbar',                //工具按钮用哪个容器
         striped: true,                      //是否显示行间隔色
-        cache: true,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
+        cache: false,                       //是否使用缓存，默认为true，所以一般情况下需要设置一下这个属性（*）
         pagination: true,                   //是否显示分页（*）
         sortable: false,                     //是否启用排序
-        sortOrder: "asc",                   //排序方式
         sidePagination: "client",           //分页方式：client客户端分页，server服务端分页（*）
         pageNumber:1,                       //初始化加载第一页，默认第一页
         pageSize: 10,                       //每页的记录行数（*）
@@ -310,7 +368,7 @@
         strictSearch: true,
         showColumns: true,                  //是否显示所有的列
         showRefresh: true,                  //是否显示刷新按钮
-        minimumCountColumns: 2,             //最少允许的列数
+        minimumCountColumns: 0,
         clickToSelect: true,                //是否启用点击选中行
         uniqueId: "number",                     //每一行的唯一标识，一般为主键列
         showToggle:true,                    //是否显示详细视图和列表视图的切换按钮
@@ -341,52 +399,83 @@
             align: 'center'
         },{
             field: 'opt',
+            width: 150,
             title: '操作',
 			align: 'center',
 			formatter: function(value,row,index){
-                return ['<a href="#"  class="editor" title="编辑" data-toggle="modal" data-target="#editor-news"><i class="iconfont icon-bianji"></i></a>\n','<a href="#" title="删除" data-toggle="modal" data-target="#delete-news"><i class="iconfont icon-shanchu"></i></a>'].join('');
+                return ['<a href="#"  class="editor" title="编辑" data-toggle="modal" data-target="#editor-news"><i class="iconfont icon-bianji"></i></a>\n','<a href="#" title="删除" data-toggle="modal" data-target="#delete-news" class="delete"> <i class="iconfont icon-shanchu"></i></a>'].join('');
 			},
-            width: 150
-		}]
-    });
-
-    var article;
-    $("html").on('click','.editor',function(events){
-        console.log($(this).parents('tr').index());
-        article = datas[$(this).parents('tr').index()];
-        $("#title").val(article.title);
-        $("#author").val(article.author);
-        UM.getEditor('myEditor').setContent(article.content);
-    });
-
-    $("html").on('click','#editor_confirm_btn',function(events){
-        $.ajax({
-            url: 'editor.php',
-            type: 'POST',
-            data: {
-                title: $("#title").val(),
-                author: $("#author").val(),
-                content:UM.getEditor('myEditor').getContent(),
-                number: article.number
+            events: {
+			    'click .editor': function (event,value,row,index) {
+                    console.log('123');
+                    console.log(index);
+                    console.log(row);
+                    console.log(value);
+                    $("#title").val(row.title);
+                    $("#author").val(row.author);
+                    UM.getEditor('myEditor').setContent(row.content);
+                    $("body").unbind('click').on('click', '#editor_confirm_btn', function (events) {
+                        $.ajax({
+                            url: 'editor.php',
+                            type: 'POST',
+                            data: {
+                                title: $("#title").val(),
+                                author: $("#author").val(),
+                                content: UM.getEditor('myEditor').getContent(),
+                                number: row.number
+                            }
+                        })
+                            .done(function (data) {
+                                if (data == 1) {
+                                    console.log('success editor');
+                                    $table.bootstrapTable('refresh',{
+                                        silent: true
+                                    })
+                                }
+                                else
+                                    console.log('error!');
+                            })
+                            .fail(function () {
+                                console.log('editor news error!')
+                                $("#error-modal").modal('show');
+                            })
+                    });
+                },
+                'click .delete':function(event,value,row,index){
+			        console.log('456');
+			        $("body").unbind('click').on('click','#delete_news_btn',function(){
+                        $.ajax({
+                            url: 'deleteNews.php',
+                            type: 'POST',
+                            data: {
+                                number: row.number
+                            },
+                            success: function (data) {
+                                if (data) {
+                                    console.log('delete news success!');
+                                    $table.bootstrapTable('remove',{
+                                        field: 'number',
+                                        values: row.number
+                                    });
+                                }
+                                else console.log('delete news error!')
+                            },
+                            fail:function () {
+                                console.log('delete news error!');
+                                $("#error-modal").modal('show');
+                            }
+                        })
+                    })
+                 }
             }
-        })
-            .done(function(data){
-                if(data==1)
-                    {
-                        console.log('success editor');
-                        window.location.reload(true);
-                    }
-                else
-                    console.log('error!');
-            })
-            .fail(function(){
-                console.log('fail editor');
-            })
+		}]
     });
 
     $("html").on('click','#add_news_btn',function (events) {
         var date = new Date();
-        var content = deleteHtml(UM.getEditor('add_news_editor').getContent());
+        var content = deleteBlank(UM.getEditor('add_news_editor').getContent());
+        var txt = UM.getEditor('add_news_editor').getContentTxt();
+        console.log(txt);
         $.ajax({
             url: 'addNews.php',
             type: 'POST',
@@ -395,20 +484,70 @@
                 author: $("#add_author").val() + "",
                 time: curentTime(new Date()) + "",
                 content: content + "",
-                firstline: (content.split('<p')[0].split('</p>')[0])||content + '...' + ""
+                firstline: txt.substring(0,150)
             },
             success: function(data){
                 if(data==1){
                     console.log('add news success!');
+                    $table.bootstrapTable('refresh',{
+                        silent: true
+                    })
                 }
                 else{
-                    console.log('add news error!')
+                    console.log('add news error!');
+                    $("#error-modal").modal('show');
                 }
             },
             error: function(){
                 console.log('add news error!');
+                $("#error-modal").modal('show');
             }
         })
+    });
+
+    $("html").on("click","#delete_many_news_btn",function(){
+        if (!$table.bootstrapTable('getSelections').length){
+            $("#select-news").modal('show');
+        }
+        else {
+            $("#delete-many-news").modal('show');
+        }
+        //$("html").off('click');
+    })
+
+    $("html").on("click","#delete_news_confirm_btn",function(){
+        $.ajax({
+            url: 'deleteManyNews.php',
+            type: 'post',
+            data: {
+                number: function(){
+                    var array = new Array();
+                    for (var i = 0;l = $table.bootstrapTable('getSelections').length,i < l; i++){
+                        array.push($table.bootstrapTable('getSelections')[i].number);
+                    }
+                    return array;
+                }
+            },
+            success: function(data){
+                if (data){
+                    console.log('delete news success!');
+                    var ids = $.map($table.bootstrapTable('getSelections'),function(row){
+                        return row.number;
+                    });
+                    $table.bootstrapTable('remove',{
+                        field: 'number',
+                        values: ids
+                    });
+                }
+                else{
+                    $("#error-modal").modal('show');
+                }
+            },
+            error:function () {
+                $("#error-modal").modal('show');
+            }
+        });
+        //$("html").off('click');
     })
 </script>
 </html>

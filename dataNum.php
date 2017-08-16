@@ -29,7 +29,7 @@ else{
         $json = $json;
         $json = rtrim($json,',');
         $json = $json . ']';
-        file_put_contents('data.json',$json);
+       // file_put_contents('data.json',$json);
         echo $json;
         //print_r (json_encode(array($newslist),JSON_UNESCAPED_UNICODE));
         //echo json_encode($newslist);

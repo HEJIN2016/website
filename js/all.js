@@ -24,6 +24,12 @@ function deleteHtml(str) {
     return str;
 }
 
+function deleteBlank(str) {
+    str.value = str.replace(/[ | ]*\n/g,'\n'); //去除行尾空白
+    str = str.replace(/\n[\s| | ]*\r/g,'\n'); //去除多余空行
+    return str;
+}
+
 function delHtmlTag(str)
 {
     return str.replace(/<[^>]+>/g,"");//去掉所有的html标记
