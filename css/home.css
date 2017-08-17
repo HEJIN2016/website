@@ -464,3 +464,7 @@ tbody tr td{
 		overflow-x: scroll;
 	}
 }
+
+.promptSpan{
+	display: block;
+}

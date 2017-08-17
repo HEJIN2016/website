@@ -121,18 +121,21 @@
 				<span class="wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="1200ms">扫一扫关注我们</span>
 			</div>
 			<div class="col-lg-5 col-lg-offset-1">
-				<div class="form-group">
-					<input type="text" name="name" id="name" placeholder="姓名 name" class="form-control wow fadeInRight" data-wow-duration="500ms" data-wow-dalay="300ms">
-				</div>
-				<div class="form-group">
-					<input type="text" name="tel" id="tel" placeholder="电话 Tel" class="form-control wow fadeInRight" data-wow-duration="500ms" data-wow-delay="600ms">
-				</div>
-				<div class="form-group">
-					<textarea placeholder="留言 Message" class="form-control wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms"></textarea>
-				</div>
-				<div class="form-group">
-				    <button class="btn wow fadeInRight" data-wow-duration="500ms" data-wow-delay="1200ms">提交</button>
-				</div>
+				<form action="" method="post" id="leaveWord">
+					<div class="form-group">
+						<input type="text" name="name" id="name" placeholder="姓名 name" class="form-control wow fadeInRight" data-wow-duration="500ms" data-wow-dalay="300ms" required>
+					</div>
+					<div class="form-group">
+						<input type="text" name="tel" id="tel" placeholder="电话 Tel" class="form-control wow fadeInRight" data-wow-duration="500ms" data-wow-delay="600ms" required>
+					</div>
+					<span class="span-notice" style="color: #a94442;font-size: 14px;margin-top: -15px;display: none;">请输入正确的固定电话或手机号码</span>
+					<div class="form-group">
+						<textarea placeholder="留言 Message" class="form-control wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms" required></textarea>
+					</div>
+					<div class="form-group">
+						<button class="btn wow fadeInRight submit" data-wow-duration="500ms" data-wow-delay="1200ms" value="留言">提交</button>
+					</div>
+				</form>
 			</div>
 		</div>
 	</div>
@@ -268,6 +271,28 @@
 $(function(){
 	//Initiat WOW JS
     new WOW().init();
+    $("#leaveWord").submit(function(){
+        var reg =  /(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$/;
+        if (!reg.test($(this).val())){
+            $(".span-notice").css('display','block');
+            $("#tel").focus();
+            return false;
+		}
+		else{
+            $.ajax({
+				url: 'leaveword.php',
+				type: 'post',
+				data: {
+				    ip: <?php echo "1.0.0.0" ?>,
+                    phone: $("#tel").val(),
+                    name: $("#name").val(),
+
+
+				}
+			})
+            return true;
+		}
+	})
 });
 </script>
 </html>

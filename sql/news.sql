@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2017-08-11 16:20:42
+Date: 2017-08-17 17:35:35
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,7 +27,7 @@ CREATE TABLE `admin` (
 -- ----------------------------
 -- Records of admin
 -- ----------------------------
-INSERT INTO `admin` VALUES ('xuanyi-01', 'a49fc56ac6c460d616ab3ecc37ea3c48');
+INSERT INTO `admin` VALUES ('xuanyi01', 'c8c1c24f460fe6e1b7564cbadf2aded8');
 
 -- ----------------------------
 -- Table structure for leaveword
@@ -36,7 +36,8 @@ DROP TABLE IF EXISTS `leaveword`;
 CREATE TABLE `leaveword` (
   `name` char(255) CHARACTER SET utf8 DEFAULT NULL,
   `phone` char(255) DEFAULT NULL,
-  `word` text CHARACTER SET utf8
+  `word` text CHARACTER SET utf8,
+  `ip` varchar(255) CHARACTER SET utf8 DEFAULT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 -- ----------------------------
@@ -55,7 +56,7 @@ CREATE TABLE `newslist` (
   `number` int(120) NOT NULL AUTO_INCREMENT,
   `firstline` text,
   PRIMARY KEY (`number`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of newslist
@@ -70,3 +71,4 @@ INSERT INTO `newslist` VALUES ('“成长 跨越 携手开启未来”渲一科�
 INSERT INTO `newslist` VALUES ('渲一科技实力赞助全球最牛生物计算机领域会议 支持科学事业', '渲一科技', '2016-12-09', '<p>近期渲一科技在高性能计算领域火力全开，成为2016年度 IEEE BIBM ( IEEEInternational Conference on Bioinformatics and Biomedicine )大会唯一合作企业。IEEE BIBM是生物计算领域的专业旗舰会议，全球最牛的生物医学专家将在这里汇聚一堂。渲一科技将针对生物信息研究计算的解决方案，结合了高性能计算和云计算，提供即时可用的硬件和软件设施，并推出一对一服务，有助于研究人员更好的处理生物研究中的计算问题，为生物科学事业发展提速。 </p>\r\n\r\n                    <p>据了解，现代生物医学研究极大地依赖于高性能计算系统。渲一科技经过五年多的积累，一年多的实战考验，已经成功打造了一个专注于高性能计算的专业团队。同时，由于渲一科技掌握了丰富的高性能计算资源，与多家国家超算中心建立战略合作关系，能为生物医学的科学家们提供更快捷、更优质、更安全的高性能计算服务。</p>\r\n\r\n                    <img src=\"img/news/news_12-09-1.png\">\r\n\r\n                    <p>随着高性能计算的应用领域越来越广，高性能计算已经走入了一个全新的时代。渲一科技五年磨一剑，凭借在高性能计算、云计算以及分布式存储等前沿技术方面的深厚积累，不仅会大力支持生物医疗领域还会支持更多与人类生存息息相关的科学领域。</p>\r\n\r\n\r\n                    <p>据悉，此次渲一科技赞助的IEEE BIBM大会已经在中、美、欧轮流举办9次，每次吸引国内外从事计算机应用、生物信息学、计算生物学、医学信息学及转化医学领域的上百名专家学者参加。此次会议除了4天的主会场报告外，会议还包括 “生物信息学中的高性能计算”等21个主题的分会场研讨会，70余名国内外权威生物信息专家和杰出中青年科学家做学术报告，为人类的健康和进步提供强有力的学术支持。(想了解更多IEEE BIBM会议的最新动态，请持续关注我们的微信推送文章。)</p>', '8', '近期渲一科技在高性能计算领域火力全开，成为2016年度 IEEE BIBM ( IEEEInternational Conference on Bioinformatics and Biomedicine )大会唯一合作企业。IEEE BIBM是生物计算领域的专业旗舰会议，全球最牛的生物医学专家将在这里汇聚一堂。渲一科技将针对生物信息研究计算的解决方案，结合了高性能计算和云计算，提供即时可用的硬件和软件设施，并推出一对一服务，有助于研究人员更好的处理生物研究中的计算问题，为生物科学事业发展提速！');
 INSERT INTO `newslist` VALUES ('渲一校招丨冬日最暖的事莫过于送你一个offer', '渲一科技', '2016-11-28', '<p style=\"text-align: center\">每年的校招季应该是</p>\r\n                    <p style=\"text-align: center\">莘莘学子们最关注的新闻之一啦</p>\r\n                    <p style=\"text-align: center\">渲一科技作为“宇宙” </p>\r\n                    <p style=\"text-align: center\">最科技最有活力的云计算、云服务公司</p>\r\n                    <p style=\"text-align: center\">当然是不会错过的！</p>\r\n                    <p style=\"text-align: center\">看，我们就分别来到了 </p>\r\n                    <p style=\"text-align: center\">历史悠久全国闻名的两所高校</p>\r\n                    <p style=\"text-align: center\">中南大学、湖南大学</p>\r\n                    <p style=\"text-align: center\">与同学们来了一场面对面的亲密交流</p>\r\n                    <img src=\"img/news/news_11-28-1.jpg\">\r\n                    <figcaption>（渲一科技CEO晏湘涛博士为大学生们宣讲）</figcaption>\r\n                    <img src=\"img/news/news_11-28-2.jpg\">\r\n                    <figcaption>（宣讲教室几乎座无虚席）</figcaption>\r\n                    <img src=\"img/news/news_11-28-3.jpg\">\r\n                    <figcaption>（招聘现场人潮涌动）</figcaption>\r\n                    <p style=\"text-align: center\">没有明确的人才培养计划，</p>\r\n                    <p style=\"text-align: center\">没有完善的薪酬体系，</p>\r\n                    <p style=\"text-align: center\">没有广阔的发展空间，</p>\r\n                    <p style=\"text-align: center\">空谈情怀，何铸梦想？</p>\r\n                    <p style=\"text-align: center\">完善的人才培养计划才是真靠谱 </p>\r\n                    <p style=\"text-align: center\">“得人者，得天下”。高度重视人才培养与发展的企业，才能实现双赢。</p>\r\n                    <p style=\"text-align: center\">渲一科技不止有情怀，也给你一个筑梦空间和实现梦想的踏板。</p>\r\n\r\n                    <img src=\"img/news/news_11-28-4.jpg\">\r\n                    <p style=\"text-align: center\">这两场校招可谓收获满满，渲一科技共收到简历100余份，目前已有6名同学收到渲一offer前来报到。</p>\r\n\r\n                    <img src=\"img/news/news_11-28-5.jpg\">\r\n                    <p style=\"text-align: center\">如果大家来到渲一科技我们将会把你培养成为公司未来的技术中坚、</p>\r\n\r\n                    <p style=\"text-align: center\">管理骨干你们可以接受全方位的见习、培训； </p>\r\n                    <p style=\"text-align: center\">拥有机会扩充您的知识宝库并磨练解决问题的能力；</p>\r\n                    <p style=\"text-align: center\">你将在一个唯贤是用并回报优异与创新的环境中茁壮成长；  </p>\r\n                    <p style=\"text-align: center\">在我们这里每个人都是充满智慧独一无二的个体；</p>\r\n                    <p style=\"text-align: center\">我们为每一个独特的你提供尽情绽放的舞台；</p>\r\n                    <p style=\"text-align: center\">这里，激情与理性交织、乐趣与挑战并存</p>\r\n                    <p style=\"text-align: center\">希望你们加入我们，携手书写无限精彩！印证辉煌未来！</p>\r\n\r\n\r\n                    <img src=\"img/news/news_11-28-6.jpg\">', '9', '每年的校招季应该是莘莘学子们最关注的新闻之一啦,渲一科技作为“宇宙”最科技最有活力的云计算、云服务公司,当然是不会错过的！');
 INSERT INTO `newslist` VALUES ('渲一科技渲染中国首部中医药题材动画片《本草药灵》', '渲一科技', '2016-08-30', '<p>“一个神秘美丽的国度歧黄世界，因为集万种病毒于一身的万疾王妄图霸占岐黄世界而散下各种可怕的病毒，两位少年药灵师为了拯救岐黄世界踏遍万水千山召集中药药灵的力量，从而发生的一个个可歌可泣的感人故事…”这就是《本草药灵》的故事梗概，是不是很让人期待呢？</p>\r\n\r\n\r\n                    <p>据悉，《本草药灵》总投资达1.5个亿，是中国首个以中医药为题材的大型3D动漫。该动画片由广东医漫文化科技有限公司独立原创，计划分三期拍摄1000集，每集12分钟，采用纯三维动画制作。《本草药灵》以精彩纷呈的情节充分展现博大精深的中医药文化，同时巧妙地融入励志、友情等元素，生动地展示了一个中药奇幻世界，预计将在今年年底登陆央视。为了赶上年底播出的进度，渲一科技调用了数百台高性能服务器进行渲染，渲染出来的效果得到了客户的高度认可。“渲染是在整个动漫后期制作过程中最终实现画面呈现的决定性步骤，我们一定会用艺术与技术的完美结合，来给观众呈现最精美的画面。”渲一科技CEO晏湘涛表示。</p>\r\n\r\n                    <img src=\"img/news/news_8-30-1.jpg\">\r\n\r\n                    <p>渲一科技作为中国云渲染行业的领导品牌，拥有自主研发的云管理平台、自主的存储系统、自主的服务器虚拟化，实现了虚实结合的资源聚合。由于与多个国家超级计算中心签订了战略合作协议，从而能够严格控制渲染成本，及时调配大量资源。因此渲一科技无论是在价格方面还是在资源调配方面优势都是杠杠的呦。各位看官，要不要扔个测试帧过来测试一下啊？</p>\r\n\r\n                    <p>《本草药灵》动漫题材新颖、趣味又不乏教育意义，能让孩子们在观看制作精美的动漫时，又能学习到中国博大精深的中医文化，确实是个不错的选择。小编预测，此剧必火！！！   </p>', '10', '“一个神秘美丽的国度歧黄世界，因为集万种病毒于一身的万疾王妄图霸占岐黄世界而散下各种可怕的病毒，两位少年药灵师为了拯救岐黄世界踏遍万水千山召集中药药灵的力量，从而发生的一个个可歌可泣的感人故事…”这就是《本草药灵》的故事梗概，是不是很让人期待呢？');
+SET FOREIGN_KEY_CHECKS=1;

@@ -9,9 +9,12 @@ if ($conn->connect_error){
 else{
     $sql = "UPDATE newslist SET title='" . $_POST["title"]."',author='" . $_POST["author"] . "',content='" . $_POST["content"] . "'WHERE number='" . $_POST["number"] . "'";
     mysqli_query($conn , "set names utf8");
-    mysqli_query($conn,$sql);
+    if(mysqli_query($conn,$sql)){
+        echo 1;
+    }
+    else echo 0;
     mysqli_close($conn);
-    echo 1;
+
 }
 
 ?>
