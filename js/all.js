@@ -56,6 +56,34 @@ function curentTime()
     return(clock);
 }
 
+function curentDateTime()
+{
+    var now = new Date();
+
+    var year = now.getFullYear();       //年
+    var month = now.getMonth() + 1;     //月
+    var day = now.getDate();            //日
+
+    var hours = (now.getHours()<10)?("0"+now.getHours()):now.getHours();//小时
+    var minutes = now.getMinutes();//分钟
+    minutes = (minutes<10)?("0"+minutes):minutes;
+    var seconds = now.getSeconds();//秒
+    seconds = (seconds<10)?("0"+seconds):seconds;
+
+    var clock = year + "-";
+
+    if(month < 10)
+        clock += "0";
+
+    clock += month + "-";
+
+    if(day < 10)
+        clock += "0";
+    clock += day;
+    clock = clock + " " + hours + ":" + minutes + ":" + seconds;
+    return(clock);
+}
+
 function checkStr(val){
     var reg = new RegExp("[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！@#￥……&*（）——|{}【】‘；：”“'。，、？]");
     return reg.test(val);

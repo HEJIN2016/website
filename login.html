@@ -13,11 +13,11 @@
 		<img class="logo" src="img/render-logo.png">
 		<ul class="nav-right">
 			<li>
-				<a href="">帮助</a>
+				<a href="" data-toggle="modal" data-target="#help-modal">帮助</a>
 				<i class="iconfont icon-bangzhu"></i>
 			</li>
 			<li>
-				<a href="">下载</a>
+				<a href="http://www.fastrender.cn/download/V1.0.0.0/fastrender.exe">下载</a>
 				<i class="iconfont icon-xiazai"></i>
 			</li>
 			<li id="login-href">
@@ -32,19 +32,19 @@
 			<span id="login-button">登录</span>
 		</h3>
 		<hr class="hr">
-		<form action="" class="login-form form-horizontal" method="post" id="login" name="login">
+		<form  class="login-form form-horizontal"  id="login" name="login">
 			<div class="user-login form-group">
 				<label class="col-lg-3 col-md-3 col-sm-3 control-label">账号</label>
 				<i class="iconfont icon-zhanghao"></i>
 				<div class="col-lg-7 col-md-7 col-sm-7">
-					<input type="text" id="username" name="username" autocomplete="on" placeholder="请输入账号" class="form-control">
+					<input type="text" id="username" name="username" autocomplete="on" placeholder="请输入账号" class="form-control" required>
 				</div>
 			</div>
 			<div class="user-login form-group">
 				<label class="col-lg-3 col-md-3 col-sm-3 control-label">密码</label>
 				<i class="iconfont icon-mima"></i>
 				<div class="col-lg-7 col-md-7 col-sm-7">
-					<input type="password" id="password" name="password" placeholder="请输入密码" autocomplete="off" class="form-control" required>
+					<input type="password" id="password" name="password" placeholder="请输入密码" autocomplete="on" class="form-control" required>
 				</div>
 			</div>
 			<div class="form-group box-area">
@@ -53,7 +53,7 @@
 			</div>
 			
 			<div class="button form-group">
-				<input type="button" id="loginbtn" value="登录" class="btn btn-info login-btn">
+				<input type="submit" id="loginbtn" value="登录" class="btn btn-info login-btn">
 			</div>
 
 			<label class="forget-psd">
@@ -69,4 +69,28 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/login.js"></script>
     <script src="js/all.js"></script>
+<!-- 帮助模态框（Modal） -->
+<div class="modal fade" id="help-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" style="width: 440px">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title">
+					帮助
+				</h4>
+			</div>
+			<div class="modal-body">
+				<div class="change-personal-psd">
+					本系统是渲一科技官方网站的后台管理系统，主要有新闻管理、留言板管理、账号管理等功能。
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
+</div>
 	</html>

@@ -130,7 +130,7 @@
 					</div>
 					<span class="span-notice" style="color: #a94442;font-size: 14px;margin-top: -15px;display: none;">请输入正确的固定电话或手机号码</span>
 					<div class="form-group">
-						<textarea placeholder="留言 Message" class="form-control wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms" required></textarea>
+						<textarea placeholder="留言 Message" class="form-control wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms" required id="word"></textarea>
 					</div>
 					<div class="form-group">
 						<button class="btn wow fadeInRight submit" data-wow-duration="500ms" data-wow-delay="1200ms" value="留言">提交</button>
@@ -267,30 +267,46 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
+<script src="js/all.js"></script>
 <script type="text/javascript">
 $(function(){
 	//Initiat WOW JS
     new WOW().init();
     $("#leaveWord").submit(function(){
         var reg =  /(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$/;
-        if (!reg.test($(this).val())){
+        if (!reg.test($("#tel").val())){
             $(".span-notice").css('display','block');
             $("#tel").focus();
             return false;
 		}
 		else{
+            var date = new Date();
+            $(".span-notice").css('display','none');
             $.ajax({
 				url: 'leaveword.php',
 				type: 'post',
 				data: {
-				    ip: <?php echo "1.0.0.0" ?>,
+//				    ip: !<?php //echo ($_SERVER["REMOTE_ADDR"])?>//?"未知ip":<?php //echo ($_SERVER["REMOTE_ADDR"])?>//;  ?>,
+                    ip: "localhost",
                     phone: $("#tel").val(),
                     name: $("#name").val(),
+                    word: $("#word").val(),
+                    time: curentDateTime()
+				},
+                success: function(data){
+				    if (data==1){
+				        alert('留言成功');
+                    }
+                    else alert("留言失败,请输入正确的数据格式");
+				    return false;
 
-
-				}
+                },
+                error: function(){
+                    alert("留言失败,请输入正确的数据格式");
+                    return false;
+                }
 			})
-            return true;
+            return false;
 		}
 	})
 });

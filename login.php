@@ -6,7 +6,7 @@ $password = "";
 $dbname = "news";
 
 //$con = mysqli_connect($servername, $username, $password, $dbname);
-$con = new mysqli($servername,$username,$password,$dbname);
+$con = new \mysqli($servername,$username,$password,$dbname);
 //防止sql注入
 function check_input($con,$value){
     if (get_magic_quotes_gpc()){
@@ -23,6 +23,7 @@ if (mysqli_connect_errno()) {
     echo "连接失败" . mysqli_connect_errno();
 }
 else {
+    mysqli_query($con , "set names utf8");
     $username = check_input($con,$_POST["username"]);
     $password = check_input($con,$_POST["password"]);
     $sql = "SELECT password FROM admin WHERE username=" . $username . " AND password = " .$password ;
@@ -34,7 +35,7 @@ else {
         echo "window.location.href='homepage'";
     }
     else {
-        echo "alert ('登录失败！')";
+        echo "alert ('用户名或密码错误！')";
     }
 }
 

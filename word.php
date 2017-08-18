@@ -4,12 +4,11 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
     header("Location:login");
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta author="hejin">
     <title>fastRender主页</title>
-    <!-- <link rel="stylesheet" type="text/css" href="lib/css/jquery-ui.min.css"> -->
     <link href="themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/editor.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -102,129 +101,31 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
                 <span><a href="word.php">查看留言</a> </span>
             </div>
         </li>
-<!--        <li>-->
-<!--            <div class="slidebar">-->
-<!--                <i class="iconfont icon-download"></i>-->
-<!--                <span><a href="" data-toggle="modal" data-target="#upload">客户端上传</a> </span>-->
-<!--            </div>-->
-<!--        </li>-->
     </ul>
 </aside>
 
 <div class="center-page">
     <div class="nav">
         <i class="iconfont icon-shouyexian"></i>
-        <span>首页 > 新闻管理</span>
+        <span>首页 > 留言管理</span>
     </div>
     <div class="select-text">
         <div class="button-area">
-            <button type="button" class="btn btn-danger" data-toggle="modal" id="delete_many_news_btn">
+            <button type="button" class="btn btn-default" data-toggle="modal" id="delete_words_btn">
                 <i class="iconfont icon-shanchu"></i>批量删除
-            </button>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#add-news">
-                <i class="iconfont icon-tianjia"></i>新增新闻
             </button>
         </div>
     </div>
 
     <div class="data-text">
-        <table data-toggle="table" id="news-table" style="table-layout: fixed;">
+        <table data-toggle="table" id="words-table" style="table-layout: fixed;">
         </table>
     </div>
 </div>
 </body>
 
-<!-- 编辑新闻模态框-->
-<div class="modal fade topmodal" id="editor-news" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-     aria-hidden="true">
-    <div class="modal-dialog" style="width: 1030px">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    &times;
-                </button>
-                <h4 class="modal-title">
-                    编辑新闻
-                </h4>
-            </div>
-
-            <div class="modal-body">
-                <div>
-                    <label class="col-lg-2 col-lg-offset-1 control-label"
-                           style="text-align: right;padding-top: 7px">标题</label>
-                    <div class="col-lg-9" style="margin-bottom: 15px">
-                        <input type="text" class="form-control" style="width: 70%;" id="title">
-                    </div>
-                </div>
-                <div>
-                    <label class="col-lg-2 col-lg-offset-1 control-label"
-                           style="text-align: right;padding-top: 7px">作者</label>
-                    <div class="col-lg-9" style="margin-bottom: 15px">
-                        <input type="text" class="form-control col-lg-8" style="width: 70%;" id="author">
-                    </div>
-                </div>
-                <div class="clear"></div>
-                <!--style给定宽度可以影响编辑器的最终宽度-->
-                <script type="text/plain" id="myEditor" style="width:1000px;height:240px">
-                    <p></p>
-                </script>
-
-                <div class= "clear" > </div>
-            </div>
-
-            <div class = "modal-footer" >
-                <button type = "button" class = "btn btn-primary" data-dismiss = "modal" id = "editor_confirm_btn" > 确认 </button>
-                <button type = "button" class = "btn btn-default" data-dismiss = "modal" > 关闭 </button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div>
-</div>
-
-<!-- 新增新闻模态框-->
-<div class = "modal fade topmodal"  id = "add-news"  tabindex = "-1" role = "dialog"  aria-labelledby = "myModalLabel"  aria-hidden = "true" >
-    <div class = "modal-dialog" style = "width: 1030px" >
-        <div class = "modal-content" >
-            <div class = "modal-header" >
-                <button type = "button" class = "close"  data-dismiss = "modal" aria-hidden = "true" >  &times; </button>
-                <h4 class = "modal-title" > 新增新闻 </h4>
-            </div>
-
-            <div class = "modal-body" > <div>
-                <label class = "col-lg-2 col-lg-offset-1 control-label" style = "text-align: right;padding-top: 7px" > 标题 </label>
-
-                <div class = "col-lg-9" style = "margin-bottom: 15px">
-                    <input type = "text" class = "form-control" style = "width: 70%;" id = "add_title" >
-                </div>
-            </div>
-            <div >
-                <label class = "col-lg-2 col-lg-offset-1 control-label" style = "text-align: right;padding-top: 7px" > 作者 </label>
-                <div class = "col-lg-9" style = "margin-bottom: 15px" >
-                    <input type = "text" class = "form-control col-lg-8" style = "width: 70%;" id = "add_author" >
-                </div>
-            </div>
-            <div class = "clear" > </div>
-            <!--style给定宽度可以影响编辑器的最终宽度-->
-            <script type = "text/plain" id = "add_news_editor" style = "width:1000px;height:240px" >
-            <p> </p>
-            </script>
-
-            <div class="clear"></div>
-        </div>
-
-        <div class="modal-footer">
-            <button type="button" class="btn btn-primary" data-dismiss="modal" id="add_news_btn">
-                确认
-            </button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-            </button>
-        </div>
-    </div><!-- /.modal-content -->
-</div>
-</div>
-
-
-<!-- 批量删除新闻模态框（Modal） -->
-<div class="modal fade" id="delete-many-news" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+<!-- 批量删除留言模态框（Modal） -->
+<div class="modal fade" id="delete-words" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
      aria-hidden="true">
     <div class="modal-dialog" style="width: 240px">
         <div class="modal-content">
@@ -233,16 +134,16 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
                     &times;
                 </button>
                 <h4 class="modal-title">
-                    删除新闻
+                    删除留言
                 </h4>
             </div>
             <div class="modal-body">
                 <div class="change-personal-psd">
-                    确定要删除这些新闻吗？
+                    确定要删除这些留言吗？
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="delete_news_confirm_btn" data-dismiss="modal">
+                <button type="button" class="btn btn-primary" id="delete_words_confirm_btn" data-dismiss="modal">
                     确认
                 </button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭
@@ -251,8 +152,8 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->
 </div>
-<!-- 删除新闻模态框（Modal） -->
-<div class="modal fade" id="delete-news" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- 删除留言模态框（Modal） -->
+<div class="modal fade" id="delete-word" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" style="width: 240px">
         <div class="modal-content">
             <div class="modal-header">
@@ -260,16 +161,16 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
                     &times;
                 </button>
                 <h4 class="modal-title">
-                    删除新闻
+                    删除留言
                 </h4>
             </div>
             <div class="modal-body">
                 <div class="change-personal-psd">
-                    确定要删除该新闻吗？
+                    确定要删除该留言吗？
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal" id="delete_news_btn">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="delete_word_btn">
                     确认
                 </button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭
@@ -385,8 +286,8 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
     </div><!-- /.modal -->
 </div>
 
-<!-- 选择新闻提示框（Modal） -->
-<div class="modal fade" id="select-news" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- 选择留言提示框（Modal） -->
+<div class="modal fade" id="select-words" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" style="width: 303px">
         <div class="modal-content">
             <div class="modal-header">
@@ -394,13 +295,13 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
                     &times;
                 </button>
                 <h4 class="modal-title">
-                    请选择新闻
+                    请选择留言
                 </h4>
             </div>
             <div class="modal-body">
                 <div class="change-personal-psd" style="overflow: hidden">
                     <img src="img/mark.png" style="width: 100px;float: left;display: block">
-                    <div style="float: right;margin-top: 31px;width: 152px;">您还未选择任何新闻，请返回重新选择！</div>
+                    <div style="float: right;margin-top: 31px;width: 152px;">您还未选择任何留言，请返回重新选择！</div>
                 </div>
             </div>
             <div class="modal-footer">
@@ -443,6 +344,48 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
     </div><!-- /.modal -->
 </div>
 
+<!-- 新增新闻模态框-->
+<div class = "modal fade topmodal"  id = "add-news"  tabindex = "-1" role = "dialog"  aria-labelledby = "myModalLabel"  aria-hidden = "true" >
+    <div class = "modal-dialog" style = "width: 1030px" >
+        <div class = "modal-content" >
+            <div class = "modal-header" >
+                <button type = "button" class = "close"  data-dismiss = "modal" aria-hidden = "true" >  &times; </button>
+                <h4 class = "modal-title" > 新增新闻 </h4>
+            </div>
+
+            <div class = "modal-body" > <div>
+                    <label class = "col-lg-2 col-lg-offset-1 control-label" style = "text-align: right;padding-top: 7px" > 标题 </label>
+
+                    <div class = "col-lg-9" style = "margin-bottom: 15px">
+                        <input type = "text" class = "form-control" style = "width: 70%;" id = "add_title" >
+                    </div>
+                </div>
+                <div >
+                    <label class = "col-lg-2 col-lg-offset-1 control-label" style = "text-align: right;padding-top: 7px" > 作者 </label>
+                    <div class = "col-lg-9" style = "margin-bottom: 15px" >
+                        <input type = "text" class = "form-control col-lg-8" style = "width: 70%;" id = "add_author" >
+                    </div>
+                </div>
+                <div class = "clear" > </div>
+                <!--style给定宽度可以影响编辑器的最终宽度-->
+                <script type = "text/plain" id = "add_news_editor" style = "width:1000px;height:240px" >
+                    <p> </p>
+                </script>
+
+                <div class="clear"></div>
+                    </div>
+
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="add_news_btn">
+                    确认
+                    </button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                    </button>
+            </div>
+         </div><!-- /.modal-content -->
+     </div>
+</div>
+
 <!-- 帮助模态框（Modal） -->
 <div class="modal fade" id="help-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-dialog" style="width: 440px">
@@ -463,58 +406,6 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">关闭
                 </button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal -->
-</div>
-
-<!-- 上传客户端文件 -->
-<div class="modal fade"  id="upload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    ×
-                </button>
-                <h4 class="modal-title" id="myModalLabel">
-                    上传客户端文件
-                </h4>
-            </div>
-            <div class="modal-body">
-                <div class="change-personal-psd">
-                    <form class="form-horizontal" action="upload.php" method="post" id="change-password-form" role="form">
-                        <div class="form-group">
-                            <label class="col-lg3 col-md-3  control-label">文件名</label>
-                            <div class="col-lg-6 col-md-6 ">
-                                <input type="text" class="form-control" id="account_name" required placeholder="请输入文件名">
-                            </div>
-                            <span class="promptSpan col-lg-3 old-password"
-                                  style="line-height: 32px;color: #a94442;font-size: 14px;padding: 0" id="span4"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-lg-3 col-md-3 control-label">客户端版本</label>
-                            <div class="col-lg-6 col-md-6 ">
-                                <input type="password" class="form-control" id="account-psw" required
-                                       placeholder="请输入客户端版本">
-                            </div>
-                            <span class="promptSpan col-lg-3 old-password"
-                                  style="line-height: 32px;color: #a94442;font-size: 14px;padding: 0" id="span5"></span>
-                        </div>
-
-                        <div class="form-group">
-                            <label class="col-lg-3 col-md-3  control-label">文件</label>
-                            <div class="col-lg-6 col-md-6">
-                                <input type="file" class="form-control" id="account-confirm-psw">
-                            </div>
-                            <span class="promptSpan col-lg-3 old-password" style="line-height: 32px;color: #a94442;font-size: 14px;padding: 0" id="span6"></span>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <input type="submit" class="btn btn-primary" id="add-account-btn" value="上传">
-                <input type="button" class="btn btn-default" data-dismiss="modal" value="关闭" id="close_btn">
             </div>
         </div><!-- /.modal-content -->
     </div><!-- /.modal -->

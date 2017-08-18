@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2017-08-17 17:35:35
+Date: 2017-08-18 15:58:00
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -27,7 +27,8 @@ CREATE TABLE `admin` (
 -- ----------------------------
 -- Records of admin
 -- ----------------------------
-INSERT INTO `admin` VALUES ('xuanyi01', 'c8c1c24f460fe6e1b7564cbadf2aded8');
+INSERT INTO `admin` VALUES ('xuanyi01', 'f3cc66445f54101d947e494a3d877a88');
+INSERT INTO `admin` VALUES ('hejin', 'c8c1c24f460fe6e1b7564cbadf2aded8');
 
 -- ----------------------------
 -- Table structure for leaveword
@@ -37,12 +38,16 @@ CREATE TABLE `leaveword` (
   `name` char(255) CHARACTER SET utf8 DEFAULT NULL,
   `phone` char(255) DEFAULT NULL,
   `word` text CHARACTER SET utf8,
-  `ip` varchar(255) CHARACTER SET utf8 DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `ip` varchar(255) CHARACTER SET utf8 DEFAULT NULL,
+  `time` datetime DEFAULT NULL,
+  `number` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`number`)
+) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 
 -- ----------------------------
 -- Records of leaveword
 -- ----------------------------
+INSERT INTO `leaveword` VALUES ('何进', '10086', '测试', 'localhost', '2017-08-18 15:57:36', '1');
 
 -- ----------------------------
 -- Table structure for newslist
@@ -56,7 +61,7 @@ CREATE TABLE `newslist` (
   `number` int(120) NOT NULL AUTO_INCREMENT,
   `firstline` text,
   PRIMARY KEY (`number`)
-) ENGINE=MyISAM AUTO_INCREMENT=18 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of newslist

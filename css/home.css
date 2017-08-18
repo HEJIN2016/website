@@ -435,7 +435,6 @@ caption{
 }
 
 table#news-table thead th:last-child > div {
-	width: 300px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
