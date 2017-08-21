@@ -2305,7 +2305,8 @@ p.content{
 }
 .news-details .container article section img{
     vertical-align: middle;
-    margin: 25px;
+    padding: 25px;
+	max-width: 100%;
 }
 .news-details .container article section figcaption{
 	font-size: 1.8rem;

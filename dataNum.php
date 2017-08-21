@@ -20,8 +20,6 @@ else{
             $newslist[$index]->setTime($row["time"]);
             $newslist[$index]->setContent($row["content"]);
             $newslist[$index]->setNumber($row["number"]);
-//            $firstline = $row["firstline"];
-//            $firstline = substr($firstline,0,10);
             $newslist[$index]->setFirstLine(mb_substr(htmlentities($row["firstline"]),0,25) . "...");
             $json = $json . json_encode($newslist[$index],JSON_UNESCAPED_UNICODE) . ',' ;
             $index++;
@@ -29,10 +27,7 @@ else{
         $json = $json;
         $json = rtrim($json,',');
         $json = $json . ']';
-       // file_put_contents('data.json',$json);
         echo $json;
-        //print_r (json_encode(array($newslist),JSON_UNESCAPED_UNICODE));
-        //echo json_encode($newslist);
     }
     else{
         echo "none result";
