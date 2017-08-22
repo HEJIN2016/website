@@ -3,7 +3,7 @@
 require ("news.php");
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "xuanyiadmin-1234";
 $dbname = "news";
 
 $conn = new \mysqli($servername,$username,$password,$dbname);

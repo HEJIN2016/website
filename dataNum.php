@@ -1,11 +1,13 @@
 <?php
-
+session_start();
+if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
+    header("Location:login.html");
 require ("connect.php");
 if ($conn->connect_error){
     die("连接失败:" . $conn->connect_error);
 }
 else{
-    $sql = "SELECT * FROM newslist ORDER BY number ASC";
+    $sql = "SELECT * FROM newslist ORDER BY time DESC";
     $conn->query("set names 'utf8'");
     $result = $conn->query($sql);
     $newslist = new ArrayObject();

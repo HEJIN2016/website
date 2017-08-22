@@ -2,7 +2,7 @@
 
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "xuanyiadmin-1234";
 $dbname = "news";
 
 //$con = mysqli_connect($servername, $username, $password, $dbname);
@@ -32,7 +32,7 @@ else {
     if (mysqli_num_rows($result) > 0) {
         session_start();
         $_SESSION["username"] = $_POST["username"];
-        echo "window.location.href='homepage'";
+        echo "window.location.href='homepage.php'";
     }
     else {
         echo "alert ('用户名或密码错误！')";

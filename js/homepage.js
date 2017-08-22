@@ -1,4 +1,4 @@
-var $table = $("#news-table");
+﻿var $table = $("#news-table");
 var $word_table = $("#words-table");
 $table.bootstrapTable({
     url: 'dataNum.php',
@@ -348,7 +348,7 @@ $confirmPsw = $("#confirm-psw");
 $span1 = $("#span1");
 $span2 = $("#span2");
 $span3 = $("#span3");
-$("#change-psd-link").click(function () {
+$("#change-psd-link,#change-psd-link1").click(function () {
     $("#change-password").modal('show');
     $newPsw.focus();
 });

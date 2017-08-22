@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"> -->
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=10">
     <meta name="keywords" content="渲一,渲一科技,渲染,迅染云平台，云渲染，渲染农场，3D渲染，渲染农场">
     <meta name="description" content="渲染云平台,渲一科技自主开发的迅染云平台是一款适合超大规模渲染集群的管理渲染服务平台系统。渲染平台适用于超大规模渲染云的管理，高效实现了远程提交渲染任务、近实时审片和及时修改设计，可根据用户需求提交大型渲染业务。平台支持3ds Max、Maya等各种主流渲染制作软件和以及mental ray、V-Ray等渲染引擎，可为动漫影视、建筑效果图、CG艺术等全领域提供专业云渲染解决方案" />
 	<title>渲一科技|您身边的急速渲染军团</title>
@@ -29,7 +29,7 @@
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">
 					<li>
-						<a href="index.html">首页</a>
+						<a href="/">首页</a>
 					</li>
 					<li>
 						<a href="render-platform.html">迅染云平台
@@ -287,7 +287,7 @@ $(function(){
 				type: 'post',
 				data: {
 //				    ip: !<?php //echo ($_SERVER["REMOTE_ADDR"])?>//?"未知ip":<?php //echo ($_SERVER["REMOTE_ADDR"])?>//;  ?>,
-                    ip: "localhost",
+                    ip: "<?php echo ($_SERVER["REMOTE_ADDR"])?>",
                     phone: $("#tel").val(),
                     name: $("#name").val(),
                     word: $("#word").val(),

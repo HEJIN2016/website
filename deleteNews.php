@@ -5,7 +5,9 @@
  * Date: 2017/8/16 0016
  * Time: 上午 10:16
  */
-
+session_start();
+if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
+    header("Location:login.html");
 require ('connect.php');
 
 if ($conn->connect_error){

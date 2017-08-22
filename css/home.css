@@ -1,4 +1,4 @@
-/*homepage主页css*/
+﻿/*homepage主页css*/
 *{
 	margin: 0;
 	padding: 0;
@@ -26,13 +26,21 @@ nav.nav-bar{
 	height: 55px;
 	/*background: #02A6BC;*/
 	background: #2C3144;
-	box-shadow: 0 3px 3px #CCD1DA
+	box-shadow: 0 3px 3px #CCD1DA;
+        text-align: center;
 }
 
 nav.nav-bar .logo{
 	height: 55px;
 	float: left; 
 	/*padding-left: 10px;*/
+}
+
+nav.nav-bar .total-num{
+        color: #fff;
+        display: inline-block;
+        line-height: 55px;
+        font-size: 14px;
 }
 
 nav.nav-bar .nav-right{

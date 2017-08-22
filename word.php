@@ -1,7 +1,7 @@
 <?php
 session_start();
 if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
-    header("Location:login");
+    header("Location:login.html");
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,6 +19,7 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
 <body>
 <nav class="nav-bar">
     <img class="logo" src="img/render-logo.png">
+    <div class="total-num"><span>官网累计访问量：<?php header('Content-type: text/html; charset=utf-8');$datei = fopen("counter.txt","r");$count = fgets($datei,1000);echo $count;fclose($datei);$datei = fopen("counter.txt","w");fwrite($datei, $count);fclose($datei);?></span></div>
     <ul class="nav-right">
         <li>
             <a href="" data-toggle="modal" data-target="#help-modal">帮助</a>
@@ -32,11 +33,9 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
             <a href="javascript:;"><?php echo $_SESSION["username"] ?></a>
             <i class="iconfont icon-arrowdown"></i>
             <ul class="userlist">
+                
                 <li>
-                    <a href="info.html">个人信息</a>
-                </li>
-                <li>
-                    <a href="changePass.html">修改密码</a>
+                    <a href="" id="change-psd-link1">修改密码</a>
                 </li>
                 <li>
                     <a href="logout.php">注销账号</a>
@@ -227,7 +226,7 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
                 </div>
             </div>
             <div class="modal-footer">
-                <input type="submit" class="btn btn-primary" id="change_psd_btn">
+                <input type="submit" class="btn btn-primary" id="change_psd_btn" value="修改">
                 <input type="button" class="btn btn-default" data-dismiss="modal" value="关闭" id="close_btn">
             </div>
         </div><!-- /.modal-content -->

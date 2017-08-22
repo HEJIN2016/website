@@ -1,18 +1,12 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
 
+<?php echo $ip = $_SERVER["REMOTE_ADDR"]; 
+var_dump($_POST);?>
+<?php
+class a{
+    public $b="";public $c="";
+}
+$a = new ArrayObject(); 
+$a[0]=new a();
+$a[1]=new a();
 
-<script>
-    var a = <?php echo $ip = $_SERVER["REMOTE_ADDR"]; ?> + "";
-    console.log(a);
-</script>
-
-</body>
-</html>
+?>
