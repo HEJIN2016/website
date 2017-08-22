@@ -347,4 +347,25 @@
     .platform .bottom .container > ul > li:nth-of-type(5) i {
         top: 40px;
     }
+    .benefit .container .phone {
+        width: 100%;
+    }
+    .clear-xs{
+        clear: both;
+    }
+    .benefit .container .phone span {
+        position: relative;
+        text-align: left!important;
+        top: 0!important;
+    }
+    .benefit {
+        height: auto;
+    }
+    .benefit .container > span {
+        line-height: 1.2;
+        padding: 20px 20px 8px;
+    }
+    .benefit .line {
+        display: none;
+    }
 }

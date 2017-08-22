@@ -184,6 +184,7 @@ fclose($datei);
 		    <div class="color"></div>
 		    <div class="phone">
 		    	<div class="wow img swing" data-wow-duration="1800ms" data-wow-delay="200ms"></div>
+                <div class="clear-xs"></div>
 		    	<span>按量计算</span>
 		    	<span>专业、省心的人工渲染服务</span>
 		    	<span>计费单元精确到每帧</span>
