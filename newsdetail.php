@@ -28,11 +28,11 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav">
-                <li>
+                <li class="active">
                     <a href="/">首页</a>
                 </li>
                 <li>
-                    <a href="render-platform.html">迅染云平台
+                    <a href="javascript:">迅染云平台
                         <i class="iconfont icon-xia1"></i>
                     </a>
                     <ul class="menu-list">
@@ -47,11 +47,11 @@
                 <li>
                     <a href="example.html">案例</a>
                 </li>
-                <li class="active">
+                <li>
                     <a href="news.html">新闻动态</a>
                 </li>
                 <li>
-                    <a href="about-us.html">关于我们
+                    <a href="javascript:">关于我们
                         <i class="iconfont icon-xia1"></i>
                     </a>
                     <ul class="menu-list">
@@ -61,7 +61,6 @@
                         <li><a href="contact-us.php#contact">联系我们</a></li>
                     </ul>
                 </li>
-
             </ul>
         </div>
     </div>

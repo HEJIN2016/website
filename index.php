@@ -22,6 +22,7 @@ fclose($datei);
 	<link rel="stylesheet" type="text/css" href="font/iconfont.css">
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body>
@@ -43,7 +44,7 @@ fclose($datei);
 						<a href="/">首页</a>
 					</li>
 					<li>
-						<a href="render-platform.html">迅染云平台
+						<a href="javascript:">迅染云平台
 						    <i class="iconfont icon-xia1"></i>
 						</a>
 						<ul class="menu-list">
@@ -62,7 +63,7 @@ fclose($datei);
 						<a href="news.html">新闻动态</a>
 					</li>
 					<li>
-						<a href="about-us.html">关于我们
+						<a href="javascript:">关于我们
 							<i class="iconfont icon-xia1"></i>
 						</a>
 						<ul class="menu-list">
@@ -72,7 +73,6 @@ fclose($datei);
 							<li><a href="contact-us.php#contact">联系我们</a></li>
 						</ul>
 					</li>
-					
 				</ul>
 			</div>
 		</div>
@@ -100,34 +100,34 @@ fclose($datei);
 				<span>The six major advantages of fastRender platform</span>
 				<div class="color"></div>
 				<ul>
-					<li class="col-lg-6 wow fadeInLeft animated" data-wow-duration="600ms" data-wow-delay="500ms">
+					<li class="col-lg-6 wow fadeInLeft animated col-md-6 col-sm-6 col-xs-12" data-wow-duration="600ms" data-wow-delay="500ms">
 						<i></i>
 						<h4>自主可控</h4>
 						<p>自主研发的云管理平台、自主的存储系统、自主的服务器虚拟化。实现了虚实结合的资源聚合、基于分区的大规模资源管理、异构资源统一调度等关键技术的应用</p>
 						<div class="circle"></div>
 					</li>
-					<li class="col-lg-6 wow fadeInRight animated" data-wow-duration="600ms" data-wow-delay="500ms">
+					<li class="col-lg-6 wow fadeInRight animated col-md-6 col-sm-6 col-xs-12" data-wow-duration="600ms" data-wow-delay="500ms">
 						<h4>超强兼容</h4>
 						<p>基于主流KVM/XEN/LXC/DOCKER等虚拟化机制、兼容能力大大提高。针对“天河二号”结果特点，优化兼容市场上巨大多数主流CG软件，比如3ds MAX、Maya、CINEMA 4D</p>
 						<i></i>
 					</li>
-					<li class="col-lg-6 wow fadeInLeft animated" data-wow-duration="600ms" data-wow-delay="800ms">
+					<li class="col-lg-6 wow fadeInLeft animated col-md-6 col-sm-6 col-xs-12" data-wow-duration="600ms" data-wow-delay="800ms">
 						<i></i>
 						<h4>价格优势</h4>
 						<p>试用超级计算机系统，大幅度降低渲染单价。按需增加或减少资源，实现真正的弹性计费，按核时计费，价格透明</p>
 						<div class="circle"></div>
 					</li>
-					<li class="col-lg-6 wow fadeInRight animated" data-wow-duration="600ms" data-wow-delay="800ms">
+					<li class="col-lg-6 wow fadeInRight animated col-md-6 col-sm-6 col-xs-12" data-wow-duration="600ms" data-wow-delay="800ms">
 						<h4>安全可靠</h4>
 						<p>数据分级物理隔离，数据传输加密与严格准入控制，领先的攻击与病毒防止技术，高度的团队安全意识与管理机制</p>
 						<i></i>
 					</li>
-					<li class="col-lg-6 wow fadeInLeft animated" data-wow-duration="600ms" data-wow-delay="1100ms">
+					<li class="col-lg-6 wow fadeInLeft animated col-md-6 col-sm-6 col-xs-12" data-wow-duration="600ms" data-wow-delay="1100ms">
 						<i></i>
 						<h4>硬件优势</h4>
 						<p>平台部署的业务主机为“天河二号”超级计算机。自主CPU阵列，超过6400个自主CPU的计算节点，双精度浮点峰值计算性能为589.8TFlops，内存总容量206.8TB，全系统磁盘总容量10PB，中心接入移动、联通、电信、科研、教育五线路，独享万兆带宽</p>
 					</li>
-					<li class="col-lg-6 wow fadeInRight animated" data-wow-duration="600ms" data-wow-delay="1100ms">
+					<li class="col-lg-6 wow fadeInRight animated col-md-6 col-sm-6 col-xs-12" data-wow-duration="600ms" data-wow-delay="1100ms">
 						<h4>异地求同</h4>
 						<p>数据分级物理隔离，数据传输加密与严格准入控制，领先的攻击与病毒防止技术，高度的团队安全意识与管理机制</p>
 						<i></i>
@@ -141,21 +141,21 @@ fclose($datei);
 				<span>迅染云平台是渲一科技自主开发的一款适合超大规模渲染集群的管理服务平台系统</span>
 				<div class="color"></div>
 				<div class="circle"></div>
-				<div class="advantage1">
+				<div class="advan advantage1">
 					<div class="word">
 						<h4>技术优势</h4>
 						<p>集群规模超千台服务器</p>
 					</div>
 					<i class="small-circle"></i>
 				</div>
-				<div class="advantage2">
+				<div class="advan advantage2">
 					<div class="word">
 						<h4>弹性资源</h4>
 						<p>用户可以按需使用，节约资源</p>
 					</div>
 					<i class="small-circle" style="background: #CCFFCC"></i>
 				</div>
-				<div class="advantage3">
+				<div class="advan advantage3">
 					<div class="word">
 						<h4>提高效率</h4>
 						<p>云计算极强的计算能力，<p>
@@ -163,7 +163,7 @@ fclose($datei);
 					</div>
 					<i class="small-circle" style="background: #8AA7C9"></i>
 				</div>
-				<div class="advantage4">
+				<div class="advan advantage4">
 					<div class="word">
 						<h4>降低成本</h4>
 						<p>服务器托管，制作公司</p>
@@ -185,7 +185,7 @@ fclose($datei);
 		    <div class="phone">
 		    	<div class="wow img swing" data-wow-duration="1800ms" data-wow-delay="200ms"></div>
 		    	<span>按量计算</span>
-		    	<span>享受专业、省心的人工渲染服务</span>
+		    	<span>专业、省心的人工渲染服务</span>
 		    	<span>计费单元精确到每帧</span>
 		    	<span>计算时间精确到秒</span>
 		    </div>
@@ -283,30 +283,29 @@ fclose($datei);
 				<ul>
 					<li></li>
 					<li>
-						<p><a href="news2.html">渲一科技成为中国超级计算</a></p>
-						<p><a href="news2.html">创新联盟一员</a></p>
-						<button class="btn"><a href="news2.html">MORE</a></button>
+						<p><a href="news.html">渲一科技成为中国超级计算创新联盟一员</a></p>
+						<button class="btn"><a href="news.html">MORE</a></button>
 					</li>
 					<li></li>
 					<li>
-						<p><a href="news3.html">看了我，你会爱上我</a></p>
-						<p><a href="news3.html">渲一科技新逼格办公室！</a></p>
-						<button class="btn"><a href="news3.html">MORE</a></button>
+						<p><a href="news.html">看了我，你会爱上我</a></p>
+						<p><a href="news.html">渲一科技新逼格办公室！</a></p>
+						<button class="btn"><a href="news.html">MORE</a></button>
 					</li>
 					<li>
 						<a href="news.html">更多资讯请点击</a>
 					</li>
 					<li>
-						<p><a href="news1.html">渲一科技厦门推介会</a></p>
-						<p><a href="news1.html">成功召开将打造厦门</a></p>
-						<p><a href="news1.html">最大迅染云平台</a></p>
-						<button class="btn"><a href="news1.html">MORE</a></button>
+						<p><a href="news.html">渲一科技厦门推介会</a></p>
+						<p><a href="news.html">成功召开将打造厦门</a></p>
+						<p><a href="news.html">最大迅染云平台</a></p>
+						<button class="btn"><a href="news.html">MORE</a></button>
 					</li>
 					<li></li>
 					<li>
-						<p><a href="news5.html">渲一科技渲染力作</a></p>
-						<p><a href="news5.html">《大唐荣耀》强势霸屏</a></p>
-						<button class="btn"><a href="news5.html">MORE</a></button>
+						<p><a href="news.html">渲一科技渲染力作</a></p>
+						<p><a href="news.html">《大唐荣耀》强势霸屏</a></p>
+						<button class="btn"><a href="news.html">MORE</a></button>
 					</li>
 					<li></li>
 					<li><a href="news.html"></a></li>
@@ -320,7 +319,7 @@ fclose($datei);
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+				<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
 					<ul class="introduction">
 						<h3>渲一科技 About Us</h3>
 						<li>
@@ -349,7 +348,7 @@ fclose($datei);
 						</li>
 					</ul>
 				</div>
-				<div class="col-lg-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+				<div class="col-lg-3 col-md-3 col-sm-3  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
 					<ul class="contact-us">
 						<h3>联系我们 Contact Us</h3>
 						<li>
@@ -378,7 +377,7 @@ fclose($datei);
 						</li>
 					</ul>
 				</div>
-				<div class="col-lg-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="900ms">
+				<div class="col-lg-3 col-md-3 col-sm-3  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="900ms">
 					<ul class="address">
 						<h3>地址 Address</h3>
 						<li><i></i><span>长沙经济技术开发区</span></li>
@@ -386,7 +385,7 @@ fclose($datei);
 						<li><span>路1318号综合楼308</span></li>
 					</ul>
 				</div>
-				<div class="col-lg-3 wow fadeInUp"  data-wow-duration="500ms" data-wow-delay="1200ms">
+				<div class="col-lg-3 col-md-3 col-sm-3  wow fadeInUp"  data-wow-duration="500ms" data-wow-delay="1200ms">
 					<div class="content">
 					    <h3>关注我们</h3>
 					    <img src="img/QRcode.png" alt="渲一科技">

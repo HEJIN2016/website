@@ -1,718 +1,350 @@
-@media only screen and (min-width : 768px) {
-  .nav.navbar-nav > li:hover > ul.sub-menu{
-    display: block;
-    -webkit-animation: fadeInUp 400ms;
-    animation: fadeInUp 400ms;
-  }
-
-  ul.sub-menu {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background: #fff;
-    padding: 10px 0;
-    width: 240px;
-    box-shadow: none;
-    display: none;
-    z-index: 999;
-    border: 1px solid #dab074;
-  }
-
-  #header .navbar-nav li ul.sub-menu li a {
-    padding-left: 20px;
-  }
-
-
-}
-
 /*md only*/
 @media (min-width: 992px) and (max-width: 1199px) {
-  .col-md-4.portfolio-item{
-    width: 33%;
-  }
+    .col-md-4.portfolio-item {
+        width: 33%;
+    }
+
+    /*index.html*/
+    .platform .content .container .advantage1 {
+        left: 144px;
+    }
+    .platform .content .container .advantage2 {
+        right: 112px;
+    }
+    .platform .content .container .advantage3 {
+        left: 96px;
+    }
+    .platform .content .container .advantage4 {
+        right: 95px;
+    }
+    .platform .content .container .tv {
+        left: 344px;
+    }
+    .platform .bottom {
+        overflow: hidden;
+    }
+    .platform .bottom .container{
+        padding: 0;
+    }
+    .platform .bottom .container > ul {
+        padding: 18px 40px;
+    }
+    .render-field .container > div:first-child {
+        width: 223px;
+        background: transparent -5px 0 url(../img/1.png) no-repeat;
+        background-size: auto 385px;
+    }
+    .render-field .container > div {
+        margin-left: -108px;
+    }
+    .render-field .container > div.img2 > .img-center-word{
+        padding-left: 54px;
+    }
+    .render-field .container > div.img3 > .img-center-word,
+    .render-field .container > div.img4 > .img-center-word,
+    .render-field .container > div.img5 > .img-center-word{
+        padding-left: 65px;
+    }
+    .render-field .container > div.img6 > .img-center-word{
+        padding-left: 82px;
+    }
+    footer .container .row ul.contact-us li:nth-of-type(3) span{
+        display: inline-block;
+        padding-right: 61px;
+    }
+    .render-news .news-area > ul > li {
+        padding: 45px 3px;
+    }
+
+    /*render-platform.html*/
+    .render-feature .container {
+        padding: 0;
+    }
+    .understand-render-platform .container .cloud-platform {
+        width: 655px;
+    }
+    .understand-render-platform .container {
+        padding: 72px 0 0 0;
+    }
+
+    /*opeartion.html*/
+    .render-server-advan .container .strength {
+        left: 125px;
+    }
+    .render-server-advan .container .strength2 {
+        left: 112px;
+    }
+    .render-server-advan .container .strength3 {
+        left: 140px;
+    }
+    .render-server-advan .container .strength4 {
+        left: auto;
+        right: 73px;
+    }
+    .render-server-advan .container .strength5 {
+        left: auto;
+        right: 70px;
+    }
+    .advantage-example-list .container .superiority .col-md-3{
+        padding: 0;
+    }
+    .advantage-example-list .container .performance div img {
+        width: 100%;
+        height: auto;
+    }
+    .advantage-example-list .container .performance > div > div{
+        padding: 0 10px;
+    }
+    .client-download .container {
+        padding: 70px 0 0 83px;
+        background: url(../img/render.png) no-repeat 712px 70px;
+    }
 }
 
 /*sm only*/
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-sm-4.portfolio-item{
-    width: 33%;
-  }
+    .col-sm-4.portfolio-item {
+        width: 33%;
+    }
+
+    /*index.html*/
+    .platform .content .container .advantage1 {
+        left: 34px;
+    }
+    .platform .content .container .advantage2 {
+        right: 2px;
+    }
+    .platform .content .container .advantage3 {
+        left: -13px;
+    }
+    .platform .content .container .advantage4 {
+        right: 0;
+        width: 215px;
+    }
+    .platform .content .container .tv {
+        left: 237px;
+    }
+    .platform .bottom  .container,
+    .platform .bottom .container > ul {
+        padding: 0;
+    }
+    .platform .bottom .container > ul > li:nth-child(2n+1) {
+        padding-left: 100px;
+    }
+    .platform .bottom .container > ul > li:nth-child(2n) {
+        padding-right: 100px;
+    }
+    .platform .bottom .container > ul > li:nth-of-type(2n+1) i {
+        left: 10px;
+    }
+    .platform .bottom .container > ul > li:nth-of-type(2n) i {
+        right: 10px;
+    }
+    .render-field .container > div.img1 .after {
+        background: url(../img/bg1.png) -57px;
+        background-size: auto 385px;
+    }
+    .render-field .container > div:first-child {
+        width: 170px;
+        background: transparent -57px url(../img/1.png);
+        background-size: auto 385px;
+    }
+    .render-field .container > div {
+        margin-left: -141px;
+    }
+    .render-field .container > div .img-center-word p:nth-child(3) {
+        display: none;
+    }
+    .render-field .container > div .img-center-word p:first-child {
+        margin-left: 53px;
+    }
+    .render-field .container > div .img-center-word p:nth-child(2) {
+        padding-left: 21px;
+    }
+    center-word, .render-field .container > div > .img-center-word {
+        padding-left: 82px;
+    }
+    center-word, .render-field .container > div.img1 .img-center-word {
+        padding-left: 0;
+    }
+    center-word, .render-field .container > div.img6 .img-center-word {
+        padding-left: 99px;
+    }
+    .render-software .container ul li:nth-of-type(8)::after {
+        left: -40px;
+    }
+    .render-news .container {
+        padding: 0;
+    }
+    .render-news .news-area > ul > li {
+        padding: 40px 5px;
+    }
+    footer .container .row ul.contact-us li:nth-of-type(3) span {
+        display: inline-block;
+        padding-right: 0;
+        width: 100%;
+    }
+    footer .container .row > div:last-child figcaption {
+        padding: 4px 15px 0;
+    }
 }
 
-/* md */
-@media only screen and (max-width : 1200px) {
-
-  /*Pricing Table*/
-  .single-price .plan-price:after {
-    border-width:100px;
-    margin-left:-100px;
-  }
-
-  .single-table .table-content {
-    padding: 20px;
-  }
-
-  .table-header {
-    padding: 0 10px 7px;
-  }
-
-  .single-table:before {
-    border-width:0 106px 60px;
-  }
-
-  .single-table .btn-signup:after {
-    border-width:78px 106px 0;
-  }
-
-}
-
-/* sm */
-@media only screen and (max-width : 992px) {
-
-  h1{
-    font-size: 25px;
-  }
-
-  #header .navbar-nav.navbar-right li {
-    padding: 0;
-  }
-
-  #header .navbar-nav.navbar-right >li a {
-    padding: 20px 10px;
-  }
-
-  #home-slider {
-    margin-top: 30px;
-  }
-
-  #home-slider .main-slider {
-    height: 250px;
-  }
-
-  #home-slider .slide-text {
-    top: 0;
-    width: 50%;
-  }
-
-  #home-slider h1 {
-    margin-top: 0;
-  }
-
-  #home-slider .slider-house {
-    width: 350px;
-  }
-
-  #home-slider .slider-circle1 {
-    right: 295px;
-    bottom: 140px;
-    width: 20px;
-  }
-
-  #home-slider .slider-circle2 {
-    right: 290px;
-    bottom: 160px;
-    width: 11px;
-  }
-
-  #home-slider .slider-cloud1 {
-    right: 190px;
-    bottom: 160px;
-    width: 60px;
-  }
-
-  #home-slider .slider-cloud2 {
-    right: 260px;
-    bottom: 190px;
-    width: 70px;
-  }
-
-  #home-slider .slider-cloud3 {
-    right: 75px;
-    bottom: 180px;
-    width: 70px;
-  }
-
-  #home-slider .slider-sun {
-    right: 170px;
-    bottom: 210px;
-    width: 60px
-  }
-
-  #home-slider .slider-cycle {
-    right: 350px;
-    bottom: 0;
-    width: 140px;
-  }
-
-  /*Pricing Table*/
-  .single-price {
-    margin-bottom: 40px;
-  }
-
-  .single-price .plan-price {
-    height: 140px;
-  }
-
-  .single-price .plan-price:after {
-    border-width: 140px;
-    margin-left: -140px;
-  }
-
-  .single-table {
-    margin-bottom: 50px;
-  }
-
-  .single-table:before {
-    border-width: 0 172px 60px;
-  }
-
-  .single-table .btn-signup:after {
-    border-width: 78px 173px 0;
-  }
-
-  #price-table2 {
-    margin-bottom: 100px;
-  }
-
-  .nav.navbar-nav.post-nav li{
-    display: inline-block;
-    margin-right: 15px;
-  }
-
-  .masonery_area .nav.nav-justified.post-nav li {
-    display: table-cell;
-  }
-
-  /* Blog */
-  .post-comment {
-    padding-left: 0;
-  }
-
-  .post-comment .pull-left img {
-    margin-right: 20px;
-  }
-
-  .parrent .post-comment {
-    margin-left: 0;
-  }
-
-  .parrent .media-list {
-    margin-left: 150px;
-  }
-
-  .single-blog.two-column .post-overlay{
-    margin-top: 0;
-  }
-
-}
-
-
-/* xs */
-@media only screen and (max-width : 768px) {
-
-  h1{
-    font-size: 22px;
-  }
-
-  h2{
-    font-size:20px;
-  }
-
-  .padding{
-    padding: 30px 0;
-  }
-
-  #header {
-    padding-bottom: 40px;
-    padding-top: 10px;
-  }
-
-  .social-icons.pull-right{
-    float: left !important;
-  }
-
-  #header .navbar-inverse .navbar-toggle,
-  #header .navbar-inverse .navbar-toggle:focus {
-    border-color: #dbb075;
-    margin-top: 15px;
-    margin-right: 5px;
-    outline: none;
-  }
-
-  .navbar-header .navbar-toggle .icon-bar {
-    background-color: #DBB075;
-  }
-
-  #header .navbar-inverse .navbar-toggle:hover {
-    background: #dbb075;
-  }
-
-  #header .navbar-inverse .navbar-toggle:hover .icon-bar {
-    background: #fff;
-  }
- 
-  .navbar-inverse .navbar-collapse,
-  .navbar-inverse .navbar-form {
-    border-top: 0;
-  }
-
-  .navbar.navbar-inverse {
-    margin-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .social-icons ul li:first-child{
-    padding-left: 0;
-  }
-
-  .search {
-    top: -40px;
-  }
-
-  #header .navbar-nav.navbar-right li > a > i {
-    display: inline-block;
-    float: right;
-    padding: 8px 10px 8px 30px
-  }
-
-  #header .navbar-nav.navbar-right li > a {
-    padding: 10px 0;
-  }
-
-  #header .navbar-nav li ul.sub-menu li a {
-    padding: 5px 10px;
-  }
-
-  #header .navbar-inverse .navbar-nav li.active > a, 
-  #header .navbar-inverse .navbar-nav li.active > a:focus, 
-  #header .navbar-nav.navbar-right li > a:hover {
-    border: none;
-  }
-
-  #home-slider {
-    margin: 50px 20px;
-  }
-
-  #home-slider .main-slider {
-    height: 500px;
-  }
-
-  #home-slider .slide-text {
-    top: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  #home-slider .slider-cloud2 {
-    width: 100px;
-  }
-
-  /*Pricing Table*/
-  .single-price, .single-table {
-    margin-bottom: 45px;
-  }
-
-  .single-price .plan-price {
-    height: 200px;
-    padding-top: 25px;
-  }
-
-  .single-price .plan-price:after {
-    border-width: 200px;
-    margin-left: -200px;
-  }
-
-  .single-table:before {
-    border-width: 0 225px 60px;
-  }
-
-  .single-table .btn-signup:after {
-    border-width: 78px 225px 0;
-  }
-
-  .single-table .btn-signup a {
-    padding: 15px;
-  }
-
-
-  #action.responsive{
-    height: 255px;
-  }
-
-  .action.take-tour{
-    margin-top: -95px;
-  }
-
-  .action.take-tour .col-sm-7{
-    width: 100%;
-    text-align: center;
-  }
-
-  .action.take-tour .col-sm-5{
-    width: 100%;
-    margin-top: 120px;
-  }
-
-  .single-features {
-    padding-bottom: 0;
-    padding-top: 30px;
-  }
-
-  .single-features img {
-    margin-bottom: 25px;
-  }
-
-
-  .single-features {
-    text-align: center;
-  }
-
-  .single-features * {
-    display: inline-block;
-    text-align: center;
-  }
-
-
-  /* about us */
-
-  .team-single {
-    margin-bottom: 30px;
-  }
-
-  #company-information.choose .padding-top {
-    padding-top: 0;
-  }
-
-  /* Blog */
-  .arrow-right:after {
-    background: none ;
-  }
-
-  .arrow-left:before {
-    background: none;
-  }
-
-  .col-sm-6.padding-right.arrow-right{
-    padding-right: 15px;
-  }
-
-  .col-sm-6.padding-left.padding-top.arrow-left {
-    margin-bottom: 70px;
-    padding-left: 15px;
-  }
-
-  .blog-padding-right {
-    padding-right: 15px;
-  }
-
-  .nav.nav-justified.post-nav li, 
-  .nav.navbar-nav.post-nav li{
-    display: inline-block;
-    margin-right: 15px;
-  }
-
-  .author-profile .col-sm-2 img {
-    margin-bottom: 20px;
-    width: auto;
-  }
-
-  .post-comment {
-    padding-left: 0;
-  }
-
-  .parrent .post-comment {
-    margin-left: 0;
-  }
-
-  .parrent .media-list {
-    margin-left: 140px;
-  }
-
-  .post-comment .pull-left img{
-    margin-right: 10px;
-  }
-
-  .single-blog.two-column .post-overlay{
-    margin-top: 0;
-  }
-
-  /* Portfolio */
-
-  .project-name h2 {
-    margin-top: 20px;
-  }
-
-  .portfolio-filter li a{
-    padding: 0 15px;
-  }
-
-  /*Coming Soon CSS*/
-  #coming-soon {
-    padding-top: 0;
-  }
-
-  .coming-content {
-    font-size: 16px;
-    padding: 0;
-  }
-
-  .coming-content h1 {
-    font-size: 27px;
-  }
-
-  #countdown li.angle-one:before, 
-  #countdown li.angle-one:after, 
-  #countdown li.angle-two:before, 
-  #countdown li.angle-two:after  {
-    display: none;
-  }
-
-  #countdown {
-    margin-bottom: 0;
-    margin-top: 50px;
-  }
-
-  #countdown li {
-    font-size: 18px;
-    margin-right: 15px;
-  }
-
-  #countdown li span {
-    font-size: 35px;
-    margin-bottom:5px;
-  }
-
-  #subscribe h2 {
-    font-size: 16px;
-  }
-
-  #countdown li.angle-two span {
-    padding-top: 0;
-  }
-
-  #countdown li.angle-one span.minutes {
-    margin-left: 0;
-  }
-
-  #subscribe {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  #newsletter .form-control {
-    font-size: 14px;
-    height: 40px
-  }
-
-  #newsletter i {
-    font-size: 25px;
-  }
-
-  #countdown li.angle-one span.minutes, 
-  #countdown li.angle-one .minute {
-    margin-left: 0
-  }
-
-  /* Contact-us2 CSS*/
-  #map-section .contact-info {
-    width: 51%;
-    padding: 20px;
-  }
-
-  #gmap {
-    height: 310px;
-  }
-
-  #contact-form .btn-submit {
-    width:50%;
-  }
-
-  #map-section .contact-info h2 {
-    font-size: 20px;
-  }
-
-  #map-section .contact-info address {
-    font-size: 14px;
-  }
-
-
-  /* 404 error CSS*/
-  #error-page {
-    padding: 50px 25px;
-  }
-
-  #error-page h2 {
-    font-size: 24px;
-  }
-
-  .btn-error {
-    font-size: 13px;
-    padding: 12px 18px;
-  }
-}
-
-@media only screen and (max-width : 480px) {
-
-
-  #home-slider .slider-circle1 {
-    right: 80%;
-    bottom: 100px;
-    width: 15px;
-  }
-
-  #home-slider .slider-circle2 {
-    right: 78%;
-    bottom: 120px;
-    width: 10px;
-  }
-
-  #home-slider .slider-cloud1 {
-    right: 140px;
-    bottom: 140px;
-    width: 60px;
-  }
-
-  #home-slider .slider-cloud2 {
-    right: 210px;
-    bottom: 190px;
-    width: 70px;
-  }
-
-  #home-slider .slider-cloud3 {
-    right: 35px;
-    bottom: 180px;
-    width: 70px;
-  }
-
-  #home-slider .slider-sun {
-    right: 120px;
-    bottom: 180px;
-    width: 60px
-  }
-
-
-  #home-slider .slider-cycle {
-    display: none;
-  }
-
-  /* Pricing Table*/
-
-  .single-price, .single-table {
-    margin-bottom: 35px;
-  }
-
-  .single-price .plan-price {
-    height: 110px;
-    padding-top: 7px;
-  }
-
-  .single-price .plan-price:after {
-    border-width: 110px;
-    margin-left: -110px;
-  }
-
-  .single-table:before {
-    border-width: 0 145px 60px;
-  }
-
-  .single-table .btn-signup:after {
-    border-width: 78px 145px 0;
-  }
-
-  /*Coming Soon CSS*/
-  #coming-soon {
-    padding-top: 0;
-  }
-
-  .coming-content {
-    font-size: 16px;
-    padding: 0;
-  }
-
-  .coming-content h1 {
-    font-size: 27px;
-  }
-
-  #countdown li.angle-one:before, 
-  #countdown li.angle-one:after, 
-  #countdown li.angle-two:before, 
-  #countdown li.angle-two:after  {
-    display: none;
-  }
-
-  #countdown {
-    margin-bottom: 0;
-    margin-top: 50px;
-  }
-
-  #countdown li {
-    font-size: 18px;
-    margin-right: 15px;
-  }
-
-  #countdown li span {
-    font-size: 35px;
-    margin-bottom:5px;
-  }
-
-  #subscribe h2 {
-    font-size: 16px;
-  }
-
-  #countdown li.angle-two span {
-    padding-top: 0;
-  }
-
-  #countdown li.angle-one span.minutes {
-    margin-left: 0;
-  }
-
-  #subscribe {
-    font-size: 14px;
-    text-align: center;
-  }
-
-  #newsletter .form-control {
-    font-size: 14px;
-    height: 40px
-  }
-
-  #newsletter i {
-    font-size: 25px;
-  }
-
-  #countdown li.angle-one span.minutes, 
-  #countdown li.angle-one .minute {
-    margin-left: 0
-  }
-
-  /* Contact-us2 CSS*/
-
-  #map-section .contact-info {
-    width: 100%;
-  }
-
-  #gmap {
-    height: 390px;
-  }
-
-  #contact-form .btn-submit {
-    width: 60%;
-  }
-
-  /* 404 error CSS*/
-
-  #error-page {
-    padding: 50px 25px;
-  }
-
-  #error-page h2 {
-    font-size: 24px;
-  }
-
-  .btn-error {
-    font-size: 10px;
-    padding: 12px 11px;
-  }
+/*xs*/
+@media only screen and (max-width: 767px) {
+    /*index.html*/
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .padding {
+        padding: 30px 0;
+    }
+    .social-icons.pull-right {
+        float: left !important;
+    }
+    .navbar-header .navbar-toggle .icon-bar {
+        background-color: #0A1C50;
+    }
+    .navbar-inverse .navbar-collapse,
+    .navbar-inverse .navbar-form {
+        border-top: 0;
+    }
+    .navbar.navbar-inverse {
+        margin-top: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .navbar-toggle{
+        border-color: #0A1C50;
+        margin-top: 30px;
+    }
+    .navbar-collapse {
+        position: absolute;
+        right: 0;
+        top: 112px;
+        z-index: 1021;
+        background: #fff;
+        margin-left: -5%!important;
+    }
+    nav .navbar-nav>li>a {
+        line-height: 1;
+    }
+    nav .navbar-nav .active {
+        background: #dbdbdb !important;
+    }
+    .nav > li {
+        padding: 0 30px;
+    }
+    .nav > li:nth-of-type(2) > a,
+    .nav > li:nth-of-type(6) > a{
+        display: none;
+    }
+    .nav > li:nth-of-type(2) .menu-list,
+    .nav > li:nth-of-type(6) .menu-list{
+        display: block;
+        border: none;
+        font-size: 1.5rem;
+        position: relative;
+        top: 0;
+        width: auto;
+    }
+    .navbar-nav > li > a {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+    nav .navbar-nav>li .menu-list li {
+        line-height: 1;
+        height: auto;
+        padding: 8px 0 8px 14px;
+    }
+    nav .navbar-nav>li .menu-list ,
+    .platform .bottom .container > ul ,
+    .platform .bottom .container > ul > li{
+        padding: 0;
+    }
+    nav .navbar-nav>li:hover .menu-list{
+        display: block;
+        -webkit-animation: none;
+        animation: none;
+    }
+    .home-slider {
+        height: 386px;
+    }
+    .home-slider .content .container h3 {
+        padding: 60px 0 20px 0;
+    }
+    .platform {
+        background: none;
+    }
+    .platform .content .container .circle {
+        background: none;
+        background-size: 100% auto;
+        width: 100%;
+    }
+    .platform .content .container .advan{
+        top: 134px;
+        left: 0;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        z-index: 9999;
+        line-height: 1;
+    }
+    .platform .content .container .advantage2{
+        top: 204px;
+    }
+    .platform .content .container .advantage3{
+        top: 280px;
+    }
+    .platform .content .container .advantage4{
+        top: 360px;
+    }
+    .platform .content .container .advan i{
+        margin-left: 30px;
+        float: left!important;
+    }
+    .platform .content .container .advan .word{
+        float: right!important;
+        margin-right: 30px;
+    }
+    .platform .content .container .advantage1 .word{
+        float: right!important;
+        margin-right: 50px;
+    }
+    .platform ,
+    .platform .bottom {
+        height: auto;
+    }
+    .platform .bottom .container > ul {
+        padding: 15px 0;
+    }
+    .platform .bottom .container > ul > li{
+        border-right: none!important;
+        border-left: none!important;
+    }
+    .platform .bottom .container > ul > li .circle{
+        display: none;
+    }
+    .platform .bottom .container > ul > li:nth-of-type(2n+1) i {
+        left: 0;
+    }
+    .platform .bottom .container > ul > li:nth-of-type(2n) i {
+        right: 0;
+    }
+    .platform .bottom .container > ul > li:nth-child(2n) {
+        padding: 10px 90px 10px 0;
+        border-top: 1px dotted #4C5F80;
+    }
+    .platform .bottom .container > ul > li:nth-child(2n+1) {
+        padding: 10px 0 10px 90px;
+    }
+    .platform .bottom .container > ul > li:nth-of-type(2) i {
+        top: 27px;
+    }
+    .platform .bottom .container > ul > li:nth-of-type(5) i {
+        top: 40px;
+    }
 }

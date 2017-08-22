@@ -31,9 +31,10 @@ ul,li{
         src: url('../font/lighter.eot?#iefix') format('embedded-opentype'),
              url('../font/lighter.woff') format('woff'),
              url('../font/lighter.svg#fzlantingheis-ul-gbregular') format('svg');
-
 }
-
+.clear{
+	clear: both;
+}
 
 /*index.html*/
 nav.navbar{
@@ -715,19 +716,12 @@ p.version{
         -webkit-transform: scale(0.75,0.75);
 	}
 }/*google chrome css hack*/
-.render-field .container > div.img3 .img-center-word,
-.render-field .container > div.img4 .img-center-word,
-.render-field .container > div.img5 .img-center-word,
-.render-field .container > div.img6 .img-center-word,
-.render-field .container > div.img2 .img-center-word{
-	position: relative;
-	z-index: 999;
-	color: #1ED2AF;
-	text-align: left;
-	padding-top: 150px;
+.render-field .container > div .img-center-word{
 	width: 234px;
-    margin: 0 auto;
     padding-left: 43px;
+}
+.render-field .container > div.img1 .img-center-word{
+	padding-left: 0;
 }
 .render-field .container > div.img6 .img-center-word{
 	padding-left: 61px;
@@ -915,7 +909,7 @@ p.version{
 	height: 150px;
 	background: #C9CACA;
 	background-size: 100% 100%;
-	padding-top: 45px;
+	padding: 45px 25px;
 }
 .render-news .news-area > ul > li:nth-of-type(1){
 	background: url('../img/news/news1.jpg');
@@ -1304,7 +1298,6 @@ p.content{
 
 .render-feature{
 	width: 100%;
-	height: 774px;
 	padding: 74px 0;
 }
 .render-feature .container{
@@ -1407,7 +1400,7 @@ p.content{
 
 .why-select{
 	width: 100%;
-	height: 425px;
+	/*height: 425px;*/
 	text-align: center;
 	background: #EEEEEF;
 	border-top: 1px solid #F2F2F3;
@@ -1500,7 +1493,6 @@ p.content{
 }
 
 .thinking{
-	height: 210px;
 	text-align: center;
 	background: #EEEEEF;
 	border-bottom: 1px solid #F6F6F7;
