@@ -1,3 +1,10 @@
+/*lg ang md*/
+@media screen and (min-width: 768px) {
+    .price .container .vip-level .vip {
+        width: 20%;
+    }
+}
+
 /*md only*/
 @media (min-width: 992px) and (max-width: 1199px) {
     .col-md-4.portfolio-item {
@@ -231,12 +238,13 @@
     .understand-render-platform .container .cloud-platform {
         display: block;
         width: 66.666667%;
-        padding: 0 0 0 15px;
+        padding: 0 0 0 25px;
         float: left;
     }
     .understand-render-platform {
         padding: 35px 0;
         height: auto;
+        border-top: 2px dashed #1CA378;
     }
     .thinking .container {
         padding: 25px 40px 35px 40px;
@@ -316,6 +324,14 @@
     }
     .advantage-example-list .container {
         padding: 45px;
+    }
+
+    /*price.html*/
+    .cost-budget {
+        display: none;
+    }
+    .price .container {
+        padding: 25px 15px 0;
     }
 }
 
@@ -877,4 +893,35 @@
         margin-bottom: 5px;
     }
 
+    /*price.html*/
+    .cost-budget ,
+    .top-header .recharge ul li::before {
+        display: none;
+    }
+    .top-header .recharge {
+        margin: -65px -150px;
+        width: 300px;
+        height: auto;
+    }
+    .top-header .recharge h3 {
+         font-size: 2rem;
+     }
+    .top-header .recharge ul li {
+        position: relative;
+        padding-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .top-header {
+        height: 300px;
+    }
+    .price .container {
+        padding: 30px 0 0;
+    }
+    .price {
+        height: auto;
+    }
+    .customer .container .cloud-platform h3 {
+        padding-top: 10px;
+    }
 }
