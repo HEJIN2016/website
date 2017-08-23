@@ -1,11 +1,15 @@
-<?php 
+﻿<?php 
 header('Content-type: text/html; charset=utf-8');
-$datei = fopen("counter.txt","r");
+$ip = ($_SERVER["REMOTE_ADDR"]).PHP_EOL;
+$ipfile = fopen("logs/ip.txt","a");
+$datei = fopen("logs/counter.txt","r");
+fwrite($ipfile,$ip);
+fclose($ipfile);
 $count = fgets($datei,1000);
 fclose($datei);
 $count=$count + 1 ;
 //echo "$count" ;
-$datei = fopen("counter.txt","w");
+$datei = fopen("logs/counter.txt","w");
 fwrite($datei, $count);
 fclose($datei);
 ?>

@@ -19,7 +19,33 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
 <body>
 <nav class="nav-bar">
     <img class="logo" src="img/render-logo.png">
-    <div class="total-num"><span>官网累计访问量：<?php header('Content-type: text/html; charset=utf-8');$datei = fopen("counter.txt","r");$count = fgets($datei,1000);echo $count;fclose($datei);$datei = fopen("counter.txt","w");fwrite($datei, $count);fclose($datei);?></span></div>
+    <div class="total-num">
+        <span>官网累计访问量：
+            <?php header('Content-type: text/html; charset=utf-8');
+            $datei = fopen("logs/counter.txt","r");
+            $count = fgets($datei,1000);
+            echo $count;
+            fclose($datei);
+            ?>
+        </span>
+        <span style="padding-left: 15px">客户端下载量：
+            <?php header('Content-type: text/html; charset=utf-8');
+            require("connect.php");
+            $sql = "SELECT * FROM download";
+            $result = mysqli_query($conn,$sql);
+            if (mysqli_num_rows($result) > 0) {
+                // 输出数据
+                while($row = mysqli_fetch_assoc($result)) {
+                    echo $row["times"];
+                }
+            }
+            else {
+                echo "暂无结果";
+            }
+            mysqli_close($conn);
+            ?>
+        </span>
+    </div>
     <ul class="nav-right">
         <li>
             <a href="" data-toggle="modal" data-target="#help-modal">帮助</a>
@@ -33,7 +59,7 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
             <a href="javascript:;"><?php echo $_SESSION["username"] ?></a>
             <i class="iconfont icon-arrowdown"></i>
             <ul class="userlist">
-                
+
                 <li>
                     <a href="" id="change-psd-link1">修改密码</a>
                 </li>
@@ -344,45 +370,49 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
 </div>
 
 <!-- 新增新闻模态框-->
-<div class = "modal fade topmodal"  id = "add-news"  tabindex = "-1" role = "dialog"  aria-labelledby = "myModalLabel"  aria-hidden = "true" >
-    <div class = "modal-dialog" style = "width: 1030px" >
-        <div class = "modal-content" >
-            <div class = "modal-header" >
-                <button type = "button" class = "close"  data-dismiss = "modal" aria-hidden = "true" >  &times; </button>
-                <h4 class = "modal-title" > 新增新闻 </h4>
+<div class="modal fade topmodal" id="add-news" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog" style="width: 1030px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"> &times;</button>
+                <h4 class="modal-title"> 新增新闻 </h4>
             </div>
 
-            <div class = "modal-body" > <div>
-                    <label class = "col-lg-2 col-lg-offset-1 control-label" style = "text-align: right;padding-top: 7px" > 标题 </label>
+            <div class="modal-body">
+                <div>
+                    <label class="col-lg-2 col-lg-offset-1 control-label" style="text-align: right;padding-top: 7px">
+                        标题 </label>
 
-                    <div class = "col-lg-9" style = "margin-bottom: 15px">
-                        <input type = "text" class = "form-control" style = "width: 70%;" id = "add_title" >
+                    <div class="col-lg-9" style="margin-bottom: 15px">
+                        <input type="text" class="form-control" style="width: 70%;" id="add_title">
                     </div>
                 </div>
-                <div >
-                    <label class = "col-lg-2 col-lg-offset-1 control-label" style = "text-align: right;padding-top: 7px" > 作者 </label>
-                    <div class = "col-lg-9" style = "margin-bottom: 15px" >
-                        <input type = "text" class = "form-control col-lg-8" style = "width: 70%;" id = "add_author" >
+                <div>
+                    <label class="col-lg-2 col-lg-offset-1 control-label" style="text-align: right;padding-top: 7px">
+                        作者 </label>
+                    <div class="col-lg-9" style="margin-bottom: 15px">
+                        <input type="text" class="form-control col-lg-8" style="width: 70%;" id="add_author">
                     </div>
                 </div>
-                <div class = "clear" > </div>
+                <div class="clear"></div>
                 <!--style给定宽度可以影响编辑器的最终宽度-->
-                <script type = "text/plain" id = "add_news_editor" style = "width:1000px;height:240px" >
-                    <p> </p>
-                </script>
+                 <script type = "text/plain" id = "add_news_editor" style = "width:1000px;height:240px" >
+                        <p> </p>
+                 </script>
 
                 <div class="clear"></div>
-                    </div>
-
-                    <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal" id="add_news_btn">
-                    确认
-                    </button>
-                    <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                    </button>
             </div>
-         </div><!-- /.modal-content -->
-     </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal" id="add_news_btn">
+                    确认
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div>
 </div>
 
 <!-- 帮助模态框（Modal） -->

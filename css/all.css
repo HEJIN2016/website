@@ -346,7 +346,7 @@ video{
 	margin: 0;
 	line-height: 1;
 	color: #1CA378;
-	font-weight: 600;
+	font-weight: 700;
 }
 .render-software .container > span,
 .render-news .container > span,
@@ -438,7 +438,7 @@ video{
 }
 .platform .content .container div h4{
 	font-size: 1.6rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 .platform .content .container div p{
 	font-size: 1.3rem;
@@ -744,7 +744,7 @@ p.version{
 .render-field .container > div.render-word h2{
 	font-size: 2.4rem;
 	margin: 10px 0 2px 0;
-	font-weight: 600;
+	font-weight: 700;
 }
 .render-field .container > div.render-word span{
     font-size: 1.2rem;
@@ -984,7 +984,7 @@ footer .container .row > div h3{
 	border: 2px solid #1CA378;
 	padding: 3px 0;
 	color: #1CA378;
-	font-weight: 600;
+	font-weight: 700;
 }
 footer .container .row > div ul.introduction{
 	width: 160px;
@@ -1056,7 +1056,7 @@ footer .container p.rights-reserved{
 	bottom: 15px;
 	font-size: 1.4rem;
 	color: #1CA378;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
 }
 footer .white-area{
@@ -1122,7 +1122,7 @@ footer a.goto-top{
 h3.heading{
 	text-align: center;
 	font-size: 2.3rem;
-	font-weight: 600;
+	font-weight: 700;
 	padding: 36px 0 8px 0;
 	margin: 0;
 }
@@ -1137,7 +1137,7 @@ span.English{
     padding: 0 6px;
     line-height: 1;
     color: #23A279;
-    font-weight: 600;
+    font-weight: 700;
 }
 span.English::before{
 	content: '';
@@ -1202,49 +1202,27 @@ p.content{
 	background-size: 100% 100%;
 	margin-right: 0;
 }
-.platform-introduction .container .service-range > div:nth-of-type(1)::after{
+.platform-introduction .container .service-range > div::after{
 	position: absolute;
 	content: '';
 	top: 0;
 	z-index: 20;
-	background: #1CA378;
-	opacity: 0.62;
 	left: 0;
 	width: 100%;
 	height: 100%;
+	opacity: 0;
+}
+.platform-introduction .container .service-range > div:nth-of-type(1)::after{
+	background: #1CA378;
 }
 .platform-introduction .container .service-range > div:nth-of-type(2)::after{
-	position: absolute;
-	content: '';
-	top: 0;
-	z-index: 20;
 	background: #5F5D5D;
-	opacity: 0.69;
-	width: 100%;
-	height: 100%;
-	left: 0;
 }
 .platform-introduction .container .service-range > div:nth-of-type(3)::after{
-	position: absolute;
-	content: '';
-	top: 0;
-	z-index: 20;
 	background: #8B8B8C;
-	opacity: 0.66;
-	width: 100%;
-	height: 100%;
-	left: 0;
 }
 .platform-introduction .container .service-range > div:last-child::after{
-	position: absolute;
-	content: '';
-	top: 0;
-	z-index: 20;
 	background: #C9CACA;
-	opacity: 0.61;
-	width: 100%;
-	height: 100%;
-	left: 0;
 }
 .platform-introduction .container .service-range > div p::before{
 	background: url('../img/weblogo.png');
@@ -1272,20 +1250,21 @@ p.content{
 }
 .platform-introduction .container .service-range > div h3{
 	width: 100%;
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 1.4rem;
     margin: 0;
     padding: 52px 0 10px;
     position: relative;
+	white-space: nowrap;
+	font-weight: 700;
     z-index: 100;
 }
 .platform-introduction .container .service-range > div p{
 	text-align: center;
 	padding: 2px 0;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     background: #1CA378;
     margin: 0;
-    font-weight: 600;
+    font-weight: 700;
     position: relative;
     z-index: 100;
 }
@@ -1298,7 +1277,10 @@ p.content{
 }
 .platform-introduction .container .service-range > div:hover > *{
     opacity: 1;
-} 
+}
+.platform-introduction .container .service-range > div:hover::after{
+	opacity: 0.69;
+}
 
 .render-feature{
 	width: 100%;
@@ -1355,7 +1337,7 @@ p.content{
     background: #BDC4CA;
     font-size: 2rem;
     color: #332C2B;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     padding: 26px 0 16px 0;
 }
@@ -1379,7 +1361,7 @@ p.content{
 	padding: 0;
 	margin: 0;
 	line-height: 1.428;
-	font-weight: 600;
+	font-weight: 700;
 }
 .render-feature .container .table-area tbody tr td p{
 	color: #332C2B;
@@ -1488,7 +1470,7 @@ p.content{
 	color: #23A279;
 	padding: 0;
 	font-size: 1.5rem;
-	font-weight: 600;
+	font-weight: 700;
 	margin: 0;
 }
 .understand-render-platform .container .cloud-platform p:nth-of-type(1){
@@ -1523,7 +1505,7 @@ p.content{
 	padding: 275px 0 0 0;
 	font-size: 1.5rem;
 	color: #332C2B;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
 }
 .render-software-list {
@@ -1627,7 +1609,7 @@ p.content{
 }
 .price .container header{
 	font-size: 1.4rem;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
 	color: #000;
 }
@@ -1659,7 +1641,7 @@ p.content{
 }
 .price .container .vip-level .vip p:nth-child(2){
     color: #342D2C;
-    font-weight: 600;
+    font-weight: 700;
     padding-bottom: 2px;
 }
 .price .container .vip-level .vip:nth-of-type(2){
@@ -1693,7 +1675,7 @@ p.content{
 	background: #1CA378;
 	color: #FFF000;
 	font-size: 2.4rem;
-	font-weight: 600;
+	font-weight: 700;
 	border-radius: 0;
 	text-align: center;
 }
@@ -1717,7 +1699,7 @@ p.content{
 .cost-budget .container .machine-config > div h3{
 	text-align: left;
 	font-size: 1.4rem;
-	font-weight: 600;
+	font-weight: 700;
 	color: #000;
 }
 .cost-budget .container .machine-config > div h3:nth-of-type(2){
@@ -1786,7 +1768,7 @@ p.content{
 }
 .customer .container .cloud-platform h3{
  	font-size: 2.2rem;
- 	font-weight: 600;
+ 	font-weight: 700;
  	padding-top: 23px;
 }
 .customer .container .cloud-platform p:nth-of-type(1) {
@@ -1832,7 +1814,7 @@ p.content{
     vertical-align: middle;
     text-align: center;
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 700;
     margin: 0;
     color: #1CA378;
     border-bottom: 4px solid #332C2B;
@@ -1846,7 +1828,7 @@ p.content{
 	color: #000;
 	font-size: 3rem;
 	text-align: center;
-	font-weight: 600;
+	font-weight: 700;
 }
 .fastrender-intr .center-content p:nth-of-type(2){
 	color: #3A3433;
@@ -1877,7 +1859,7 @@ p.content{
 .example-content section div .article h3{
 	font-size: 15px;
 	color: #000;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
 	position: relative;
 }
@@ -2050,12 +2032,12 @@ p.content{
 .footer .container h3{
     color: #1CA378;
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 700;
     padding-top: 35px;
 }
 .footer .container p:nth-of-type(1){
     font-size: 1.6rem;
-    font-weight: 600;
+    font-weight: 700;
 }
 .footer .container p:nth-of-type(2){
     padding: 0 210px 30px;
@@ -2134,7 +2116,7 @@ p.content{
 }
 .news-area .container header h3{
 	font-size: 2.4rem;
-	font-weight: 600;
+	font-weight: 700;
 	color: #1CA378;
 	letter-spacing: 2px;
 }
@@ -2182,7 +2164,7 @@ p.content{
 }
 .news-area .container ul.news-list li h3{
 	font-size: 1.8rem;
-	font-weight: 600;
+	font-weight: 700;
 	color: #332C2B;
 }
 .news-area .container ul.news-list li  div.info{
@@ -2249,7 +2231,7 @@ p.content{
 	padding: 35px 0 80px 0;
 }
 .news-details .container article header {
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
     font-size: 2.4rem;
     padding: 15px;
@@ -2260,7 +2242,7 @@ p.content{
     margin-bottom: 40px;
     background: #f5f5f5;
     font-family: 'NSimSun';
-    font-weight: 600;
+    font-weight: 700;
 }
 .news-details .container article header span{
     color: #515151;
@@ -2271,7 +2253,7 @@ p.content{
     font-weight: 300;
 }
 .news-details .container article header h3{
-	font-weight: 600;
+	font-weight: 700;
 }
 .news-details .container article section{
 	word-wrap: break-word;
@@ -2345,7 +2327,7 @@ p.content{
 	color: #1CA378;
 	display: inline-block;
 	padding: 10px 30px;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
 	border: 4px solid #1CA378;
 	margin-bottom: 10px;
@@ -2371,7 +2353,7 @@ p.content{
 }
 .join-us .content article h4{
 	font-size: 1.8rem;
-	font-weight: 600;
+	font-weight: 700;
 }
 .join-us .content article p{
 	font-size: 1.2rem;
@@ -2406,7 +2388,7 @@ p.content{
 	margin: 0 20%;
 	font-size: 2.6rem;
 	color: #1CA378;
-	font-weight: 600;
+	font-weight: 700;
 	text-align: center;
 	position: relative;
 	background-size: auto 4px;
@@ -2590,7 +2572,7 @@ p.content{
 }
 .cooperative-partner .container .computer-centrality > div h3{
 	font-size: 1.8rem;
-	font-weight: 600;
+	font-weight: 700;
 	color: #1CA378;
 	padding-left: 18px; 
 	text-align: left;
@@ -2671,7 +2653,7 @@ p.content{
 .leave-word .container > h3{
 	color: #332C2B;
 	font-size: 2.4rem;
-	font-weight: 600;
+	font-weight: 700;
 	padding: 0 10px;
 }
 .leave-word .container > h3 span{
@@ -2680,7 +2662,7 @@ p.content{
 .leave-word .container > div >h3{
 	font-size: 1.6rem;
 	color: #1FA47A;
-	font-weight: 600;
+	font-weight: 700;
 }
 .leave-word .container > div{
 	padding: 0 9px;
@@ -2903,7 +2885,7 @@ p.content{
 .platform-video .container span.English{
     margin: 25px 0 15px 0;
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
 }
 .platform-video .container span.English::after,
@@ -3314,7 +3296,7 @@ p.content{
 	font-size: 2.4rem;
 	line-height: 40px;
 	text-align: center;
-	font-weight: 600;
+	font-weight: 700;
 	margin-bottom: 40px;
 }
 .advantage-example-list .container .performance div .no-bottom{
@@ -3391,14 +3373,14 @@ p.content{
 	border-radius: 100%;
 	text-align: center;
 	margin: 0 5px;
-	font-weight: 600;
+	font-weight: 700;
 }
 .recruit-job .container > div h3{
 	width: 226px;
 	display: inline-block;
 	font-size: 1.7rem;
 	color: #332C2B;
-	font-weight: 600;
+	font-weight: 700;
 	border-top: 3px solid #1CA378;
 	text-align: center;
 	padding: 8px 0 37px 0;

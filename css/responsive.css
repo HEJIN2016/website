@@ -106,6 +106,10 @@
     .col-sm-4.portfolio-item {
         width: 33%;
     }
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
 
     /*index.html*/
     .platform .content .container .advantage1 {
@@ -187,10 +191,80 @@
     footer .container .row > div:last-child figcaption {
         padding: 4px 15px 0;
     }
+
+    /*render-platform.html*/
+    .platform-introduction .container ,
+    .render-feature .container,
+    .understand-render-platform .container{
+        padding: 0 15px;
+    }
+    .platform-introduction .container .service-range > div {
+        width: 167px;
+        height: 167px;
+    }
+    .platform-introduction .container .service-range > div > * {
+        opacity: 1;
+    }
+    .platform-introduction .container .service-range > div p {
+        font-size: 2.3rem;
+    }
+    .platform-introduction .container .service-range > div h3 {
+        font-size: 1.3rem;
+        white-space: nowrap;
+    }
+    .render-feature {
+        padding: 45px 0;
+    }
+    .why-select .container .word-pic .word-area {
+        padding: 15px 5px 0 5px;
+    }
+    .why-select .container .word-pic {
+        padding: 25px 5px;
+    }
+    .understand-render-platform .container img{
+        width: 33.333333%;
+        float: left;
+        height: auto;
+        padding: 0;
+        margin-top: 30px;
+    }
+    .understand-render-platform .container .cloud-platform {
+        display: block;
+        width: 66.666667%;
+        padding: 0 0 0 15px;
+        float: left;
+    }
+    .understand-render-platform {
+        padding: 35px 0;
+        height: auto;
+    }
+    .thinking .container {
+        padding: 25px 40px 35px 40px;
+    }
+    .sketch-map {
+        background: #fff url(../img/renderword.png) center no-repeat;
+        background-size: 715px auto;
+    }
+    .sketch-map p {
+        font-size: 1.6rem;
+    }
+    .render-software-list .software {
+        width: 100%;
+        background: url(../img/software-bg.png);
+        background-size: 100% auto;
+        height: 150px;
+    }
+    .platform-introduction .container .service-range > div::after{
+        opacity: 0.69;
+    }
 }
 
 /*xs*/
 @media only screen and (max-width: 767px) {
+    html,body{
+        width: 100%;
+        overflow-x: hidden;
+    }
     /*index.html*/
     h1 {
         font-size: 22px;
@@ -263,6 +337,7 @@
         padding: 8px 0 8px 14px;
     }
     nav .navbar-nav>li .menu-list ,
+    .render-software-list .container,
     .platform .bottom .container > ul ,
     .platform .bottom .container > ul > li{
         padding: 0;
@@ -437,7 +512,8 @@
         width: 52px;
         background-position: -248px -96px;
     }
-    .render-news .container {
+    .render-news .container ,
+    .understand-render-platform .container{
         padding: 0;
     }
     .render-news .news-area > ul > li {
@@ -489,4 +565,120 @@
     footer::after {
         bottom: 0;
     }
+    .platform .content .container .tv {
+        display: none;
+    }
+
+    /*render-platform.html*/
+    .platform-introduction .container {
+        padding: 0 8px;
+    }
+    .platform-introduction {
+        height: auto;
+        padding-bottom: 36px ;
+    }
+    .platform-introduction .container .service-range {
+        width: 100%;
+    }
+    .platform-introduction .container .service-range > div {
+        width: 149px;
+        height: 150px;
+        margin-right: 2px;
+    }
+    .platform-introduction .container .service-range > div > * {
+        opacity: 1;
+    }
+    .platform-introduction .container .service-range > div p {
+        font-size: 1.8rem;
+    }
+    .platform-introduction .container .service-range > div h3 {
+        font-size: 1.2rem;
+        white-space: nowrap;
+    }
+    .platform-introduction .container .service-range > div p::before {
+        height: 21px;
+    }
+    .render-feature {
+        padding: 35px 0;
+    }
+    .render-feature .container{
+        padding: 0 4px;
+    }
+    .platform-introduction .container .service-range > div::after{
+        opacity: 0.69;
+    }
+    .render-feature .container .table-area tbody tr td:nth-of-type(1) {
+         padding: 6px 2px;
+    }
+    .render-feature .container .table-area tbody tr td:nth-of-type(3) {
+         padding: 6px 2px;
+    }
+    .render-feature .container .table-area th:nth-of-type(2n+1),
+    .render-feature .container .table-area td:nth-of-type(2n+1) {
+        width: 43%;
+    }
+    .render-feature .container .table-area th:nth-of-type(2),
+    .render-feature .container .table-area .top,
+    .render-feature .container .table-area td:nth-of-type(2) {
+        width: 14%;
+    }
+    .understand-render-platform {
+        height: auto;
+        padding: 35px 0;
+    }
+    .understand-render-platform .container img {
+        width: 100%;
+        height: auto;
+    }
+    .understand-render-platform .container .cloud-platform {
+        width: 100%;
+        padding: 20px 15px 0 15px;
+    }
+    .understand-render-platform .container .cloud-platform h3, .understand-render-platform .container .cloud-platform p:nth-of-type(1) {
+        font-weight: 700;
+        text-align: center;
+    }
+    .understand-render-platform .container .cloud-platform p ,
+    .thinking .container p {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+    span.English {
+        padding-bottom: 10px;
+    }
+    .thinking .container{
+        padding: 14px 15px 35px 15px;
+    }
+    .sketch-map p {
+        padding: 130px 0 0 0;
+        font-weight: 700;
+    }
+    .sketch-map {
+         width: 100%;
+          height: auto;
+         background: #fff url(../img/renderword.png) center no-repeat;
+         background-size: 100% auto;
+     }
+    .render-software-list span.English{
+        padding: 0;
+    }
+    span.English::before ,
+    span.English::after {
+        display: none;
+    }
+    .render-software-list .software {
+        width: 100%;
+        background: url(../img/software-bg.png);
+        background-size: 100% auto;
+        height: 50px;
+    }
+    .download-area {
+        height: auto;
+    }
+    .download-area .container h3 {
+        font-size: 2.4rem;
+        padding: 30px 0 16px;
+        line-height: 1.4;
+    }
+
 }
