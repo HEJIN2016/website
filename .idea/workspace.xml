@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="116c767e-c1a5-443d-a8db-60d163d04615" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sql/news.sql" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/all.css" afterPath="$PROJECT_DIR$/css/all.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bootstrap.css" afterPath="$PROJECT_DIR$/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/counter.txt" afterPath="$PROJECT_DIR$/logs/counter.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/ip.txt" afterPath="$PROJECT_DIR$/logs/ip.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/operation.html" afterPath="$PROJECT_DIR$/operation.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/render-platform.html" afterPath="$PROJECT_DIR$/render-platform.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +22,8 @@
       <file leaf-file-name="all.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/all.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-398">
-              <caret line="1258" column="17" lean-forward="true" selection-start-line="1258" selection-start-column="17" selection-end-line="1258" selection-end-column="17" />
+            <state relative-caret-position="-873">
+              <caret line="2941" column="22" lean-forward="false" selection-start-line="2941" selection-start-column="22" selection-end-line="2941" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -26,56 +32,39 @@
       <file leaf-file-name="render-platform.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/render-platform.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="207" column="101" lean-forward="false" selection-start-line="207" selection-start-column="101" selection-end-line="207" selection-end-column="101" />
+            <state relative-caret-position="-3698">
+              <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="operation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/operation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="604">
+              <caret line="124" column="63" lean-forward="false" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="601">
+              <caret line="5459" column="17" lean-forward="false" selection-start-line="5459" selection-start-column="17" selection-end-line="5459" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="responsive.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="687">
-              <caret line="679" column="29" lean-forward="false" selection-start-line="679" selection-start-column="29" selection-end-line="679" selection-end-column="29" />
+            <state relative-caret-position="858">
+              <caret line="876" column="26" lean-forward="false" selection-start-line="876" selection-start-column="26" selection-end-line="876" selection-end-column="26" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="413" column="21" lean-forward="false" selection-start-line="413" selection-start-column="21" selection-end-line="413" selection-end-column="21" />
-              <folding>
-                <marker date="1503454224899" expanded="false" signature="5569:5588" ph="..." />
-                <marker date="1503454224899" expanded="false" signature="5784:5803" ph="..." />
-                <marker date="1503454224899" expanded="false" signature="5999:6018" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="52" lean-forward="false" selection-start-line="14" selection-start-column="52" selection-end-line="14" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="download.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/download.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="16" lean-forward="false" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-              <folding>
-                <marker date="1503460663540" expanded="true" signature="244:281" ph="UPDATE downl... " />
-                <marker date="1503460663540" expanded="true" signature="250:259" ph="SELECT * FRO... download" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -118,6 +107,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="323" column="4" lean-forward="false" selection-start-line="323" selection-start-column="4" selection-end-line="404" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="dataNum.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataNum.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -154,7 +153,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/css/bootstrap-table.css" />
         <option value="$PROJECT_DIR$/editor.html" />
         <option value="$PROJECT_DIR$/homepage.html" />
         <option value="$PROJECT_DIR$/css/editor.css" />
@@ -194,7 +192,6 @@
         <option value="$PROJECT_DIR$/example.html" />
         <option value="$PROJECT_DIR$/news.html" />
         <option value="$PROJECT_DIR$/newsdetail.php" />
-        <option value="$PROJECT_DIR$/operation.html" />
         <option value="$PROJECT_DIR$/price.html" />
         <option value="$PROJECT_DIR$/recruitment.html" />
         <option value="$PROJECT_DIR$/index.php" />
@@ -203,8 +200,10 @@
         <option value="$PROJECT_DIR$/homepage.php" />
         <option value="$PROJECT_DIR$/word.php" />
         <option value="$PROJECT_DIR$/render-platform.html" />
+        <option value="$PROJECT_DIR$/operation.html" />
         <option value="$PROJECT_DIR$/css/all.css" />
         <option value="$PROJECT_DIR$/css/responsive.css" />
+        <option value="$PROJECT_DIR$/css/bootstrap.css" />
       </list>
     </option>
   </component>
@@ -252,6 +251,11 @@
             <path>
               <item name="website2" type="b2602c69:ProjectViewProjectNode" />
               <item name="website2" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="website2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="website2" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="website2" type="b2602c69:ProjectViewProjectNode" />
@@ -309,12 +313,12 @@
       <workItem from="1503017639385" duration="15791000" />
       <workItem from="1503275638608" duration="3797000" />
       <workItem from="1503369892973" duration="20183000" />
-      <workItem from="1503448076017" duration="17611000" />
+      <workItem from="1503448076017" duration="24279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196214000" />
+    <option name="totallyTimeSpent" value="202882000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
@@ -369,13 +373,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/newspage1.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/website/node_modules/bootstrap-table/dist/bootstrap-table.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -651,14 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/operation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="68" column="6" lean-forward="false" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/newsdetail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
@@ -673,18 +662,6 @@
           <caret line="67" column="6" lean-forward="false" selection-start-line="67" selection-start-column="6" selection-end-line="67" selection-end-column="6" />
           <folding>
             <marker date="1503383586063" expanded="true" signature="8927:8935" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="413" column="21" lean-forward="false" selection-start-line="413" selection-start-column="21" selection-end-line="413" selection-end-column="21" />
-          <folding>
-            <marker date="1503454224899" expanded="false" signature="5569:5588" ph="..." />
-            <marker date="1503454224899" expanded="false" signature="5784:5803" ph="..." />
-            <marker date="1503454224899" expanded="false" signature="5999:6018" ph="..." />
           </folding>
         </state>
       </provider>
@@ -752,24 +729,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/render-platform.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="654">
-          <caret line="207" column="101" lean-forward="false" selection-start-line="207" selection-start-column="101" selection-end-line="207" selection-end-column="101" />
+        <state relative-caret-position="-3698">
+          <caret line="40" column="42" lean-forward="false" selection-start-line="40" selection-start-column="42" selection-end-line="40" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="323" column="4" lean-forward="false" selection-start-line="323" selection-start-column="4" selection-end-line="404" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/operation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="124" column="63" lean-forward="false" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/all.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-398">
-          <caret line="1258" column="17" lean-forward="true" selection-start-line="1258" selection-start-column="17" selection-end-line="1258" selection-end-column="17" />
+        <state relative-caret-position="-873">
+          <caret line="2941" column="22" lean-forward="false" selection-start-line="2941" selection-start-column="22" selection-end-line="2941" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="687">
-          <caret line="679" column="29" lean-forward="false" selection-start-line="679" selection-start-column="29" selection-end-line="679" selection-end-column="29" />
+        <state relative-caret-position="858">
+          <caret line="876" column="26" lean-forward="false" selection-start-line="876" selection-start-column="26" selection-end-line="876" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="5459" column="17" lean-forward="false" selection-start-line="5459" selection-start-column="17" selection-end-line="5459" selection-end-column="17" />
           <folding />
         </state>
       </provider>

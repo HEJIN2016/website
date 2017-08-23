@@ -257,6 +257,66 @@
     .platform-introduction .container .service-range > div::after{
         opacity: 0.69;
     }
+
+    /*opeartion.html*/
+    .client-download .container {
+        background: none;
+    }
+    .render-step {
+        padding: 20px 0;
+    }
+    .render-step .container ul li {
+        text-align: center;
+    }
+    .render-step .container ul li figcaption {
+        width: 100%;
+    }
+    .render-server-advan .container .strength {
+        left: 15px;
+    }
+    .render-server-advan .container .strength2 {
+        left: 2px;
+    }
+    .render-server-advan .container .strength3 {
+        left: 33px;
+    }
+    .render-server-advan .container .strength4,
+    .render-server-advan .container .strength5 {
+        right: -30px;
+        left: auto;
+    }
+    .render-server-advan .container .our-server {
+        width: auto;
+    }
+    .render-progess .container {
+        padding: 0 15px 35px;
+    }
+    .render-progess .container .border-square,
+    .render-progess .container ul,
+    .advantage-example-list .container .performance > div {
+        padding: 0;
+    }
+    .render-progess .container ul {
+        width: 100%;
+    }
+    .render-progess .container ul li {
+        width: 130px;
+        margin-right: 13px;
+    }
+    .render-progess .container .border-square .top,
+    .render-progess .container .border-square .bottom {
+        left: 50%;
+        margin-left: -78px;
+    }
+    .advantage-example-list .container .superiority > div {
+        height: 260px;
+    }
+    .panel-body{
+        font-size: 1.4rem;
+    }
+    .advantage-example-list .container {
+        padding: 45px;
+    }
 }
 
 /*xs*/
@@ -312,7 +372,8 @@
         background: #dbdbdb !important;
     }
     .nav > li {
-        padding: 0 30px;
+        padding: 0;
+        margin: 0 30px;
     }
     .nav > li:nth-of-type(2) > a,
     .nav > li:nth-of-type(6) > a{
@@ -659,7 +720,8 @@
          background: #fff url(../img/renderword.png) center no-repeat;
          background-size: 100% auto;
      }
-    .render-software-list span.English{
+    .render-software-list span.English,
+    .render-step {
         padding: 0;
     }
     span.English::before ,
@@ -668,9 +730,9 @@
     }
     .render-software-list .software {
         width: 100%;
-        background: url(../img/software-bg.png);
+        background: url(../img/software-bg.png) no-repeat;
         background-size: 100% auto;
-        height: 50px;
+        height: 61px;
     }
     .download-area {
         height: auto;
@@ -679,6 +741,140 @@
         font-size: 2.4rem;
         padding: 30px 0 16px;
         line-height: 1.4;
+    }
+
+    /*opeartion.html*/
+    .client-download .container {
+        padding: 35px 0 15px;
+        text-align: center;
+    }
+    .client-download .container .download-client ,
+    .client-download .container > .download-word{
+        float: none;
+    }
+    .client-download .container > .download-word p {
+        font-size: 3.2rem;
+    }
+    p#v1 {
+        margin-left: 0;
+    }
+    .client-download ,
+    .platform-video ,
+    .render-server-advan {
+        height: auto;
+    }
+    .platform-video .container .video {
+        margin-top: 15px;
+        width: 300px;
+        height: 182px;
+        background: url(../img/tv.png) no-repeat 0 0;
+        background-size: 100% auto;
+    }
+    .video video {
+        height: 155px;
+    }
+    .platform-video .container span.English {
+        margin: 25px 0 5px 0;
+    }
+    .render-server-advan .container .strength {
+        top: 0!important;
+        left: 0!important;
+        width: 100%!important;
+        background: none!important;
+        position: relative!important;
+        text-align: left!important;
+    }
+    .render-server-advan .container .sector ,
+    .render-server-advan .container .our-server {
+        position: relative;
+        bottom: auto;
+    }
+    .render-server-advan .container .strength h3::before {
+        bottom: auto;
+        top: auto;
+        right: auto;
+        left: -14px;
+    }
+    .render-server-advan .container .strength3 {
+        padding-top: 45px;
+    }
+    .render-server-advan .container .strength3 h3 {
+        position: absolute;
+        top: 0;
+    }
+    .render-server-advan .container .sector {
+        width: 290px;
+        margin: 25px auto 0;
+        top: 0;
+        left: 0;
+        height: 290px;
+        background: url(../img/sector.png);
+        background-size: 290px 290px;
+    }
+    h3.heading {
+        padding: 25px 0 15px 0;
+        line-height: 1.4;
+    }
+    .render-server-advan .container .our-server p {
+        font-size: 1.4rem;
+        margin-top: 5px;
+    }
+    .render-server-advan {
+        padding-bottom: 25px;
+    }
+    h3.heading {
+        font-size: 2rem;
+    }
+    .render-progess {
+        height: 480px;
+    }
+    .render-progess .container ,
+    .render-progess .container span.English{
+        padding: 0;
+    }
+    .render-progess h3.heading {
+        padding: 15px 0 5px 0;
+        line-height: 1.4;
+    }
+    .render-progess .container .border-square {
+        display: none;
+    }
+    .render-progess .container ul {
+        position: relative;
+        width: 100%;
+        top: 10px;
+        left: 0;
+    }
+    .render-progess .container ul li {
+        background: url(../img/arrow.png) no-repeat;
+        background-size: 100% auto;
+        width: 45%;
+        height: 64px;
+        margin-right: 4%!important;
+        margin-bottom: 15px;
+    }
+    .advantage-example-list .container {
+        padding: 5px 15px 25px;
+    }
+    .advantage-example-list .container .superiority > div {
+        padding-bottom: 15px;
+    }
+    .advantage-example-list .container .superiority > div h3 {
+        margin-top: 10px;
+    }
+    .advantage-example-list .container .performance > div ,
+    .advantage-example-list .container .questions h3.heading{
+        padding: 0;
+    }
+    .advantage-example-list .container .performance > div:first-child {
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .advantage-example-list .container .performance div header {
+        padding-bottom: 15px;
+    }
+    .advantage-example-list .container .questions span.English {
+        margin-bottom: 5px;
     }
 
 }

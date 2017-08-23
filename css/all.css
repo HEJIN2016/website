@@ -2939,7 +2939,7 @@ p.content{
 	padding-top: 25px;
 }
 .render-step .container ul li{
-	text-align: left;
+	text-align: center;
 }
 .render-step .container ul li img{
 	width: 240px;
@@ -3205,7 +3205,7 @@ p.content{
 .render-progess .container ul li{
 	font-size: 1.5rem;
 	float: left;
-	background: url('../img/arrow.png');
+	background: url('../img/arrow.png') no-repeat;
 	background-size: 100% auto;
 	width: 142px;
 	height: 53px;
