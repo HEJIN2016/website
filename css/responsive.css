@@ -106,6 +106,28 @@
         padding: 70px 0 0 83px;
         background: url(../img/render.png) no-repeat 712px 70px;
     }
+
+    /*example.html*/
+    .example-content section div .article p {
+        padding: 5px 10px;
+    }
+    .example-content section div .article {
+        padding: 0;
+    }
+    .works-example {
+        height: auto;
+    }
+    .footer {
+        height: auto;
+    }
+    .footer .container h3 {
+        padding-top: 15px;
+    }
+    .footer .container p:nth-of-type(2) {
+        padding: 0 40px 15px;
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
 }
 
 /*sm only*/

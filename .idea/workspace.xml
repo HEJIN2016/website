@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="116c767e-c1a5-443d-a8db-60d163d04615" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/all.css" afterPath="$PROJECT_DIR$/css/all.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/price.html" afterPath="$PROJECT_DIR$/price.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example.html" afterPath="$PROJECT_DIR$/example.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,7 +37,7 @@
       <file leaf-file-name="operation.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/operation.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
+            <state relative-caret-position="2356">
               <caret line="124" column="63" lean-forward="false" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="63" />
               <folding />
             </state>
@@ -69,8 +67,18 @@
       <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="924" column="25" lean-forward="false" selection-start-line="924" selection-start-column="25" selection-end-line="924" selection-end-column="25" />
+            <state relative-caret-position="684">
+              <caret line="126" column="20" lean-forward="false" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="example.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/example.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="475">
+              <caret line="124" column="47" lean-forward="true" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -110,18 +118,6 @@
             <state relative-caret-position="5808">
               <caret line="310" column="63" lean-forward="true" selection-start-line="310" selection-start-column="63" selection-end-line="310" selection-end-column="63" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dataNum.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataNum.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="4" lean-forward="false" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="37" />
-              <folding>
-                <marker date="1503368080218" expanded="true" signature="283:1354" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -186,7 +182,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/about-us.html" />
         <option value="$PROJECT_DIR$/cooperative-partner.html" />
-        <option value="$PROJECT_DIR$/example.html" />
         <option value="$PROJECT_DIR$/news.html" />
         <option value="$PROJECT_DIR$/newsdetail.php" />
         <option value="$PROJECT_DIR$/recruitment.html" />
@@ -200,6 +195,7 @@
         <option value="$PROJECT_DIR$/css/bootstrap.css" />
         <option value="$PROJECT_DIR$/css/all.css" />
         <option value="$PROJECT_DIR$/price.html" />
+        <option value="$PROJECT_DIR$/example.html" />
         <option value="$PROJECT_DIR$/css/responsive.css" />
       </list>
     </option>
@@ -218,7 +214,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="225" />
     <option name="y" value="524" />
     <option name="width" value="1700" />
@@ -310,15 +306,15 @@
       <workItem from="1503017639385" duration="15791000" />
       <workItem from="1503275638608" duration="3797000" />
       <workItem from="1503369892973" duration="20183000" />
-      <workItem from="1503448076017" duration="26621000" />
+      <workItem from="1503448076017" duration="27680000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="205224000" />
+    <option name="totallyTimeSpent" value="206283000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09427083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -605,13 +601,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
-          <caret line="66" column="6" lean-forward="false" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/leaveword.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -740,14 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/operation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="124" column="63" lean-forward="false" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/price.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -764,10 +745,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/operation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2356">
+          <caret line="124" column="63" lean-forward="false" selection-start-line="124" selection-start-column="63" selection-end-line="124" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="124" column="47" lean-forward="true" selection-start-line="124" selection-start-column="47" selection-end-line="124" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/css/responsive.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="924" column="25" lean-forward="false" selection-start-line="924" selection-start-column="25" selection-end-line="924" selection-end-column="25" />
+        <state relative-caret-position="684">
+          <caret line="126" column="20" lean-forward="false" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
           <folding />
         </state>
       </provider>
