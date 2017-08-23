@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="116c767e-c1a5-443d-a8db-60d163d04615" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/download.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/counter.txt" afterPath="$PROJECT_DIR$/counter.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/all.css" afterPath="$PROJECT_DIR$/css/all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/homepage.php" afterPath="$PROJECT_DIR$/homepage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/config.js" afterPath="$PROJECT_DIR$/js/config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/render-platform.html" afterPath="$PROJECT_DIR$/render-platform.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sql/news.sql" afterPath="$PROJECT_DIR$/sql/news.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/word.php" afterPath="$PROJECT_DIR$/word.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sql/news.sql" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -232,7 +222,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="225" />
     <option name="y" value="524" />
     <option name="width" value="1700" />
@@ -319,15 +309,15 @@
       <workItem from="1503017639385" duration="15791000" />
       <workItem from="1503275638608" duration="3797000" />
       <workItem from="1503369892973" duration="20183000" />
-      <workItem from="1503448076017" duration="17511000" />
+      <workItem from="1503448076017" duration="17611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196114000" />
+    <option name="totallyTimeSpent" value="196214000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09427083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
