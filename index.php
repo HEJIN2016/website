@@ -320,7 +320,7 @@ fclose($datei);
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
 					<ul class="introduction">
 						<h3>渲一科技 About Us</h3>
 						<li>
@@ -349,7 +349,7 @@ fclose($datei);
 						</li>
 					</ul>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
 					<ul class="contact-us">
 						<h3>联系我们 Contact Us</h3>
 						<li>
@@ -378,7 +378,7 @@ fclose($datei);
 						</li>
 					</ul>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="900ms">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="900ms">
 					<ul class="address">
 						<h3>地址 Address</h3>
 						<li><i></i><span>长沙经济技术开发区</span></li>
@@ -386,7 +386,7 @@ fclose($datei);
 						<li><span>路1318号综合楼308</span></li>
 					</ul>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3  wow fadeInUp"  data-wow-duration="500ms" data-wow-delay="1200ms">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp"  data-wow-duration="500ms" data-wow-delay="1200ms">
 					<div class="content">
 					    <h3>关注我们</h3>
 					    <img src="img/QRcode.png" alt="渲一科技">

@@ -479,6 +479,9 @@ video{
 	text-align: center;
 	position: relative;
 }
+.benefit a.download{
+    color: #fff!important;
+}
 .benefit .container > span{
 	display: inline-block;
 	width: auto;
@@ -563,6 +566,7 @@ video{
 	top: 204px;
 	z-index: 1;
 }
+
 .download:hover{
 	color: #97E7A9;
 }
