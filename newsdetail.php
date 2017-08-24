@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1"> -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10">
     <meta name="keywords" content="渲一,渲一科技,渲染,迅染云平台，云渲染，渲染农场，3D渲染，渲染农场">
     <meta name="description" content="渲染云平台,渲一科技自主开发的迅染云平台是一款适合超大规模渲染集群的管理渲染服务平台系统。渲染平台适用于超大规模渲染云的管理，高效实现了远程提交渲染任务、近实时审片和及时修改设计，可根据用户需求提交大型渲染业务。平台支持3ds Max、Maya等各种主流渲染制作软件和以及mental ray、V-Ray等渲染引擎，可为动漫影视、建筑效果图、CG艺术等全领域提供专业云渲染解决方案" />
     <title>渲一科技|您身边的急速渲染军团</title>
@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="font/iconfont.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css">
     <link rel="stylesheet" type="text/css" href="css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body>
@@ -28,7 +29,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapse">
             <ul class="nav navbar-nav">
-                <li class="active">
+                <li>
                     <a href="/">首页</a>
                 </li>
                 <li>
@@ -47,7 +48,7 @@
                 <li>
                     <a href="example.html">案例</a>
                 </li>
-                <li>
+                <li class="active">
                     <a href="news.html">新闻动态</a>
                 </li>
                 <li>
@@ -97,7 +98,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-lg-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                 <ul class="introduction">
                     <h3>渲一科技 About Us</h3>
                     <li>
@@ -126,7 +127,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
                 <ul class="contact-us">
                     <h3>联系我们 Contact Us</h3>
                     <li>
@@ -155,7 +156,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-3 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="900ms">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="900ms">
                 <ul class="address">
                     <h3>地址 Address</h3>
                     <li><i></i><span>长沙经济技术开发区</span></li>
@@ -163,15 +164,15 @@
                     <li><span>路1318号综合楼308</span></li>
                 </ul>
             </div>
-            <div class="col-lg-3 wow fadeInUp"  data-wow-duration="500ms" data-wow-delay="1200ms">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp"  data-wow-duration="500ms" data-wow-delay="1200ms">
                 <div class="content">
                     <h3>关注我们</h3>
-                    <img src="img/QRcode.png">
+                    <img src="img/QRcode.png" alt="渲一科技">
                 </div>
                 <figcaption>关注渲一科技微信，送百元大礼包！</figcaption>
             </div>
         </div>
-        <p class="rights-reserved wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1200ms">© 广州渲一信息科技有限版权所有</p>
+        <p class="rights-reserved wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1200ms">© 广州渲一信息科技有限版权所有  京ICP备15062696号-3</p>
     </div>
     <div class="white-area"></div>
     <a class="goto-top" href="#top"></a>

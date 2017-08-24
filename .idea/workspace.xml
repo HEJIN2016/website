@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="116c767e-c1a5-443d-a8db-60d163d04615" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/connect.php" afterPath="$PROJECT_DIR$/connect.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/all.css" afterPath="$PROJECT_DIR$/css/all.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/responsive.css" afterPath="$PROJECT_DIR$/css/responsive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/news.js" afterPath="$PROJECT_DIR$/js/news.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/news.html" afterPath="$PROJECT_DIR$/news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/newsdetail.php" afterPath="$PROJECT_DIR$/newsdetail.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,8 +27,8 @@
       <file leaf-file-name="news.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="14" column="69" lean-forward="true" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+            <state relative-caret-position="1338">
+              <caret line="167" column="1" lean-forward="false" selection-start-line="167" selection-start-column="1" selection-end-line="184" selection-end-column="9" />
               <folding>
                 <marker date="1503542334379" expanded="true" signature="7992:8000" ph="..." />
               </folding>
@@ -72,16 +69,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="price.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/price.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1938">
-              <caret line="102" column="79" lean-forward="false" selection-start-line="102" selection-start-column="79" selection-end-line="102" selection-end-column="79" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,8 +82,8 @@
       <file leaf-file-name="responsive.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/responsive.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="1154" column="17" lean-forward="false" selection-start-line="1154" selection-start-column="17" selection-end-line="1154" selection-end-column="17" />
+            <state relative-caret-position="744">
+              <caret line="1177" column="27" lean-forward="true" selection-start-line="1177" selection-start-column="27" selection-end-line="1177" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -117,6 +104,16 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="554">
               <caret line="404" column="13" lean-forward="true" selection-start-line="323" selection-start-column="4" selection-end-line="404" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="newsdetail.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/newsdetail.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -180,7 +177,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/about-us.html" />
         <option value="$PROJECT_DIR$/cooperative-partner.html" />
-        <option value="$PROJECT_DIR$/newsdetail.php" />
         <option value="$PROJECT_DIR$/recruitment.html" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/download.php" />
@@ -196,6 +192,7 @@
         <option value="$PROJECT_DIR$/connect.php" />
         <option value="$PROJECT_DIR$/news.html" />
         <option value="$PROJECT_DIR$/js/news.js" />
+        <option value="$PROJECT_DIR$/newsdetail.php" />
         <option value="$PROJECT_DIR$/css/responsive.css" />
       </list>
     </option>
@@ -312,12 +309,12 @@
       <workItem from="1503275638608" duration="3797000" />
       <workItem from="1503369892973" duration="20183000" />
       <workItem from="1503448076017" duration="27780000" />
-      <workItem from="1503535469171" duration="8857000" />
+      <workItem from="1503535469171" duration="9463000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215240000" />
+    <option name="totallyTimeSpent" value="215846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -616,14 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newsdetail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="66" column="6" lean-forward="false" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
@@ -737,24 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="404" column="13" lean-forward="true" selection-start-line="323" selection-start-column="4" selection-end-line="404" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="14" column="69" lean-forward="true" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
-          <folding>
-            <marker date="1503542334379" expanded="true" signature="7992:8000" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/news.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -766,10 +737,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/responsive.css">
+    <entry file="file://$PROJECT_DIR$/news.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1338">
+          <caret line="167" column="1" lean-forward="false" selection-start-line="167" selection-start-column="1" selection-end-line="184" selection-end-column="9" />
+          <folding>
+            <marker date="1503542334379" expanded="true" signature="7992:8000" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="554">
-          <caret line="1154" column="17" lean-forward="false" selection-start-line="1154" selection-start-column="17" selection-end-line="1154" selection-end-column="17" />
+          <caret line="404" column="13" lean-forward="true" selection-start-line="323" selection-start-column="4" selection-end-line="404" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newsdetail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="744">
+          <caret line="1177" column="27" lean-forward="true" selection-start-line="1177" selection-start-column="27" selection-end-line="1177" selection-end-column="27" />
           <folding />
         </state>
       </provider>
