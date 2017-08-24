@@ -481,6 +481,24 @@
         background-size: 100% 100%;
     }
 
+    /*recruitment.html*/
+    .recruit-job .container div.liney {
+        height: 1066px;
+    }
+    .recruit-job .container div.ask-border {
+        top: 1114px;
+    }
+    .recruit-job::before {
+        background: transparent url(../img/xia.png) no-repeat 12px 0;
+        background-size: 100% 100%;
+    }
+    .recruit-job {
+        height: 1554px;
+    }
+    .recruit-job .container  .job-go{
+        padding-top: 28px;
+    }
+
 }
 
 /*xs*/
@@ -783,7 +801,7 @@
         margin: 0 auto;
     }
     footer .container .row > div h3 {
-        margin: 35px 0 15px;;
+        margin: 25px 0 15px;;
     }
     footer .container .row ul.contact-us li:nth-of-type(3) span {
         display: inline-block;
@@ -794,7 +812,9 @@
         width: 100%;
     }
     footer .container p.rights-reserved {
-        padding: 0 25px;
+        padding: 20px 0;
+        width: 230px;
+        margin: 0 auto;
     }
     footer a.goto-top {
         bottom: 16px;
@@ -1233,14 +1253,15 @@
         padding: 10px 5px 0 5px;
         bottom: 0;
         height: auto;
+        margin-top: 28px;
     }
     .join-us .content article p {
         font-size: 1.2rem;
         margin-bottom: 10px;
     }
     .join-us {
-        height: 642px;
-    }
+         height: 590px;
+     }
     .center-content .container ul.menulist li {
         width: 50%;
     }
@@ -1299,4 +1320,79 @@
         margin: 0 10px!important;
     }
 
+    /*recruitment.html*/
+    .recruit-job .container > div h3 {
+        display: block;
+        margin: 8px 14px 0;
+        padding: 8px 0 5px 0;
+    }
+    .recruit-job .container div.liney {
+        left: 0;
+        margin-left: 32px;
+        height: 2082px;
+    }
+    .recruit-job .container div.circle {
+        left: 0;
+        margin-left: 0;
+        top: 0;
+    }
+    .recruit-job .container > div.col-xs-12 {
+         text-align: left;
+         padding-left: 50px;
+     }
+    .recruit-job .container > div h3.header {
+        display: none;
+    }
+    .recruit-job {
+        width: 100%;
+        height: 2482px;
+    }
+    .recruit-job .container div.ask-border {
+        left: 0;
+        margin-left: 0;
+        top: 2125px;
+    }
+    .recruit-job .container > div  p.null {
+        display: none;
+    }
+    .recruit-job::before {
+        display: none;
+    }
+    .recruit-job .container .ship {
+        left: 0;
+    }
+    .recruit-job .container .gray {
+        left: 81px;
+    }
+    .recruit-job .container > div.col-xs-12 > div {
+        width: 270px;
+    }
+    .recruit-job .container .joinus {
+        bottom: 114px;
+        left: 45%;
+    }
+    .recruit-job .container a.go-to-top {
+        bottom: 15px;
+    }
+
+
+
+}
+
+/*for iPhone5、iPhone4s*/
+@media screen and (max-width: 340px){
+    .recruit-job .container .joinus {
+        width: 200px;
+        text-align: center;
+        height: 90px;
+        bottom: 147px;
+    }
+    .recruit-job .container .joinus h4 {
+        font-size: 2rem;
+        padding: 0;
+        text-align: left;
+    }
+    .join-us {
+        height: 675px;
+    }
 }
