@@ -1883,7 +1883,7 @@ p.content{
 	/*background-position: -60px 0; */
 /*}*/
 .example-content section > div:nth-of-type(1) .top-picture{
-	background: url('../img/example/lanmao') center -5px no-repeat;
+	background: url('../img/example/lanmao.png') center -5px no-repeat;
 	background-size: cover;
 }
 .example-content section > div:nth-of-type(2) .top-picture{
