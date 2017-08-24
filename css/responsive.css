@@ -137,6 +137,19 @@
         width: 25%;
         height: 110px;
     }
+
+    /*contact-us.html*/
+    .linkman-list .container {
+        padding: 0;
+    }
+    .linkman-list .container > div {
+        width: 194px;
+        padding: 3px 0px 18px;
+    }
+    .linkman-list .container > div:first-child {
+        background: #2F3E53 url(../img/weblogo.png) 90px -58px no-repeat;
+        background-size: 540px auto;
+    }
 }
 
 /*sm only*/
@@ -497,6 +510,17 @@
     }
     .recruit-job .container  .job-go{
         padding-top: 28px;
+    }
+
+    /*contact-us.html*/
+    .leave-word .container {
+        padding: 15px 35px;
+    }
+    .linkman-list .container > div:last-child {
+        border-right: none;
+    }
+    .linkman-list .container > div:nth-child(2n) {
+        background: transparent;
     }
 
 }
@@ -1215,6 +1239,7 @@
     .news-area .container ul.news-list li button {
         width: 100%;
         background: #02a6bc;
+        color: #fff;
     }
     .news-area .container ul.news-list li {
         padding: 0 10px 15px 17px;
@@ -1375,7 +1400,62 @@
         bottom: 15px;
     }
 
-
+    /*contact-us.html*/
+    .leave-word .container {
+        padding: 15px;
+    }
+    .leave-word {
+        height: auto;
+    }
+    .leave-word .container > div input ,
+    .leave-word .container > div textarea {
+        margin: 0 auto;
+    }
+    .leave-word form {
+        padding-top: 25px;
+    }
+    .leave-word .container img {
+        display: block;
+        margin-bottom: 6px;
+    }
+    .leave-word .container > div button {
+        background: #02a6bc;
+        color: #fff;
+        width: 50%;
+        height: 28px;
+        display: block;
+        margin: 0 auto;
+    }
+    .linkman-list .container > div {
+        width: 100%;
+        padding-left: 60px;
+    }
+    .linkman-list .container {
+        padding: 0;
+    }
+    .linkman-list .container > div:first-child {
+        width: 212px;
+        height: 155px;
+        background: #2F3E53 url("../img/weblogo.png") 116px -62px no-repeat;
+        background-size: 540px auto;
+    }
+    .map .container .border-btn {
+        width: auto;
+        padding: 12px 5px;
+        font-size: 2rem;
+    }
+    .map .container .map-area {
+        width: 100%;
+        height: 330px;
+        background: transparent no-repeat url(../img/map.png);
+        background-size: 100% auto;
+    }
+    .map .container .map-area::after {
+        display: none;
+    }
+    .map .container .footer-word {
+        margin: 15px auto;
+    }
 
 }
 
@@ -1394,5 +1474,20 @@
     }
     .join-us {
         height: 675px;
+    }
+    .linkman-list .container > div {
+        width: 100%;
+        padding-left: 30px;
+    }
+    .map .container .border-btn {
+        width: auto;
+        padding: 12px 5px;
+        font-size: 1.8rem;
+    }
+    .map .container .map-area {
+        height: 260px;
+    }
+    .map .container h4 {
+        margin-bottom: 20px;
     }
 }

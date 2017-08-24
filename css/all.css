@@ -2790,6 +2790,7 @@ p.content{
 	background: #1CA378;
 	color: #fff;
 	position: relative;
+	white-space: nowrap;
 }
 .map .container h4{
 	font-size: 1.2rem;
@@ -2823,6 +2824,7 @@ p.content{
 	text-align: center;
 	padding: 1px 7px;
 	margin: 25px auto;
+    font-weight: 700;
 }
 
 
