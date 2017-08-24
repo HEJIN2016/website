@@ -2452,10 +2452,13 @@ p.content{
 	padding-left: 200px;
 }
 .center-content .goodness .goodness-details{
-	padding: 90px 175px 0 0;
+	padding: 65px 175px 0 0;
     line-height: 1.5;
     font-size: 1.2rem;
     color: #332C2B;
+}
+.center-content .goodness .goodness-details p {
+	font-size: 1.3rem;
 }
 .center-content .technology{
     background: #F3F3F3 url('../img/people2.png') 58% center no-repeat;

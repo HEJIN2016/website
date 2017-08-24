@@ -442,7 +442,33 @@
     .news-details .container article section p {
         font-family: "microsoft yahei", Helvetica, Arial, sans-serif;
     }
-
+    /*about-us.html*/
+    .join-us .content .article {
+        padding: 20px 20px 0 20px;
+    }
+    .join-us .content .article article {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .join-us .content article p {
+        font-size: 1.2rem;
+        margin-bottom: 15px;
+    }
+    .center-content header {
+        width: 80%;
+        margin: 0 10%;
+    }
+    .center-content .goodness .container {
+        position: relative;
+        z-index: 100;
+        padding: 0 40px;
+    }
+    .center-content .goodness .goodness-details {
+        padding: 68px 85px 0 0;
+    }
+    .center-content .goodness:nth-last-of-type(1) .goodness-details {
+        padding: 100px 85px 0 0;
+    }
 
 }
 
@@ -1179,4 +1205,59 @@
         margin: 0;
         font-weight: 700;
     }
+
+    /*contact-us.html*/
+    .join-us .content {
+        padding: 35px 0 0 0;
+    }
+    .join-us .content .article {
+        position: absolute;
+        top: 29%;
+    }
+    .join-us .content .article article {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .join-us .content .article {
+        padding: 10px 5px 0 5px;
+        bottom: 0;
+        height: auto;
+    }
+    .join-us .content article p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .join-us {
+        height: 642px;
+    }
+    .center-content .container ul.menulist li {
+        width: 50%;
+    }
+    .center-content .goodness .goodness-word {
+        display: none;
+    }
+    .center-content .goodness .container {
+        position: relative;
+        z-index: 100;
+        padding: 0 10px;
+        height: 100%;
+        display: table;
+    }
+    .center-content .goodness .goodness-details {
+        padding: 50px 0 0 0;
+        height: 100%;
+        display: table-row;
+    }
+    .center-content .goodness .goodness-details p{
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        font-size: 1.4rem;
+        color: #000;
+        line-height: 1.5;
+        text-indent: 2.8rem;
+    }
+
+
+
 }
