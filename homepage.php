@@ -119,6 +119,12 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
                 <span><a href="word.php">查看留言</a> </span>
             </div>
         </li>
+        <li>
+            <div class="slidebar">
+                <i class="iconfont icon-IPguanli"></i>
+                <span><a href="javascript:" data-toggle="modal" data-target="#ip">查看访问者ip</a> </span>
+            </div>
+        </li>
         <!--        <li>-->
         <!--            <div class="slidebar">-->
         <!--                <i class="iconfont icon-download"></i>-->
@@ -182,7 +188,7 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
                 </div>
                 <div class="clear"></div>
                 <!--style给定宽度可以影响编辑器的最终宽度-->
-                <script type="text/plain" id="myEditor" style="width:1000px;height:240px">
+                <script type="text/plain" id="myEditor">
                     <p></p>
                 </script>
 
@@ -221,7 +227,7 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
                     </div>
                     <div class = "clear" > </div>
                     <!--style给定宽度可以影响编辑器的最终宽度-->
-                    <script type = "text/plain" id = "add_news_editor" style = "width:1000px;height:240px" >
+                    <script type = "text/plain" id = "add_news_editor">
                     <p> </p>
                 </script>
 
@@ -239,6 +245,34 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
     </div>
 </div>
 
+<!-- 查看ip模态框（Modal） -->
+<div class="modal fade" id="ip" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    查看访问者ip
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="change-personal-psd">
+                    <iframe src="logs/ip.txt" width="100%" frameborder="0" height="240px"></iframe>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="delete_news_confirm_btn" data-dismiss="modal">
+                    确认
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
 
 <!-- 批量删除新闻模态框（Modal） -->
 <div class="modal fade" id="delete-many-news" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"

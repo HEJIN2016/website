@@ -1,138 +1,138 @@
 ﻿/*homepage主页css*/
 *{
-	margin: 0;
-	padding: 0;
-	font-family: 'Microsoft YaHei'
+    margin: 0;
+    padding: 0;
+    font-family: 'Microsoft YaHei'
 }
 html{
-	overflow-y: hidden;
+    overflow-y: hidden;
 }
 ul,li{
-	list-style: none;
+    list-style: none;
 }
 
 a:link,a:visited,a:hover,a:active{
-	text-decoration:none;
+    text-decoration:none;
 }
 
 body{
-	background: #ededed;
-	min-width: 768px;
+    background: #ededed;
+    min-width: 768px;
 }
 
 /*导航栏*/
 nav.nav-bar{
-	width: 100%;
-	height: 55px;
-	/*background: #02A6BC;*/
-	background: #2C3144;
-	box-shadow: 0 3px 3px #CCD1DA;
-        text-align: center;
+    width: 100%;
+    height: 55px;
+    /*background: #02A6BC;*/
+    background: #2C3144;
+    box-shadow: 0 3px 3px #CCD1DA;
+    text-align: center;
 }
 
 nav.nav-bar .logo{
-	height: 55px;
-	float: left; 
-	/*padding-left: 10px;*/
+    height: 55px;
+    float: left;
+    /*padding-left: 10px;*/
 }
 
 nav.nav-bar .total-num{
-        color: #fff;
-        display: inline-block;
-        line-height: 55px;
-        font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    line-height: 55px;
+    font-size: 14px;
 }
 
 nav.nav-bar .nav-right{
-	float: right;
-	/*width: 280px;*/
-	height: 100%;
-	border: 0;
-	font: 14px/55px 'Microsoft YaHei';
-	color: #fff;
-	padding-right: 10px;
+    float: right;
+    /*width: 280px;*/
+    height: 100%;
+    border: 0;
+    font: 14px/55px 'Microsoft YaHei';
+    color: #fff;
+    padding-right: 10px;
 }
 
 nav.nav-bar .nav-right>li{
-	position: relative;
-	display: block;
-	/*width: 70px;*/
-	padding: 0 5px;
-	float: left;
-	height: 100%;
-	text-align: center;
-	cursor: pointer;
-	border: 0;
-	transition: all .3s ease-in;
-	-moz-transition: all .3s ease-in; /* Firefox 4 */
+    position: relative;
+    display: block;
+    /*width: 70px;*/
+    padding: 0 5px;
+    float: left;
+    height: 100%;
+    text-align: center;
+    cursor: pointer;
+    border: 0;
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in; /* Firefox 4 */
     -webkit-transition: all .3s ease-in; /* Safari 和 Chrome */
     -o-transition: all .3s ease-in; /* Opera */
 }
 
 .clear{
-	clear: both;
+    clear: both;
 }
 
 nav.nav-bar .nav-right>li:hover{
-	background: #02899b;
+    background: #02899b;
 }
 
 nav.nav-bar .nav-right>li>ul{
-	background: #fff;
-	color: #000;
+    background: #fff;
+    color: #000;
 }
 
 nav.nav-bar .nav-right>li>ul{
-	width: 100px;
-	text-align: left;
-	position: absolute;
-	z-index: 100;
-	white-space: nowrap;
-	border: solid 1px #f2f2f2;
-	line-height: 1.8;
-	display: none;
+    width: 100px;
+    text-align: left;
+    position: absolute;
+    z-index: 100;
+    white-space: nowrap;
+    border: solid 1px #f2f2f2;
+    line-height: 1.8;
+    display: none;
 }
 
 nav.nav-bar .nav-right>li>ul>li{
-	border-bottom: solid 1px #f2f2f2;
+    border-bottom: solid 1px #f2f2f2;
 }
 
 nav.nav-bar .nav-right>li>ul>li a{
-	padding: 5px 10px;
-	display: inline-block;
-	color: #333;
+    padding: 5px 10px;
+    display: inline-block;
+    color: #333;
 }
 
 nav.nav-bar .nav-right>li>ul>li a:hover{
-	color: #FF00FF;
+    color: #FF00FF;
 }
 
 nav.nav-bar .nav-right>li>ul.bgcolor{
     top: 55px;
-	right: 0;
+    right: 0;
 }
 
 nav.nav-bar .nav-right>li>ul.userlist{
     top: 55px;
-	left: 0;
+    left: 0;
 }
 
 nav.nav-bar .nav-right>li:hover ul{
-	display: block;
+    display: block;
 }
 
 nav.nav-bar .nav-right>li>a{
-	color: #fff;
+    color: #fff;
 }
 
 nav.nav-bar .nav-right>li>i{
-	font-size: 13px;
+    font-size: 13px;
 }
 
 /*aside菜单*/
 aside.menu{
-	opacity: 0.95;
-	position: fixed;
+    opacity: 0.95;
+    position: fixed;
     top: 55px;
     bottom: 0;
     left: 0;
@@ -149,17 +149,17 @@ aside.menu{
 }
 
 aside.menu .personal{
-	text-align: center;
-	padding-bottom: 20px;
-	border-bottom: 2px solid #555;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #555;
 }
 
 aside.menu .personal img{
-	margin-top: 25px;
-	border-radius: 100%;
-	width: 60px;
-	height: 60px;
-	cursor: pointer;
+    margin-top: 25px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
 }
 
 aside.menu .personal>span{
@@ -175,57 +175,57 @@ aside.menu .personal>span{
 }
 
 aside.menu .personal .fund-info{
-	text-align: left;
-	width: 145px;
-	height: 90px;
-	padding: 5px 0;
-	margin: 0 auto;
-	font-size: 12px;
+    text-align: left;
+    width: 145px;
+    height: 90px;
+    padding: 5px 0;
+    margin: 0 auto;
+    font-size: 12px;
 }
 
 aside.menu .personal .fund-info p{
-	height: 20px;
-	width: 100%;
-	padding: 5px;
+    height: 20px;
+    width: 100%;
+    padding: 5px;
 }
 
 aside.menu .personal .fund-info p span:first-child{
-	color: #8b91a6;
-	display: inline-block;
-	width: 55px;
+    color: #8b91a6;
+    display: inline-block;
+    width: 55px;
 }
 
 aside.menu .personal .fund-info p span a{
-	color: #fff;
+    color: #fff;
 }
 
 aside.menu .personal .fund-info p span a:hover{
-	color: #FF00FF;
+    color: #FF00FF;
 }
 
 aside.menu .personal .fund-info p span.operation a{
-	line-height: 1;
+    line-height: 1;
     display: inline-block;
     padding: 0 5px;
 }
 
 aside.menu .personal .fund-info p span.operation a:first-child{
-	border-right: 1px solid #fff;
+    border-right: 1px solid #fff;
 }
 
 aside.menu .menu-list{
-	width: 100%;
-	padding: 10px 20px;
-	line-height: 20px;
-	font-size: 14px;
+    width: 100%;
+    padding: 10px 20px;
+    line-height: 20px;
+    font-size: 14px;
 }
 
 aside.menu .menu-list li{
-	cursor: pointer;
+    cursor: pointer;
 }
 
 aside.menu .menu-list li a{
-	color: #fff;
+    color: #fff;
 }
 
 aside.menu .menu-list li a:hover{
@@ -233,245 +233,260 @@ aside.menu .menu-list li a:hover{
 }
 
 aside.menu .menu-list li .slidebar>span{
-	padding-right: 40px;
+    padding-right: 40px;
 }
 aside.menu .menu-list>li>ul{
     display: none;
 }
 
 aside.menu .menu-list>li i{
-	vertical-align: middle;
-	font-size: 17px;
-	color: #fff;
-	/*padding-right: 2px;*/
+    vertical-align: middle;
+    font-size: 17px;
+    color: #fff;
+    /*padding-right: 2px;*/
 }
 
 aside.menu .menu-list>li i:nth-of-type(2){
-	font-size: 10px;
-	color: #fff;
-	display: inline-block;
-	/*padding-right: 2px;*/
+    font-size: 10px;
+    color: #fff;
+    display: inline-block;
+    /*padding-right: 2px;*/
 }
 
 aside.menu .menu-list li{
-	padding: 7px 0;
-	line-height: 20px;
+    padding: 7px 0;
+    line-height: 20px;
 }
 
 aside.menu .menu-list li ul li{
-	text-indent: 20px;
+    text-indent: 20px;
 }
 
 @keyframes rotateDiv1{
-	from {
-		transform: rotate(0);
-	}
-	to {
-		transform: rotate(180deg);
-	}
+    from {
+        transform: rotate(0);
+    }
+    to {
+        transform: rotate(180deg);
+    }
 }
 
 @keyframes rotateDiv2{
-	from {
-		transform: rotate(180deg);
-	}
-	to {
-		transform: rotate(0);
-	}
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0);
+    }
 }
 
 .center-page{
-	position: absolute;
-	top:55px;
-	left:200px;
-	right:0;
-	bottom:0;
-	color: #333;
-	font-size: 14px;
-	line-height: 1.6;
+    position: absolute;
+    top:55px;
+    left:200px;
+    right:0;
+    bottom:0;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 .center-page>.nav {
-	height: 40px;
-	width: 100%;
-	padding: 0 20px;
-	background: #f5f5f5;
-	line-height: 40px;
-	vertical-align: middle;
+    height: 40px;
+    width: 100%;
+    padding: 0 20px;
+    background: #f5f5f5;
+    line-height: 40px;
+    vertical-align: middle;
 }
 
 .center-page>p{
-	padding: 10px 20px 0 20px;
-	font-size: 24px;
-	font-weight: 500;
+    padding: 10px 20px 0 20px;
+    font-size: 24px;
+    font-weight: 500;
 }
 .center-page .select-text{
-	text-align: center;
-	word-wrap: break-word;
-	margin-top: 31px;
-	float: left;
+    text-align: center;
+    word-wrap: break-word;
+    margin-top: 31px;
+    float: left;
 }
 
 .center-page .select-text>span{
-	color: #333;
-	font-size: 14px;
-	line-height: 1.6;
-	font-weight: 700;
-	padding: 0 6px;
+    color: #333;
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 700;
+    padding: 0 6px;
 }
 
 .center-page .select-text input,
 .center-page .select-text select{
-	vertical-align: middle;
-	height: 31px;
-	padding: 4px;
-	width: 120px;
-	border: solid 1px #ddd;
-	-webkit-transition: all .2s linear 0s;
-	-moz-transition: all .2s linear 0s;
-	-o-transition: all .2s linear 0s;
-	transition: all .2s linear 0s;
+    vertical-align: middle;
+    height: 31px;
+    padding: 4px;
+    width: 120px;
+    border: solid 1px #ddd;
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
 }
 
 .center-page .select-text .date{
-	background: url('../images/datePicker.gif') no-repeat right;
+    background: url('../images/datePicker.gif') no-repeat right;
 }
 
 .center-page .select-text i{
-	padding-right: 4px;
-	font-size: 14px;
+    padding-right: 4px;
+    font-size: 14px;
 }
 
 .center-page .select-text .search{
-	vertical-align: middle;
-	/*width: 90px;*/
-	height: 31px;
-	line-height: 15px;
+    vertical-align: middle;
+    /*width: 90px;*/
+    height: 31px;
+    line-height: 15px;
 }
 
 .center-page .select-text #input-text{
-	width: 250px;
+    width: 250px;
 }
 
 .center-page .select-text{
-	padding: 10px 20px 30px 50px;
+    padding: 10px 20px 30px 50px;
 }
 
 .center-page .select-text .button-area{
-	float: left;
+    float: left;
 }
 
 .center-page .select-text button{
-	height: 31px;
-	font-size: 14px;
-	vertical-align: middle;
-	line-height: 15px;
+    height: 31px;
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 15px;
 }
 
 .center-page .select-text button i{
-	font-size: 14px;
-	padding-right: 3px;
+    font-size: 14px;
+    padding-right: 3px;
 }
 
 .center-page .data-text{
-	padding: 30px 50px;
+    padding: 30px 50px;
 }
 
 .center-page .data-text tbody tr td{
-	text-align: left;
-	white-space: nowrap;
+    text-align: left;
+    white-space: nowrap;
 }
 
 .center-page .data-text tr th{
-	text-align: center;
-	white-space: nowrap;
+    text-align: center;
+    white-space: nowrap;
 }
 
 .center-page .data-text tbody tr td i{
-	font-size: 16px;
-	vertical-align: middle;
-	padding: 0 2px;
-	cursor: pointer;
+    font-size: 16px;
+    vertical-align: middle;
+    padding: 0 2px;
+    cursor: pointer;
 }
 
 .center-page .data-text tbody tr td:last-child a{
-	color: inherit;
+    color: inherit;
 }
 
 .center-page .data-text tbody tr td i:hover{
-	color: #06c;
+    color: #06c;
 }
 
 .center-page .table-info{
-	padding-top: 5px;
-	height: 50px;
-	line-height: 35px;
+    padding-top: 5px;
+    height: 50px;
+    line-height: 35px;
 }
 
 .center-page .table-info .number-info{
-	color: #666;
-	float: left;
-	font-size: 14px;
+    color: #666;
+    float: left;
+    font-size: 14px;
 }
 
 .center-page .table-info .turn-page{
-	float: right;
+    float: right;
 }
 
 .pagination{
-	margin: 0;
+    margin: 0;
 }
 
 /*模态框*/
 .modal{
-	top: 150px;
+    top: 150px;
 }
 
 .topmodal{
-	top: 100px;
+    top: 100px;
 }
 
 .row{
-	margin: 0;
+    margin: 0;
 }
 
 caption{
-	text-align: center;
-	padding-top: 15px;
-	color: #333;
-	font-weight: 600;
+    text-align: center;
+    padding-top: 15px;
+    color: #333;
+    font-weight: 600;
 }
 
 table#news-table thead th:last-child > div {
-	overflow: hidden;
-	text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 @media screen and (max-width: 1400px){
-	.center-page .data-text {
-		padding: 30px 20px;
-	}
+    .center-page .data-text {
+        padding: 30px 20px;
+    }
 }
 .tabletd{
-	max-width: 150px;
+    max-width: 150px;
 }
 
 #news-table{
-	overflow-x: hidden;
+    overflow-x: hidden;
 }
 .fixed-table-body {
-	overflow-x: hidden!important;
+    overflow-x: hidden!important;
 }
 tbody tr td{
-	text-overflow: ellipsis!important;
-	overflow: hidden!important;
+    text-overflow: ellipsis!important;
+    overflow: hidden!important;
 }
 @media screen and (max-width: 1300px){
-	#news-table{
-		overflow-x: scroll;
-	}
+    #news-table{
+        overflow-x: scroll;
+    }
+}
+#add_news_editor,
+#myEditor{
+    height: 400px;
+    width: 1000px;
+}
+.promptSpan{
+    display: block;
 }
 
-.promptSpan{
-	display: block;
+@media screen and (max-height: 700px){
+    .topmodal{
+        top: 0;
+    }
+    #add_news_editor,
+    #myEditor{
+        width: 1000px;
+        height: 260px;
+    }
 }

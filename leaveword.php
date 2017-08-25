@@ -7,7 +7,7 @@ if ($conn->connect_error){
 
 else{
     $name = check_input($conn,$_POST["name"]);
-    $ip = check_input($conn,$_POST["ip"]);
+    $ip = check_input($_SERVER["REMOTE_ADDR"]);
     $phone = check_input($conn,$_POST["phone"]);
     $word = check_input($conn,$_POST["word"]);
     $time = check_input($conn,$_POST["time"]);

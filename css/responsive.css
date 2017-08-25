@@ -860,11 +860,14 @@
     }
     .platform-introduction .container .service-range {
         width: 100%;
+        text-align: center;
     }
     .platform-introduction .container .service-range > div {
         width: 149px;
         height: 150px;
-        margin-right: 2px;
+        margin: 0 2px 4px 0;
+        display: inline-block;
+        float: none;
     }
     .platform-introduction .container .service-range > div > * {
         opacity: 1;

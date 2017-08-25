@@ -181,10 +181,16 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
 <script type="text/javascript">
     $(function(){
         //Initiat WOW JS
         new WOW().init();
+        $("img").lazyload({
+            placeholder : "img/loading.gif",
+            effect: "fadeIn"
+        });
+
     });
     $.ajax({
         url: 'data.php',

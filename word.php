@@ -397,7 +397,7 @@ if ((!(isset($_SESSION["username"]))) || (empty($_SESSION["username"])))
                 </div>
                 <div class="clear"></div>
                 <!--style给定宽度可以影响编辑器的最终宽度-->
-                 <script type = "text/plain" id = "add_news_editor" style = "width:1000px;height:240px" >
+                 <script type = "text/plain" id = "add_news_editor">
                         <p> </p>
                  </script>
 

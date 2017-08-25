@@ -13,7 +13,7 @@ $table.bootstrapTable({
     sortable: false,                     //是否启用排序
     sidePagination: "client",           //分页方式：client客户端分页，server服务端分页（*）
     pageNumber: 1,                       //初始化加载第一页，默认第一页
-    pageSize: 10,                       //每页的记录行数（*）
+    pageSize: $("body").width()<1400?8:10,                       //每页的记录行数（*）
     pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
     search: true,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端
     strictSearch: true,
@@ -133,7 +133,7 @@ $word_table.bootstrapTable({
     sortable: false,                     //是否启用排序
     sidePagination: "client",           //分页方式：client客户端分页，server服务端分页（*）
     pageNumber: 1,                       //初始化加载第一页，默认第一页
-    pageSize: 10,                       //每页的记录行数（*）
+    pageSize: $("body").width()<1400?8:10,                       //每页的记录行数（*）
     pageList: [10, 25, 50, 100],        //可供选择的每页的行数（*）
     search: true,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端
     strictSearch: true,

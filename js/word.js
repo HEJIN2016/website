@@ -15,7 +15,6 @@ $(function(){
                 url: 'leaveword.php',
                 type: 'post',
                 data: {
-                    ip: "<?php echo ($_SERVER["REMOTE_ADDR"])?>",
                     phone: $("#tel").val(),
                     name: $("#name").val(),
                     word: $("#word").val(),
