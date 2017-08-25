@@ -85,7 +85,7 @@
 		<div class="container">
 			<span class="English">迅染云平台</span>
 			<p>渲一科技自主研发的一款适合超大规模渲染集群的管理服务平台系统</p>
-			<div class="video">
+			<div class="video imgload" background-url="url('img/tv.png')">
 				<video src="video/526756359.mp4" controls="controls" preload="none"></video>
 			</div>
 			<ul>
@@ -103,27 +103,27 @@
 			<span class="English">配置灵活 管理便捷 操作简洁 智能感知</span>
 			<ul>
 				<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="00ms">
-					<img src="img/step1.jpg">
+					<img data-original="img/step1.jpg" src="img/loading.gif">
 					<figcaption>1.登录界面</figcaption>
 				</li>
 				<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="500ms">
-					<img src="img/step2.jpg">
+					<img data-original="img/step2.jpg" src="img/loading.gif">
 					<figcaption>2.登录之后的主界面</figcaption>
 				</li>
 				<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="1000ms">
-					<img src="img/step3.jpg">
+					<img data-original="img/step3.jpg" src="img/loading.gif">
 					<figcaption>3.作业提交界面</figcaption>
 				</li>
 				<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="1500ms">
-					<img src="img/step4.jpg">
+					<img data-original="img/step4.jpg" src="img/loading.gif">
 					<figcaption>4.费用查看界面</figcaption>
 				</li>
 				<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="2000ms">
-					<img src="img/step5.jpg">
+					<img data-original="img/step5.jpg" src="img/loading.gif">
 					<figcaption>5.下载界面</figcaption>
 				</li>
 				<li class="col-lg-4 col-md-4 col-sm-6 col-xs-12 wow fadeInLeft" data-wow-duration="800ms" data-wow-delay="2500ms">
-					<img src="img/step6.jpg">
+					<img data-original="img/step6.jpg" src="img/loading.gif">
 					<figcaption>6.导出历史</figcaption>
 				</li>
 			</ul>
@@ -239,7 +239,7 @@
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12 wow fadeInRight" data-wow-ruation="500ms">
 					<header class="no-bottom">迅染云平台性能评估</header>
-					<div class="evaluate"></div>
+					<div class="evaluate imgload" background-url="url('img/server.jpg')"></div>
 				</div>
 			</div>
 
@@ -462,11 +462,16 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script src="js/config.js"></script>
-<script type="text/javascript">
-$(function(){
-	//Initiat WOW JS
-	new WOW().init();
-});
-</script>
+<script src="js/jquery.lazyload.min.js"></script>
 <script src="js/video.js"></script>
+<script type="text/javascript" src="js/loadimg.js"></script>
+<script type="text/javascript">
+    $(function(){
+        new WOW().init();
+        $("img").lazyload({
+            placeholder : "img/loading.gif",
+            effect: "fadeIn"
+        });
+    })
+</script>
 </html>

@@ -177,7 +177,7 @@
 			    <div class="border-btn">无论你在哪里，渲一都在你的身边</div>
 			</div>
 			<h4>给您高效的、优质的、极速的渲染保障</h4>
-			<div class="map-area"></div>
+			<div class="map-area imgload" background-url=" url('img/map.png')"></div>
 			<div class="footer-word">渲一，开启您的极速渲染之旅</div>
 		</div>
 	</div>
@@ -270,4 +270,5 @@
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script src="js/all.js"></script>
 <script src="js/word.js"></script>
+<script type="text/javascript" src="js/loadimg.js"></script>
 </html>

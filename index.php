@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 header('Content-type: text/html; charset=utf-8');
 $ip = ($_SERVER["REMOTE_ADDR"]).PHP_EOL;
 $ipfile = fopen("logs/ip.txt","a");
@@ -18,7 +18,7 @@ fclose($datei);
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=10">
     <meta name="keywords" content="渲一科技,渲染,渲一,迅染云平台,急速渲染军团，云渲染，渲染农场，渲染平台，3dmax云渲染，3D渲染，3d渲染平台，渲染农场价格，自助式渲染，渲染云">
     <meta name="description" content="渲一科技，您身边的急速渲染军团。迅染云平台是渲一科技自主开发的一款适合超大规模渲染集群的管理服务平台系统" />
 	<title>渲染|渲一科技|您身边的急速渲染军团</title>
@@ -95,7 +95,7 @@ fclose($datei);
 		</div>
 	</div>
 
-	<div class="platform">
+	<div class="platform imgload" imgsrc="url('img/pic.jpg')">
 		<div class="top"></div>
 		<div class="center"></div>
 		<div class="bottom">
@@ -105,7 +105,7 @@ fclose($datei);
 				<div class="color"></div>
 				<ul>
 					<li class="col-lg-6 wow fadeInLeft animated col-md-6 col-sm-6 col-xs-12" data-wow-duration="600ms" data-wow-delay="500ms">
-						<i></i>
+						<i class="imgload" background-url="url('img/weblogo.png')"></i>
 						<h4>自主可控</h4>
 						<p>自主研发的云管理平台、自主的存储系统、自主的服务器虚拟化。实现了虚实结合的资源聚合、基于分区的大规模资源管理、异构资源统一调度等关键技术的应用</p>
 						<div class="circle"></div>
@@ -113,10 +113,10 @@ fclose($datei);
 					<li class="col-lg-6 wow fadeInRight animated col-md-6 col-sm-6 col-xs-12" data-wow-duration="600ms" data-wow-delay="500ms">
 						<h4>超强兼容</h4>
 						<p>基于主流KVM/XEN/LXC/DOCKER等虚拟化机制、兼容能力大大提高。针对“天河二号”结果特点，优化兼容市场上巨大多数主流CG软件，比如3ds MAX、Maya、CINEMA 4D</p>
-						<i></i>
+						<i class="imgload" background-url="url('img/weblogo.png')"></i>
 					</li>
 					<li class="col-lg-6 wow fadeInLeft animated col-md-6 col-sm-6 col-xs-12" data-wow-duration="600ms" data-wow-delay="800ms">
-						<i></i>
+						<i class="imgload" background-url="url('img/weblogo.png')"></i>
 						<h4>价格优势</h4>
 						<p>试用超级计算机系统，大幅度降低渲染单价。按需增加或减少资源，实现真正的弹性计费，按核时计费，价格透明</p>
 						<div class="circle"></div>
@@ -124,17 +124,17 @@ fclose($datei);
 					<li class="col-lg-6 wow fadeInRight animated col-md-6 col-sm-6 col-xs-12" data-wow-duration="600ms" data-wow-delay="800ms">
 						<h4>安全可靠</h4>
 						<p>数据分级物理隔离，数据传输加密与严格准入控制，领先的攻击与病毒防止技术，高度的团队安全意识与管理机制</p>
-						<i></i>
+						<i class="imgload" background-url="url('img/weblogo.png')"></i>
 					</li>
 					<li class="col-lg-6 wow fadeInLeft animated col-md-6 col-sm-6 col-xs-12" data-wow-duration="600ms" data-wow-delay="1100ms">
-						<i></i>
+						<i class="imgload" background-url="url('img/weblogo.png')"></i>
 						<h4>硬件优势</h4>
 						<p>平台部署的业务主机为“天河二号”超级计算机。自主CPU阵列，超过6400个自主CPU的计算节点，双精度浮点峰值计算性能为589.8TFlops，内存总容量206.8TB，全系统磁盘总容量10PB，中心接入移动、联通、电信、科研、教育五线路，独享万兆带宽</p>
 					</li>
 					<li class="col-lg-6 wow fadeInRight animated col-md-6 col-sm-6 col-xs-12" data-wow-duration="600ms" data-wow-delay="1100ms">
 						<h4>异地求同</h4>
 						<p>数据分级物理隔离，数据传输加密与严格准入控制，领先的攻击与病毒防止技术，高度的团队安全意识与管理机制</p>
-						<i></i>
+						<i class="imgload" background-url="url('img/weblogo.png')"></i>
 					</li>
 				</ul>
 			</div>
@@ -175,7 +175,7 @@ fclose($datei);
 					</div>
 					<i class="small-circle" style="background: #4598B6"></i>
 				</div>
-				<div class="tv">
+				<div class="tv imgload" background-url="url('img/tv.png')">
 
 				</div>
 			</div>
@@ -204,7 +204,7 @@ fclose($datei);
 
 	<div class="render-field">
 		<div class="container">
-			<div class="img1">
+			<div class="img1 imgload" background-url="url('img/1.png')">
 				<div class="after"></div>
 				<div class="img-center-word">
 					<p>1</p>
@@ -212,7 +212,7 @@ fclose($datei);
 					<p>Domestic outfit design industry</p>
 				</div>
 			</div>
-			<div class="img2">
+			<div class="img2 imgload" background-url="url('img/2.png')">
 				<div class="after"></div>
 				<div class="img-center-word">
 					<p>2</p>
@@ -220,7 +220,7 @@ fclose($datei);
 					<p>Film and television design industry</p>
 				</div>
 			</div>
-			<div class="img3">
+			<div class="img3 imgload" background-url="url('img/3.png')">
 				<div class="after"></div>
 				<div class="img-center-word">
 					<p>3</p>
@@ -228,7 +228,7 @@ fclose($datei);
 					<p>Animation design industry</p>
 				</div>
 			</div>
-			<div class="img4">
+			<div class="img4 imgload" background-url="url('img/4.png')">
 				<div class="after"></div>
 				<div class="img-center-word">
 					<p>4</p>
@@ -236,7 +236,7 @@ fclose($datei);
 					<p>Architectural design industry</p>
 				</div>
 			</div>
-			<div class="img5">
+			<div class="img5 imgload" background-url="url('img/5.png')">
 				<div class="after"></div>
 				<div class="img-center-word">
 					<p>5</p>
@@ -244,7 +244,7 @@ fclose($datei);
 					<p>The Game design industry</p>
 				</div>
 			</div>
-			<div class="img6">
+			<div class="img6 imgload" background-url="url('img/6.png')">
 				<div class="after"></div>
 				<div class="img-center-word">
 					<p>6</p>
@@ -266,14 +266,14 @@ fclose($datei);
 			<span>RENDER SOFTWARE</span>
 			<div class="color"></div>
 			<ul class="wow lightSpeedIn" data-wow-duration="1500ms" data-wow-delay="300ms">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
+				<li><div class="after imgload" background-url="url('img/software.png')"></div></li>
+				<li><div class="after imgload" background-url="url('img/software.png')"></div></li>
+				<li><div class="after imgload" background-url="url('img/software.png')"></div></li>
+				<li><div class="after imgload" background-url="url('img/software.png')"></div></li>
+				<li><div class="after imgload" background-url="url('img/software.png')"></div></li>
+				<li><div class="after imgload" background-url="url('img/software.png')"></div></li>
+				<li><div class="after imgload" background-url="url('img/software.png')"></div></li>
+				<li><div class="after imgload" background-url="url('img/software.png')"></div></li>
 			</ul>
 		</div>
 		<div class="line"></div>
@@ -286,12 +286,12 @@ fclose($datei);
 			<div class="color"></div>
 			<div class="news-area">
 				<ul>
-					<li></li>
+					<li class="imgload" background-url="url('img/news/news1-small.jpg')"></li>
 					<li>
 						<p><a href="news.html">渲一科技成为中国超级计算创新联盟一员</a></p>
 						<button class="btn"><a href="news.html">MORE</a></button>
 					</li>
-					<li></li>
+					<li class="imgload" background-url="url('img/news/news2-small.jpg')"></li>
 					<li>
 						<p><a href="news.html">看了我，你会爱上我</a></p>
 						<p><a href="news.html">渲一科技新逼格办公室！</a></p>
@@ -306,13 +306,13 @@ fclose($datei);
 						<p><a href="news.html">最大迅染云平台</a></p>
 						<button class="btn"><a href="news.html">MORE</a></button>
 					</li>
-					<li></li>
+					<li class="imgload" background-url="url('img/news/news3-small.jpg')"></li>
 					<li>
 						<p><a href="news.html">渲一科技渲染力作</a></p>
 						<p><a href="news.html">《大唐荣耀》强势霸屏</a></p>
 						<button class="btn"><a href="news.html">MORE</a></button>
 					</li>
-					<li></li>
+					<li class="imgload" background-url="url('img/news/news4-small.jpg')"></li>
 					<li><a href="news.html"></a></li>
 				</ul>
 			</div>
@@ -408,6 +408,7 @@ fclose($datei);
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script src="js/config.js"></script>
+<script type="text/javascript" src="js/loadimg.js"></script>
 <script type="text/javascript">
 $(function(){
 	//Initiat WOW JS

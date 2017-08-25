@@ -179,7 +179,7 @@
 
 	<div class="understand-render-platform customer">
 		<div class="container">
-			<img src="img/customer.jpg" class="wow fadeInLeft" data-wow-duration="1000ms">
+			<img data-original = "img/customer.jpg" src="img/loading.gif" class="wow fadeInLeft" data-wow-duration="1000ms">
 			<div class="cloud-platform wow fadeInRight" data-wow-duration="1000ms">
 				<h3>客户须知</h3>
 				<p>The customer requirements</p>
@@ -203,9 +203,14 @@
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script src="js/config.js"></script>
+<script src="js/jquery.lazyload.min.js"></script>
 <script type="text/javascript">
 	$(function(){
 		new WOW().init();
+        $("img").lazyload({
+            placeholder : "img/loading.gif",
+            effect: "fadeIn"
+        });
 	})
 </script>
 </html>
