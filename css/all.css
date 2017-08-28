@@ -47,13 +47,11 @@ nav .top-area{
 	height: 20px;
 	border-bottom: 1px solid #959596;
 }
-nav .container .navbar-header a{
+nav .container .navbar-header .icon{
 	margin: 35px 0;
 	display: inline-block;
 	width: 80px;
 	height: 30px;
-    background: url('../img/renderlink.png');
-    background-size: 80px auto;
 }
 nav .navbar-nav>li a i{
 	padding-left: 4px;
@@ -945,7 +943,7 @@ p.version{
 	background: #C9CACA url('../img/add.png') center 35px no-repeat;
 	background-size: 70px 70px;
 }
-.render-news .news-area > ul > li button{
+.render-news .news-area > ul > li a.btn{
 	width: 60px;
 	height: 24px;
 	border-radius: 0;
@@ -971,6 +969,9 @@ footer{
 footer .container{
     overflow: hidden;
 }
+footer .container .row > div{
+	text-align: center;
+}
 footer .container .row > div h3{
 	margin: 63px 0 30px;
 	font-size: 1.4rem;
@@ -979,12 +980,21 @@ footer .container .row > div h3{
 	padding: 3px 0;
 	color: #1CA378;
 	font-weight: 700;
+	width: 165px;
+	display: inline-block;
+}
+footer .container .row > div:nth-of-type(2) h3 {
+	width: 282px;
+}
+footer .container .row > div:nth-of-type(4) h3{
+	width: 130px;
 }
 footer .container .row > div ul.introduction{
 	width: 160px;
 	margin: 0 auto;
 }
 footer .container .row > div ul li{
+	text-align: left;
     margin-bottom: 14px;
     font-size: 1.4rem;
     position: relative;
@@ -1005,11 +1015,15 @@ footer .container .row > div ul li i{
     height: 18px;
     display: inline-block;
     border-radius: 100%;
-    background-image: url('../img/weblogo.png');
     background-size: 500px auto;
 }
-footer .container .row > div ul li span{
+footer .container .row > div ul.address li span,
+footer .container .row > div ul li a{
 	padding-left: 28px;
+	display: inline-block;
+}
+footer .container .row > div ul.introduction li a{
+	padding-left: 0;
 }
 footer .container .row > div ul.contact-us li:nth-of-type(1) i{
     background-position: -96px -130px;
@@ -1040,7 +1054,7 @@ footer .container .row > div:last-child .content{
 footer .container .row > div:last-child img{
     width: 130px;
 }
-footer .container .row > div:last-child figcaption{
+footer .container .row > div:last-child .figcaption{
 	text-align: center;
 	font-size: 1.2rem;
 	padding-top: 4px;
@@ -2267,15 +2281,15 @@ p.content{
     text-align: center;
     overflow-x: hidden; 
 }
-.news-details .container article section p{
-	text-indent: 28px;
+.news-details .container article section p {
+	text-indent: 30px;
 	text-align: left;
 	margin-bottom: 15px;
 	padding: 15px 50px;
-	font-size: 1.8rem;
+	font-size: 1.6rem;
 	color: #000;
 	line-height: 1.5;
-	font-family: 'NSimSun';
+	font-family: Microsoft YaHei,Arial,sans-serif;
 }
 .news-details .container article section img{
     vertical-align: middle;
@@ -2948,7 +2962,6 @@ p.content{
 .render-step .container ul li figcaption{
 	font-size: 1.6rem;
 	width: 100%;
-	width: 240px;
 	padding: 10px 0;
 	text-align: center;
 }

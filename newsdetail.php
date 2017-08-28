@@ -15,57 +15,57 @@
     <link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body>
-<nav class="navbar" role="navigation">
-    <a name="top"><div class="top-area"></div></a>
-    <div class="container">
-        <div class="navbar-header">
-            <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-                <span class="sr-only">切换导航</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="javascript:"></a>
+    <nav class="navbar" role="navigation">
+        <a id="top"><div class="top-area"></div></a>
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <img src="img/renderlink.png" class="icon" alt="渲一科技" title="fastrender迅染云平台"> 
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/">首页</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">迅染云平台
+                            <i class="iconfont icon-xia1"></i>
+                        </a>
+                        <ul class="menu-list">
+                            <li><a href="render-platform.html">平台概述</a></li>
+                            <li><a href="operation.html">操作指南</a></li>
+                            <li><a href="operation.html#problems">常见问题</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="price.html">价格</a>
+                    </li>
+                    <li>
+                        <a href="example.html">案例</a>
+                    </li>
+                    <li class="active">
+                        <a href="news.html">新闻动态</a>
+                    </li>
+                    <li>
+                        <a href="javascript:">关于我们
+                            <i class="iconfont icon-xia1"></i>
+                        </a>
+                        <ul class="menu-list">
+                            <li><a href="about-us.html">公司简介</a></li>
+                            <li><a href="cooperative-partner.html#cooperative">合作伙伴</a></li>
+                            <li><a href="recruitment.html#recriut">人才招聘</a></li>
+                            <li><a href="contact-us.php#contact">联系我们</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="/">首页</a>
-                </li>
-                <li>
-                    <a href="javascript:">迅染云平台
-                        <i class="iconfont icon-xia1"></i>
-                    </a>
-                    <ul class="menu-list">
-                        <li><a href="render-platform.html">平台概述</a></li>
-                        <li><a href="operation.html">操作指南</a></li>
-                        <li><a href="operation.html#problems">常见问题</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="price.html">价格</a>
-                </li>
-                <li>
-                    <a href="example.html">案例</a>
-                </li>
-                <li class="active">
-                    <a href="news.html">新闻动态</a>
-                </li>
-                <li>
-                    <a href="javascript:">关于我们
-                        <i class="iconfont icon-xia1"></i>
-                    </a>
-                    <ul class="menu-list">
-                        <li><a href="about-us.html">公司简介</a></li>
-                        <li><a href="cooperative-partner.html#cooperative">合作伙伴</a></li>
-                        <li><a href="recruitment.html#recriut">人才招聘</a></li>
-                        <li><a href="contact-us.php#contact">联系我们</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+    </nav>
 
 <div class="page-header-div">
     <div class="container">
@@ -95,89 +95,81 @@
     </div>
 </div>
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
-                <ul class="introduction">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
                     <h3>渲一科技 About Us</h3>
-                    <li>
-                        <a href="about-us.html">关于渲一</a>
-                    </li>
-                    <li>
-                        <a href="render-platform.html#software">渲染软件</a>
-                    </li>
-                    <li>
-                        <a href="news.html">渲一动态</a>
-                    </li>
-                    <li>
-                        <a href="cooperative-partner.html#cooperative">合作伙伴</a>
-                    </li>
-                    <li>
-                        <a href="example.html">成功案例</a>
-                    </li>
-                    <li>
-                        <a href="operation.html#problems">常见问题</a>
-                    </li>
-                    <li>
-                        <a href="operation.html">新手指南</a>
-                    </li>
-                    <li>
-                        <a href="recruitment.html#recruit">招贤纳才</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
-                <ul class="contact-us">
-                    <h3>联系我们 Contact Us</h3>
-                    <li>
-                        <a href="tencent://message/?uin=3119682797&Site=&Menu=yes" class="icon icon-qq first">
-                            <i></i>
-                            <span>QQ在线客服<span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i></i>
-                            <span>help@fastrender.cn</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i></i>
-                            <span>24小时在线服务热线：499-6938-636</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="">
-                            <i></i>
-                            <span>渲一科技</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="900ms">
-                <ul class="address">
-                    <h3>地址 Address</h3>
-                    <li><i></i><span>长沙经济技术开发区</span></li>
-                    <li><span>星沙产业基地开元东</span></li>
-                    <li><span>路1318号综合楼308</span></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp"  data-wow-duration="500ms" data-wow-delay="1200ms">
-                <div class="content">
-                    <h3>关注我们</h3>
-                    <img src="img/QRcode.png" alt="渲一科技">
+                    <ul class="introduction">
+                        <li>
+                            <a href="about-us.html">关于渲一</a>
+                        </li>
+                        <li>
+                            <a href="render-platform.html#software">渲染软件</a>
+                        </li>
+                        <li>
+                            <a href="news.html">渲一动态</a>
+                        </li>
+                        <li>
+                            <a href="cooperative-partner.html#cooperative">合作伙伴</a>
+                        </li>
+                        <li>
+                            <a href="example.html">成功案例</a>
+                        </li>
+                        <li>
+                            <a href="operation.html#problems">常见问题</a>
+                        </li>
+                        <li>
+                            <a href="operation.html">新手指南</a>
+                        </li>
+                        <li>
+                            <a href="recruitment.html#recruit">招贤纳才</a>
+                        </li>
+                    </ul>
                 </div>
-                <figcaption>关注渲一科技微信，送百元大礼包！</figcaption>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+                    <h3>联系我们 Contact Us</h3>
+                    <ul class="contact-us">
+                        <li>
+                            <i class="imgload" data-url="url('img/weblogo.png')"></i>
+                            <a href="tencent://message/?uin=3119682797&Site=&Menu=yes" class="icon icon-qq first">QQ在线客服</a>
+                        </li>
+                        <li>
+                            <i class="imgload" data-url="url('img/weblogo.png')"></i>
+                            <a href="javascript:">help@fastrender.cn</a>
+                        </li>
+                        <li>
+                            <i class="imgload" data-url="url('img/weblogo.png')"></i>
+                            <a href="javascript:">24小时在线服务热线：499-6938-636</a>
+                        </li>
+                        <li>
+                            <i class="imgload" data-url="url('img/weblogo.png')"></i>
+                            <a href="/">渲一科技</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="900ms">
+                    <h3>地址 Address</h3>
+                    <ul class="address">
+                        <li><i class="imgload" data-url="url('img/weblogo.png')"></i><span>长沙经济技术开发区</span></li>
+                        <li><span>星沙产业基地开元东</span></li>
+                        <li><span>路1318号综合楼308</span></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp"  data-wow-duration="500ms" data-wow-delay="1200ms">
+                    <div class="content">
+                        <h3>关注我们</h3>
+                        <img src="img/QRcode.png" alt="渲一科技">
+                    </div>
+                    <p class="figcaption">关注渲一科技微信，送百元大礼包！</p>
+                </div>
             </div>
+            <p class="rights-reserved wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1200ms">© 广州渲一信息科技有限版权所有  京ICP备15062696号-3</p>
         </div>
-        <p class="rights-reserved wow fadeInUp" data-wow-duration="500ms" data-wow-delay="1200ms">© 广州渲一信息科技有限版权所有  京ICP备15062696号-3</p>
-    </div>
-    <div class="white-area"></div>
-    <a class="goto-top" href="#top"></a>
-</footer>
-</body>
+        <div class="white-area"></div>
+        <a class="goto-top" href="#top"></a>
+    </footer>
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
@@ -206,4 +198,5 @@
         //console.log(data);
     })
 </script>
+</body>
 </html>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=10">
     <meta name="keywords" content="渲一,渲一科技,渲染,迅染云平台，云渲染，渲染农场，3D渲染，渲染农场">
     <meta name="description" content="渲染云平台,渲一科技自主开发的迅染云平台是一款适合超大规模渲染集群的管理渲染服务平台系统。渲染平台适用于超大规模渲染云的管理，高效实现了远程提交渲染任务、近实时审片和及时修改设计，可根据用户需求提交大型渲染业务。平台支持3ds Max、Maya等各种主流渲染制作软件和以及mental ray、V-Ray等渲染引擎，可为动漫影视、建筑效果图、CG艺术等全领域提供专业云渲染解决方案" />
 	<title>渲一科技|您身边的急速渲染军团</title>
@@ -16,8 +16,8 @@
 	<link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body>
-<nav class="navbar" role="navigation">
-	<a name="top"><div class="top-area"></div></a>
+<nav class="navbar">
+	<a id="top"><div class="top-area"></div></a>
 	<div class="container">
 		<div class="navbar-header">
 			<button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -79,19 +79,19 @@
 			<span class="English">ABOUT US</span>
 			<p class="content">迅染云平台是渲一科技自主开发的一款适合超大规模渲染集群的管理服务平台系统。平台适用于超大规模渲染云的管理，高效实现了远程提交渲染任务、近实时审片和及时修改设计，可以根据用户需求提交大型渲染业务。平台支持3ds Max、Maya等各种主流制作软件和以及mental ray、V-Ray等渲染引擎，可以为动漫影视、建筑效果图、CG艺术等全领域提供专业的云渲染解决方案。</p>
 			<div class="service-range">
-				<div class="imgload" background-url="img/r1.jpg">
+				<div class="imgload" data-url="img/r1.jpg">
 					<h3>System monitoring</h3>
 					<p>系统监控</p>
 				</div>
-				<div class="imgload" background-url="img/r2.jpg">
+				<div class="imgload" data-url="img/r2.jpg">
 					<h3>Business management</h3>
 					<p>业务管理</p>
 				</div>
-				<div class="imgload" background-url="img/r3.jpg">
+				<div class="imgload" data-url="img/r3.jpg">
 					<h3>Business distribution</h3>
 					<p>业务分发</p>
 				</div>
-				<div class="imgload" background-url="img/r4.jpg">
+				<div class="imgload" data-url="img/r4.jpg">
 					<h3>3d video rendering</h3>
 					<p>三维影视渲染</p>
 				</div>
@@ -219,7 +219,7 @@
 
 	<div class="understand-render-platform">
 		<div class="container">
-			<img src="img/finger.jpg" class="wow fadeInLeft col-sm-4" data-wow-duration="1000ms" data-wow-delay="500ms">
+			<img src="img/finger.jpg" class="wow fadeInLeft col-sm-4" data-wow-duration="1000ms" data-wow-delay="500ms" alt="迅染云平台" title="fastrender">
 			<div class="cloud-platform wow fadeInRight col-sm-8" data-wow-duration="1000ms" data-wow-delay="500ms">
 				<h3>更好的理解迅染云平台</h3>
 				<p>Better understanding of FastRender Cloud Platforms</p>
@@ -246,7 +246,7 @@
 
 	<div class="render-software-list">
 		<div class="container">
-		    <a href="javascript:" name="software"></a>
+		    <a href="javascript:"></a>
 		    <div>
 		        <h3 class="heading">支持主流的渲染软件</h3>
 			    <span class="English">Support Mainstream Rendering Software</span>
@@ -258,11 +258,10 @@
 	<div class="download-area">
 		<div class="container">
 		    <h3>历时一年 为您倾力打造  现在注册即送100元大礼包</h3>
-		    <a href="download/FastRenderClientV1.0.0.0.exe" class="btn download"><i class="iconfont icon-iconfontyonghu"></i>客户端下载</a>
+		    <a class="btn download"><i class="iconfont icon-iconfontyonghu"></i>客户端下载</a>
 		    <p class="version">最新版本：1.0.0.0（2017.08.06）</p>
 		</div>
 	</div>
-</body>
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
@@ -275,4 +274,5 @@ $(function() {
 });
 </script>
 <script type="text/javascript" src="js/loadimg.js"></script>
+</body>
 </html>
