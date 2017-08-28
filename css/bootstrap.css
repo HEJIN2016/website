@@ -238,7 +238,7 @@ th {
   h3 {
     page-break-after: avoid;
   }
-  .navbar {
+  .navbar,.ie-nav {
     display: none;
   }
   .btn > .caret,
@@ -4163,14 +4163,15 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
-.navbar {
+.navbar ,
+.ie-nav{
   position: relative;
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
-  .navbar {
+  .navbar ,.ie-nav{
     border-radius: 4px;
   }
 }

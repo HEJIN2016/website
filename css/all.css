@@ -47,16 +47,19 @@ nav .top-area{
 	height: 20px;
 	border-bottom: 1px solid #959596;
 }
+.ie-nav .container .navbar-header .icon,
 nav .container .navbar-header .icon{
 	margin: 35px 0;
 	display: inline-block;
 	width: 80px;
 	height: 30px;
 }
+.ie-nav .navbar-nav>li a i,
 nav .navbar-nav>li a i{
 	padding-left: 4px;
     font-size: 1.2rem;
 }
+.ie-nav .navbar-nav>li .menu-list,
 nav .navbar-nav>li .menu-list{
 	width: 240px;
 	display: none;
@@ -75,6 +78,7 @@ nav .navbar-nav>li .menu-list{
     -webkit-transition: all .5s; /* Safari and Chrome */
     -o-transition: top .5s; /* Opera */
 }
+.ie-nav .navbar-nav>li .menu-list li,
 nav .navbar-nav>li .menu-list li{
 	cursor: pointer;
 	height: 40px;
@@ -83,25 +87,31 @@ nav .navbar-nav>li .menu-list li{
     padding-start: 0px;
     padding: 0px 10px;
 }
+.ie-nav .navbar-nav>li .menu-list li a:hover,
 nav .navbar-nav>li .menu-list li a:hover{
 	color: #72FFC5;
 }
+.ie-nav  .navbar-nav>li:hover .menu-list,
 nav .navbar-nav>li:hover .menu-list{
 	display: block;
     -webkit-animation: fadeInUp 400ms;
     animation: fadeInUp 400ms;
 }
+.ie-nav .navbar-nav>li:nth-of-type(7),
 nav .navbar-nav>li:nth-of-type(7){
 	padding: 38px 16px 0 40px;
 }
+.ie-nav .navbar-nav>li:nth-of-type(7) input,
 nav .navbar-nav>li:nth-of-type(7) input{
 	width: 120px;
     height: 25px;
     border: 1px solid #CFFFE0;
 }
+.ie-nav .navbar-nav>li:nth-of-type(8),
 nav .navbar-nav>li:nth-of-type(8){
 	padding: 38px 0 0 0; 
 }
+.ie-nav .navbar-nav>li:nth-of-type(8) button,
 nav .navbar-nav>li:nth-of-type(8) button{
 	background: #1ED2AF;
 	width: 63px;
@@ -112,6 +122,7 @@ nav .navbar-nav>li:nth-of-type(8) button{
 	line-height: 25px;
 	padding: 0;
 }
+.ie-nav .navbar-nav>li>a,
 nav .navbar-nav>li>a {
 	line-height: 70px;
 	color: #000;
@@ -119,15 +130,19 @@ nav .navbar-nav>li>a {
 	font-size: 1.5rem;
 	background: transparent;
 }
+.ie-nav li.active > a,
 nav li.active > a{
 	color: #1ED2AF;
 }
+.ie-nav .navbar .navbar-toggle,
 nav .navbar .navbar-toggle {
   border-color: #ddd;
 }
+.ie-nav .navbar .navbar-toggle .icon-bar,
 nav .navbar .navbar-toggle .icon-bar {
   background-color: #888;
 }
+.ie-nav .navbar-nav>li>a:hover,
 nav .navbar-nav>li>a:hover {
     color: #1ED2AF;
     background: transparent; 
@@ -141,6 +156,8 @@ nav .navbar-nav>li>a:hover {
     position: relative;
     background: url("../img/city.jpg") no-repeat 0 center;
     background-size: cover;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
     text-align: center;
 }
 .home-slider .bg-gray{
@@ -149,6 +166,8 @@ nav .navbar-nav>li>a:hover {
 	height: 100%;
 	background: no-repeat 0 center url('../img/star.png');
     background-size: 100% 100%;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
     z-index: 10;
 }
 .home-slider .shadow{
@@ -208,6 +227,8 @@ video{
 	height: 945px;
 	background: no-repeat;
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .platform .top{
 	width: 100%;
@@ -282,35 +303,33 @@ video{
 	height: 78px;
 	top: 10px;
 	border-radius: 100%;
+	background-size: 548px auto;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .platform .bottom .container > ul > li:nth-of-type(1) i{
     background: #FF4374  -10px -206px;
-    background-size: 548px auto;
     left: 50px;
+	background-size: 548px auto;
 }
 .platform .bottom .container > ul > li:nth-of-type(2) i{
-    background:  -159px -228px;
-    background-size: 548px auto;
+    background-position:  -159px -228px;
     right: 50px;
 }
 .platform .bottom .container > ul > li:nth-of-type(3) i {
-    background:  -159px -16px;
-    background-size: 548px auto;
+	background-position:  -159px -16px;
     left: 50px;
 }
 .platform .bottom .container > ul > li:nth-of-type(4) i{
-    background:  -159px -334px;
-    background-size: 548px auto;
+	background-position:  -159px -334px;
    right: 50px;
 }
 .platform .bottom .container > ul > li:nth-of-type(5) i{
-    background:  -159px -122px;
-    background-size: 548px auto;
+	background-position:  -159px -122px;
     left: 50px;
 }
 .platform .bottom .container > ul > li:nth-of-type(6) i {
-    background:  -159px -440px;
-    background-size: 548px auto;
+	background-position:  -159px -440px;
     right: 50px;
 }
 .platform .bottom .container > ul > li > .circle{
@@ -370,6 +389,8 @@ video{
 	margin: 18px auto 0 auto;
 	height: 318px;
 	width: 408px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .platform .content .container .tv{
 	position: absolute;
@@ -381,6 +402,8 @@ video{
 	margin: 10px auto;
 	/*background: url('../img/tv.png');*/
 	background-size: 275px auto;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .platform .content .container video{
 	width: 100%;
@@ -504,6 +527,8 @@ video{
 	width: 260px;
 	background: #E5E5E5 url('../img/phone.png');
 	background-size: 260px 95px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	position: relative;
 	margin: 0 auto;
 	z-index: 999;
@@ -558,6 +583,8 @@ video{
 .benefit .line{
 	background: url('../img/line-small.png') repeat-x;
 	background-size: auto 4px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	width: 100%;
 	height: 4px;
 	position: absolute;
@@ -595,6 +622,7 @@ p.version{
 	border-top: 1px solid #308976;
 	border-bottom: 1px solid #C6C5C4;
 	background: #332C2B;
+	display: none\9;
 	/*background: #000;*/
 }
 .render-field .container{
@@ -621,13 +649,19 @@ p.version{
 	width: 227px;
 	background: transparent;
 	background-size: auto 385px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	margin-left: 0;
 	position: relative;
 	z-index: 100;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-field .container > div .after{
 	background: url('../img/bg2.png');
 	background-size: auto 385px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -636,14 +670,18 @@ p.version{
 	z-index: 1; 
 	opacity: 1;
 	transition: all ease-in-out .5s;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-field .container > div.img1 .after{
 	background: url('../img/bg1.png');
-	background-size: auto 385px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-field .container > div.img6 .after{
 	background: url('../img/bg3.png');
-	background-size: auto 385px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 
 
@@ -651,27 +689,43 @@ p.version{
 	height: 385px;
 	background: transparent;
 	background-size: auto 385px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	position: relative;
 	z-index: 90;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-field .container > div:nth-child(3){
 	height: 385px;
 	background: transparent;
 	background-size: auto 385px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	position: relative;
 	z-index: 80;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-field .container > div:nth-child(4){
 	height: 385px;
 	background: transparent;
 	background-size: auto 385px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	position: relative;
 	z-index: 70;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-field .container > div:nth-child(5){
 	height: 385px;
 	background-size: auto 385px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	position: relative;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	z-index: 60;
 }
 .render-field .container > div:nth-child(6){
@@ -679,7 +733,11 @@ p.version{
 	width: 225px;
 	background: transparent;
 	background-size: auto 385px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	position: relative;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	z-index: 50;
 }
 .render-field .container > div .img-center-word{
@@ -875,6 +933,8 @@ p.version{
 	height: 3px;
 	background: url('../img/line-small.png') repeat-x;
     background-size: auto 3px;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
     position: absolute;
     top: 244px;
     z-index: 1;
@@ -909,13 +969,19 @@ p.version{
 	height: 150px;
 	background: #C9CACA;
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	padding: 45px 25px;
 }
 .render-news .news-area > ul > li:nth-of-type(1){
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-news .news-area > ul > li:nth-of-type(3){
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-news .news-area > ul > li:nth-of-type(5){
     background: #A1A1A1;
@@ -928,9 +994,13 @@ p.version{
 }
 .render-news .news-area > ul > li:nth-of-type(7){
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-news .news-area > ul > li:nth-of-type(9){
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-news .news-area > ul > li:nth-of-type(10){
 	padding-top: 0;
@@ -942,7 +1012,10 @@ p.version{
 	cursor: pointer;
 	background: #C9CACA url('../img/add.png') center 35px no-repeat;
 	background-size: 70px 70px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
+
 .render-news .news-area > ul > li a.btn{
 	width: 60px;
 	height: 24px;
@@ -959,6 +1032,7 @@ p.version{
 	border-bottom: 1px solid #949DA6;
 }
 
+.ie-footer,
 footer{
 	background: #2C3E50;
 	height: 350px;
@@ -966,12 +1040,15 @@ footer{
 	position: relative;
 	z-index: 10;
 }
+.ie-footer .container,
 footer .container{
     overflow: hidden;
 }
+.ie-footer .container .row > div,
 footer .container .row > div{
 	text-align: center;
 }
+.ie-footer .container .row > div h3,
 footer .container .row > div h3{
 	margin: 63px 0 30px;
 	font-size: 1.4rem;
@@ -983,32 +1060,43 @@ footer .container .row > div h3{
 	width: 165px;
 	display: inline-block;
 }
+.ie-footer .container .row > div:nth-of-type(2) h3,
 footer .container .row > div:nth-of-type(2) h3 {
 	width: 282px;
 }
+.ie-footer .container .row > div:nth-of-type(4) h3,
 footer .container .row > div:nth-of-type(4) h3{
 	width: 130px;
 }
+.ie-footer .container .row > div ul.introduction,
 footer .container .row > div ul.introduction{
 	width: 160px;
 	margin: 0 auto;
 }
+.ie-footer .container .row > div ul li,
 footer .container .row > div ul li{
 	text-align: left;
     margin-bottom: 14px;
     font-size: 1.4rem;
     position: relative;
 }
+.ie-footer .container .row .introduction li {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
 footer .container .row > div ul.introduction li:nth-of-type(2n+1){
 	width: 50%;
 	float: left;
 	text-align: left;
 }
+
 footer .container .row > div ul.introduction li:nth-of-type(2n){
 	width: 50%;
 	float: right;
 	text-align: right;
 }
+.ie-footer .container .row > div ul li i,
 footer .container .row > div ul li i{
 	position: absolute;
     width: 18px;
@@ -1016,49 +1104,67 @@ footer .container .row > div ul li i{
     display: inline-block;
     border-radius: 100%;
     background-size: 500px auto;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
+.ie-footer .container .row > div ul.address li span,
+.ie-footer .container .row > div ul li a,
 footer .container .row > div ul.address li span,
 footer .container .row > div ul li a{
 	padding-left: 28px;
 	display: inline-block;
 }
+.ie-footer .container .row > div ul.introduction li a,
 footer .container .row > div ul.introduction li a{
 	padding-left: 0;
 }
+.ie-footer .container .row > div ul.contact-us li:nth-of-type(1) i,
 footer .container .row > div ul.contact-us li:nth-of-type(1) i{
     background-position: -96px -130px;
 }
+.ie-footer .container .row > div ul.contact-us li:nth-of-type(2) i,
 footer .container .row > div ul.contact-us li:nth-of-type(2) i{
     background-position: -96px -158px;
 }
+.ie-footer .container .row > div ul.contact-us li:nth-of-type(3) i,
 footer .container .row > div ul.contact-us li:nth-of-type(3) i{
     background-position: -96px -187px;
 }
+.ie-footer .container .row > div ul.contact-us li:nth-of-type(4) i,
 footer .container .row > div ul.contact-us li:nth-of-type(4) i{
     background-position: -96px -215px;
 }
+.ie-footer .container .row > div ul.address li i,
 footer .container .row > div ul.address li i{
 	background-position: -96px -420px;
 }
+.ie-footer .container .row > div:nth-of-type(2),
 footer .container .row > div:nth-of-type(2){
 	padding: 0 5px;
 }
+.ie-footer .container .row > div:nth-of-type(3) ul,
 footer .container .row > div:nth-of-type(3) ul{
 	width: 156px;
 	margin: 0 auto;
 }
+.ie-footer .container .row > div:last-child .content,
 footer .container .row > div:last-child .content{
 	width: 130px;
 	margin: 0 auto;
 }
-footer .container .row > div:last-child img{
+footer .container .row > div:last-child img,
+.ie-footer img,
+.qrcode{
     width: 130px;
+    height: 130px;
 }
+.ie-footer .container .row > div:last-child .figcaption,
 footer .container .row > div:last-child .figcaption{
 	text-align: center;
 	font-size: 1.2rem;
 	padding-top: 4px;
 }
+.ie-footer .container p.rights-reserved,
 footer .container p.rights-reserved{
 	margin: 40px 0 15px 0;
 	bottom: 15px;
@@ -1067,12 +1173,14 @@ footer .container p.rights-reserved{
 	font-weight: 700;
 	text-align: center;
 }
+.ie-footer .white-area,
 footer .white-area{
 	border-top: 1px solid #A0A7B0;
 	height: 28px;
 	width: 100%;
 	background: #fff;
 }
+.ie-footer::after,
 footer::after{
 	content: '';
 	position: absolute;
@@ -1086,6 +1194,7 @@ footer::after{
 	left: 50%;
 	margin-left: -25px;
 }
+.ie-footer a.goto-top,
 footer a.goto-top{
 	display: block;
 	position: absolute;
@@ -1106,6 +1215,8 @@ footer a.goto-top{
 	width: 100%;
 	background: #060D15 url('../img/render.jpg') center no-repeat;
 	background-size: 1170px auto; 
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	background-color: #262221\0;
 	position: relative;
 	z-index: 1;
@@ -1118,6 +1229,8 @@ footer a.goto-top{
 	top: 0;
 	background: url('../img/graybg.png');
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .platform-introduction{
 	width: 100%;
@@ -1195,15 +1308,24 @@ p.content{
 }
 .platform-introduction .container .service-range > div:nth-of-type(1){
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .platform-introduction .container .service-range > div:nth-of-type(2){
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .platform-introduction .container .service-range > div:nth-of-type(3){
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
+
 .platform-introduction .container .service-range > div:last-child{
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	margin-right: 0;
 }
 .platform-introduction .container .service-range > div::after{
@@ -1231,6 +1353,8 @@ p.content{
 .platform-introduction .container .service-range > div p::before{
 	background: url('../img/weblogo.png');
     background-size: 500px auto;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
     content: '';
     height: 22px;
     width: 25px;
@@ -1246,6 +1370,8 @@ p.content{
 	background: url('../img/yun.png') no-repeat;
     width: 32px;
     background-size: 30px auto;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
     margin-right: 4px;
 }
 .platform-introduction .container .service-range > div:last-child p::before{
@@ -1406,6 +1532,8 @@ p.content{
 	width: 100px;
 	height: 120px;
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	position: relative;
 	z-index: 10;
 }
@@ -1420,14 +1548,20 @@ p.content{
 .why-select .container .word-pic:nth-of-type(1) .top-word{
     background: url('../img/w1.png');
     background-size: 100% 100%;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .why-select .container .word-pic:nth-of-type(2) .top-word{
     background: url('../img/w2.png');
     background-size: 100% 100%;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .why-select .container .word-pic:nth-of-type(3) .top-word{
     background: url('../img/w3.png');
     background-size: 100% 100%;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .why-select .container .word-pic:nth-of-type(1) .top-word .top-pic{
     background: url('../img/p1.png');
@@ -1504,6 +1638,8 @@ p.content{
 	height: 340px;
 	background: #fff url('../img/renderword.png') center no-repeat;
 	background-size: 750px auto;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .sketch-map p{
 	padding: 275px 0 0 0;
@@ -1523,6 +1659,8 @@ p.content{
 	margin: 0 auto;
 	background: url('../img/software-bg.png');
 	background-size: 970px auto;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	height: 170px;
 }
 .download-area{
@@ -1546,6 +1684,8 @@ p.content{
 	height: 414px;
 	background: #003574 url('../img/price.jpg') center no-repeat;
 	background-size: auto 413px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	position: relative;
 	z-index: 1;
 }
@@ -1559,6 +1699,8 @@ p.content{
 	height: 100%;
 	background: url('../img/price.png');
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .top-header .recharge{
 	position: absolute;
@@ -1789,6 +1931,8 @@ p.content{
 	background: url('../img/bg.jpg') top center scroll;
 	background-size: cover;
 	position: relative;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	z-index: 1;
 }
 .fastrender-intr::after{
@@ -1855,6 +1999,9 @@ p.content{
 .example-content section div .top-picture{
 	width: 100%;
 	height: 255px;
+	background-size: 500px auto; 
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .example-content section div .article {
     padding: 15px;
@@ -1988,6 +2135,9 @@ p.content{
 	width: 70px;
 	height: 50px;
 	background-image: url('../img/weblogo.png');
+	background-size: 500px auto; 
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-server .container .logo .pic p{
 	font-size: 1.2rem;
@@ -2097,6 +2247,8 @@ p.content{
 	left: 0;
 	background: url('../img/news.png');
 	background-size: 100% auto;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .page-header-div .container h3{
 	font-family: 'lighter';
@@ -2215,6 +2367,8 @@ p.content{
 	width: 235px;
 	background: url('../img/news/news_05_12_2.jpg') no-repeat;
 	background-size: cover; 
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .news-area .container div.paging{
 	text-align: center;
@@ -2310,6 +2464,8 @@ p.content{
 	width: 100%;
 	background: url('../img/joinus.jpg') no-repeat center top;
     background-size: cover;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
     position: relative;
 }
 .join-us .before{
@@ -2402,7 +2558,10 @@ p.content{
 	text-align: center;
 	position: relative;
 	background-size: auto 4px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
+
 .center-content header::after{
 	position: absolute;
 	content: '';
@@ -2412,6 +2571,8 @@ p.content{
 	bottom: -7px;
 	background: url('../img/linex.png') repeat-x;
 	background-size: auto 4px; 
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	z-index: 1000;
 }
 .center-content .goodness{
@@ -2734,6 +2895,8 @@ p.content{
     height: 157px;
     background: #2F3E53 url(../img/weblogo.png) 116px -58px no-repeat;
     background-size: 540px auto;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .linkman-list .container > div:last-child{
     border-right: 2px solid #21886E;
@@ -2837,6 +3000,8 @@ p.content{
 	width: 100%;
 	background: #133C39 url('../img/platformbg.png') center;
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	position: relative;
 	z-index: 1;
 }
@@ -2849,6 +3014,8 @@ p.content{
 	content: '';
 	background: url('../img/platformbg2.png');
 	background-size: 100% auto;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	z-index: 10;
 }
 .client-download .container{
@@ -2925,6 +3092,8 @@ p.content{
 	/*background: url('../img/tv.png') no-repeat;
 	background-size: 630px auto;*/
 	background:  no-repeat 47px 0;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
     background-size: 532px 374px;
 }
 .platform-video .container ul{
@@ -2991,6 +3160,8 @@ p.content{
 	width: 280px;
 	background: url('../img/line1.png') no-repeat 0 53px;
 	background-size: auto 30px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-server-advan .container .strength h3{
 	display: inline-block;
@@ -3038,6 +3209,8 @@ p.content{
 	width: 280px;
 	background: url('../img/line2.png') no-repeat 0 53px;
 	background-size: auto 30px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-server-advan .container .strength2 h3{
 	display: inline-block;
@@ -3073,6 +3246,8 @@ p.content{
     width: 280px;
     background: url('../img/line3.png') no-repeat 0 31px;
     background-size: auto 33px;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-server-advan .container .strength3 h3{
 	display: inline-block;
@@ -3109,6 +3284,8 @@ p.content{
 	right: 173px;
 	background: url('../img/line4.png') no-repeat 0 53px;
 	background-size: auto 30px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-server-advan .container .strength4 h3{
 	background: #F48359;
@@ -3132,6 +3309,8 @@ p.content{
 	right: 173px;
 	background: url('../img/line5.png') no-repeat 0 53px;
 	background-size: auto 22px;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .render-server-advan .container .strength5 h3{
 	background: #5DB8EF;
@@ -3221,6 +3400,8 @@ p.content{
 	float: left;
 	background: url('../img/arrow.png') no-repeat;
 	background-size: 100% auto;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	width: 142px;
 	height: 53px;
 	margin-right: 50px;
@@ -3276,6 +3457,8 @@ p.content{
 	position: relative;
 	background-clip: content-box;
 	background-size: 100% auto;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	margin: 0;
 	z-index: 10;
 }
@@ -3289,12 +3472,16 @@ p.content{
 	height: 100%;
 	background: url('../img/advan.png') center no-repeat;
 	background-size: 100% auto;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	z-index: 40;
 }
 .advantage-example-list .container .performance > div:last-child .evaluate::before{
 	background: url('../img/before.png') top center no-repeat;
 	background-clip: content-box;
 	background-size: 100% auto;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	z-index: 30;
 }
 .advantage-example-list .container .performance > div:first-child{
@@ -3342,6 +3529,8 @@ p.content{
 	background: top center no-repeat;
 	background-size: 100% auto;
 	z-index: 1;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }
 .recruit-job::after{
 	width: 100%;
@@ -3352,6 +3541,8 @@ p.content{
 	position: absolute;
 	z-index: 10;
 	background-size: cover;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	background: url('../img/rebg.png') repeat-x top center;
 }
 .recruit-job .container{
@@ -3453,6 +3644,8 @@ p.content{
 	background: url('../img/liney2.png') repeat-y;
 	background-size: 4px auto;
 	position: absolute;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	top: 48px;
 	left: 50%;
 	margin-left: -2px;
@@ -3482,12 +3675,16 @@ p.content{
 	left: 0;
 	background: transparent url('../img/xia.png') no-repeat 30px 0; 
 	background-size: 100% 100%;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	z-index: 999;
 }
 .recruit-job .container .ship{
 	width: 205px;
 	background: url('../img/fan.png') no-repeat;
 	background-size: 100% auto;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 	height: 265px;
     left: 150px;
     bottom: 45px;
@@ -3497,6 +3694,8 @@ p.content{
 	width: 358px;
     background: url('../img/job.png') no-repeat;
     background-size: auto 100%;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
     height: 289px;
     left: 231px;
     bottom: -1px;
@@ -3507,6 +3706,8 @@ p.content{
     background: url('../img/job.png') no-repeat;
     background-size: auto 100%;
     height: 289px;
+    -ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
     left: 231px;
     bottom: -1px;
     position: absolute;
@@ -3559,4 +3760,6 @@ p.content{
 .advantage-example-list .container .performance>div:last-child .evaluate {
 	background-clip: border-box;
 	background-size: 100% auto;
+	-ms-behavior: url(css/backgroundsize.min.htc);
+	behavior: url(css/backgroundsize.min.htc);
 }

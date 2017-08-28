@@ -44,6 +44,8 @@
         width: 223px;
         background: transparent -5px 0  no-repeat;
         background-size: auto 385px;
+        -ms-behavior: url(css/backgroundsize.min.htc);
+        behavior: url(css/backgroundsize.min.htc);
     }
     .render-field .container > div {
         margin-left: -108px;

@@ -1,4 +1,4 @@
-<?php 
+﻿<?php 
 header('Content-type: text/html; charset=utf-8');
 $ip = ($_SERVER["REMOTE_ADDR"]).PHP_EOL;
 $ipfile = fopen("logs/ip.txt","a");
@@ -18,7 +18,7 @@ fclose($datei);
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=10">
+	<meta http-equiv="X-UA-Compatible" content="IE=10,chrome=1">
     <meta name="keywords" content="渲一科技,渲染,渲一,迅染云平台,急速渲染军团，云渲染，渲染农场，渲染平台，3dmax云渲染，3D渲染，3d渲染平台，渲染农场价格，自助式渲染，渲染云">
     <meta name="description" content="渲一科技，您身边的急速渲染军团。迅染云平台是渲一科技自主开发的一款适合超大规模渲染集群的管理服务平台系统" />
 	<title>渲一科技|您身边的急速渲染军团</title>
@@ -27,10 +27,11 @@ fclose($datei);
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="css/all.css">
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="css/ie.css"><![endif]-->
 	<link rel="shortcut icon" href="img/favicon.ico">
 </head>
 <body>
-	<nav class="navbar" role="navigation">
+	<nav class="navbar"><!--[if lt IE 9]><div class="ie-nav"><![endif]-->
 		<a id="top"><div class="top-area"></div></a>
 		<div class="container">
 			<div class="navbar-header">
@@ -80,7 +81,7 @@ fclose($datei);
 				</ul>
 			</div>
 		</div>
-	</nav>
+	</nav><!--[if lt IE 9]></div><![endif]-->
 
 	<div class="home-slider">
 		<div class="bg-gray"></div>
@@ -320,11 +321,11 @@ fclose($datei);
 	</div>
 
 	<div class="white"></div>
-
 	<footer>
+        <!--[if lt IE 9]><div class="ie-footer"><![endif]-->
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 wow fadeInUp div1" data-wow-duration="500ms" data-wow-delay="300ms">
                     <h3>渲一科技 About Us</h3>
 					<ul class="introduction">
 						<li>
@@ -353,28 +354,28 @@ fclose($datei);
 						</li>
 					</ul>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp div2" data-wow-duration="500ms" data-wow-delay="600ms">
                     <h3>联系我们 Contact Us</h3>
 					<ul class="contact-us">
-						<li>
+						<li class="li1">
                             <i class="imgload" data-url="url('img/weblogo.png')"></i>
 							<a href="tencent://message/?uin=3119682797&Site=&Menu=yes" class="icon icon-qq first">QQ在线客服</a>
 						</li>
-						<li>
+						<li class="li2">
                             <i class="imgload" data-url="url('img/weblogo.png')"></i>
 							<a href="javascript:">help@fastrender.cn</a>
 						</li>
-						<li>
+						<li class="li3">
                             <i class="imgload" data-url="url('img/weblogo.png')"></i>
 							<a href="javascript:">24小时在线服务热线：499-6938-636</a>
 						</li>
-						<li>
+						<li class="li4">
                             <i class="imgload" data-url="url('img/weblogo.png')"></i>
 							<a href="/">渲一科技</a>
 						</li>
 					</ul>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp" data-wow-duration="500ms" data-wow-delay="900ms">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp div3" data-wow-duration="500ms" data-wow-delay="900ms">
                     <h3>地址 Address</h3>
 					<ul class="address">
 						<li><i class="imgload" data-url="url('img/weblogo.png')"></i><span>长沙经济技术开发区</span></li>
@@ -382,10 +383,10 @@ fclose($datei);
 						<li><span>路1318号综合楼308</span></li>
 					</ul>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp"  data-wow-duration="500ms" data-wow-delay="1200ms">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12  wow fadeInUp div4"  data-wow-duration="500ms" data-wow-delay="1200ms">
 					<div class="content">
 					    <h3>关注我们</h3>
-					    <img src="img/QRcode.png" alt="渲一科技">
+					    <img src="img/QRcode.png" alt="渲一科技" class="qrcode" style="width: 130px\9">
 					</div>
 					<p class="figcaption">关注渲一科技微信，送百元大礼包！</p>
 				</div>
@@ -394,8 +395,11 @@ fclose($datei);
 		</div>
 		<div class="white-area"></div>
 		<a class="goto-top" href="#top"></a>
+        <!--[if lt IE 9]></div><![endif]-->
     </footer>
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--[if !IE]> --><script type="text/javascript" src="js/jquery.min.js"></script><![endif]-->
+<!--[if lte IE 8]><script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script><![endif]-->
+<!--[if gte IE 9]><script type="text/javascript" src="js/jquery.min.js"></script><![endif]-->
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
 <script src="js/config.js"></script>
@@ -406,5 +410,10 @@ $(function(){
 	new WOW().init();
 });
 </script>
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+    <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
 </body>
 </html>
