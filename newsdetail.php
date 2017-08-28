@@ -178,11 +178,6 @@
     $(function(){
         //Initiat WOW JS
         new WOW().init();
-        $("img").lazyload({
-            placeholder : "img/loading.gif",
-            effect: "fadeIn"
-        });
-
     });
     $.ajax({
         url: 'data.php',
@@ -195,6 +190,10 @@
         $("header .time").html(jQuery.parseJSON(data)[number].time);
         $("header .author").html(jQuery.parseJSON(data)[number].author);
         $("section").html(jQuery.parseJSON(data)[number].content);
+        $("img").lazyload({
+            placeholder : "img/loading.gif",
+            effect: "fadeIn"
+        });
         //console.log(data);
     })
 </script>
