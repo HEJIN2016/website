@@ -4,7 +4,7 @@ if ($conn->connect_error){
     die("连接失败:" . $conn->connect_error);
 }
 else {
-    $sql = "SELECT * FROM newslist ORDER BY time DESC";
+    $sql = "SELECT * FROM newslist WHENEVER number = " . $_GET["number"];
     $conn->query("set names 'utf8'");
     $result = $conn->query($sql);
     $newslist = new ArrayObject();

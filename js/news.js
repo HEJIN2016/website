@@ -1,4 +1,4 @@
-
+﻿
 $(function(){
     //Initiat WOW JS
     new WOW().init();
@@ -17,7 +17,12 @@ $(function(){
                 url = newsdata[i].content.split("<img src=\"")[1].split("\"")[0];
             }
             catch (e){
-                url = "img/news/none.jpg";
+                try{
+                    url = newsdata[i].content.split("<img data-original=\"")[1].split("\"")[0];
+                }
+                catch(e){
+                    url = "img/news/none.jpg";
+                }
             }
            // var url = (!newsdata[i].content.split("<img src=\"")[1].split("\"")[0])?("img/news/none.jpg"):(newsdata[i].content.split("<img src=\"")[1].split("\"")[0]);
             console.log(url);
@@ -27,6 +32,6 @@ $(function(){
         }
     })
     .fail(function(){
-        alert('��Ǹ����û�������Ϣ��');
+        alert('error');
     })
 });

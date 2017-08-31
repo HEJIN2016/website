@@ -8,8 +8,10 @@ if ($conn->connect_error){
 }
 else{
     $sql = "UPDATE download SET times = times + 1 ";
+	$ip = $_SERVER["REMOTE_ADDR"];
+	$sql2 = "INSERT INTO downloadIp (ip) VALUES ('" . $ip. "')";
     $conn->query("set names 'utf8'");
-    if (mysqli_query($conn,$sql)){
+    if (mysqli_query($conn,$sql)&&mysqli_query($conn,$sql2)){
         echo 1;
     }
     else echo 0;

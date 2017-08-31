@@ -65,7 +65,7 @@ fclose($datei);
 						<a href="example.html">案例</a>
 					</li>
 					<li>
-						<a href="news.html">新闻动态</a>
+						<a href="newslist.php">新闻动态</a>
 					</li>
 					<li>
 						<a href="javascript:">关于我们
@@ -289,32 +289,32 @@ fclose($datei);
 				<ul>
 					<li class="imgload" data-url="url('img/news/news1-small.jpg')"></li>
 					<li>
-						<p><a href="news.html">渲一科技成为中国超级计算创新联盟一员</a></p>
-						<a href="news.html" class="btn">MORE</a>
+						<p><a href="newslist.php">渲一科技成为中国超级计算创新联盟一员</a></p>
+						<a href="newslist.php" class="btn">MORE</a>
 					</li>
 					<li class="imgload" data-url="url('img/news/news2-small.jpg')"></li>
 					<li>
-						<p><a href="news.html">看了我，你会爱上我</a></p>
-						<p><a href="news.html">渲一科技新逼格办公室！</a></p>
-						<a href="news.html" class="btn">MORE</a>
+						<p><a href="newslist.php">看了我，你会爱上我</a></p>
+						<p><a href="newslist.php">渲一科技新逼格办公室！</a></p>
+						<a href="newslist.php" class="btn">MORE</a>
 					</li>
 					<li>
-						<a href="news.html">更多资讯请点击</a>
+						<a href="newslist.php">更多资讯请点击</a>
 					</li>
 					<li>
-						<p><a href="news.html">渲一科技厦门推介会</a></p>
-						<p><a href="news.html">成功召开将打造厦门</a></p>
-						<p><a href="news.html">最大迅染云平台</a></p>
-						<a href="news.html" class="btn">MORE</a>
+						<p><a href="newslist.php">渲一科技厦门推介会</a></p>
+						<p><a href="newslist.php">成功召开将打造厦门</a></p>
+						<p><a href="newslist.php">最大迅染云平台</a></p>
+						<a href="newslist.php" class="btn">MORE</a>
 					</li>
 					<li class="imgload" data-url="url('img/news/news3-small.jpg')"></li>
 					<li>
-						<p><a href="news.html">渲一科技渲染力作</a></p>
-						<p><a href="news.html">《大唐荣耀》强势霸屏</a></p>
-						<a href="news.html" class="btn">MORE</a>
+						<p><a href="newslist.php">渲一科技渲染力作</a></p>
+						<p><a href="newslist.php">《大唐荣耀》强势霸屏</a></p>
+						<a href="newslist.php" class="btn">MORE</a>
 					</li>
 					<li class="imgload" data-url="url('img/news/news4-small.jpg')"></li>
-					<li><a href="news.html"></a></li>
+					<li><a href="newslist.php"></a></li>
 				</ul>
 			</div>
 		</div>
@@ -335,7 +335,7 @@ fclose($datei);
 							<a href="render-platform.html#software">渲染软件</a>
 						</li>
 						<li>
-							<a href="news.html">渲一动态</a>
+							<a href="newslist.php">渲一动态</a>
 						</li>
 						<li>
 							<a href="cooperative-partner.html#cooperative">合作伙伴</a>

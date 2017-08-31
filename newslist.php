@@ -1,5 +1,33 @@
+<?php
+require("connect.php");
+if ($conn->connect_error){
+    die("连接失败:" . $conn->connect_error);
+}
+else {
+    $sql = "SELECT * FROM newslist ORDER BY time DESC";
+    $conn->query("set names 'utf8'");
+    $result = $conn->query($sql);
+    $newslist = new ArrayObject();
+    $index = 0;
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            //echo "title:" . $row["title"] . "- author:" .$row["title"] ."-time:" . $row["time"] . "-content" . $row["content"] . "<br>";
+            $newslist[$index] = new news();
+            $newslist[$index]->setTitle($row["title"]);
+            $newslist[$index]->setAuthor($row["author"]);
+            $newslist[$index]->setTime($row["time"]);
+            $newslist[$index]->setContent($row["content"]);
+            $newslist[$index]->setNumber($row["number"]);
+            $newslist[$index]->setFirstLine($row["firstline"]);
+            $newslist[$index]->setImg($row["img"]);
+            $index++;
+        }
+    }
+}
+$conn->close();
+?>
 <!DOCTYPE html>
-<html lang="en" id="html">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1">
@@ -66,61 +94,61 @@
             </div>
         </div>
     </nav>
-
-<div class="page-header-div">
-    <div class="container">
-        <div class="left-bg-img wow fadeInLeft" data-wow-duration="900ms"></div>
-        <div class="right-word wow fadeInRight" data-wow-duration="900ms">
-            <h3>NEWS AND</h3>
-            <h4>INFORMATION</h4>
-            <h3>新闻资讯</h3>
-            <p>洞悉互联网行业前沿资讯 探索渲染平台优化规律</p>
+    <div class="page-header-div">
+        <div class="container">
+            <div class="left-bg-img wow fadeInLeft" data-wow-duration="900ms"></div>
+            <div class="right-word wow fadeInRight" data-wow-duration="900ms">
+                <h3>NEWS AND</h3>
+                <h4>INFORMATION</h4>
+                <h3>新闻资讯</h3>
+                <p>洞悉互联网行业前沿资讯 探索渲染平台优化规律</p>
+            </div>
         </div>
     </div>
-</div>
 
-<?php
-    require("connect.php");
-    $error = "";
-    if ($conn->connect_error){
-        die("连接失败:" . $conn->connect_error);
-    }
-    else {
-        $sql = "SELECT * FROM newslist WHERE number = " . check_input($conn,$_GET["number"]);
-        $conn->query("set names 'utf8'");
-        $result = $conn->query($sql);
-        $newslist = new news();
-        if ($result->num_rows > 0) {
-            while ($row = $result->fetch_assoc()) {
-                $newslist->setTitle($row["title"]);
-                $newslist->setAuthor($row["author"]);
-                $newslist->setTime($row["time"]);
-                $newslist->setContent($row["content"]);
-                $newslist->setNumber($row["number"]);
-            }
-        } else {
-            $error = "$('.modal').modal('show');";
-            //echo "<script>var html= document.getElementById('html');var script = document.createElement('script');script.appendChild(document.createTextNode(\"$('.modal').modal('show');\"));html.appendChild(script);</script>";
-        }
-    }
-    $conn->close();
-?>
-
-<div class="news-details">
-    <div class="container">
-        <article>
+    <div class="news-area">
+        <div class="container">
             <header>
-                <h3><?php echo $newslist->title;?></h3>
-                <span class="time"><?php echo $newslist->time;?></span>
-                <span class="author"><?php echo $newslist->author;?></span>
+                <h3>新闻资讯<span>NEWS</span></h3>
+                <p>持续关注行业发展，致力于在CG领域为文化创意企业及机构提供业界领先的渲染超级集群服务平台</p>
             </header>
-
-            <section>
-                <?php echo $newslist->content;?>
-            </section>
-        </article>
+            <ul class="news-list">
+                <?php
+                    $j = count($newslist);
+                    $pageNum = ceil(count($newslist)/10);
+                    $index = isset($_GET["page"])?$_GET["page"]:1;
+                    for ($i = ($index-1)*10;$i < $j;$i++){
+                ?>
+                    <li>
+                        <h3>
+                            <a href="<?php echo 'newsdetail.php?number='.(int)$newslist[$i]->number?>"><?php echo $newslist[$i]->title;?></a>
+                        </h3>
+                        <div class="col-lg-9 col-md-9 col-sm-9 left-word" onclick="window.location.href='newsdetail.php?number=<?php echo (int)$newslist[$i]->number;?>'">
+                            <div class="info">
+                                <span><?php echo $newslist[$i]->author; ?></span>
+                                <span><?php echo $newslist[$i]->time; ?></span>
+                            </div>
+                            <p><?php echo $newslist[$i]->firstline; ?></p>
+                            <button class="btn" onclick="window.location.href='newsdetail.php?number=<?php echo (int)$newslist[$i]->number;?>'">Details</button>
+                        </div>
+                        <div class="col-lg-3 right-img col-md-3 imgload" style="background-size: cover" data-url="url(<?php echo $newslist[$i]->img; ?>)" ></div>
+                        <div style="clear: both"></div>
+                    </li>
+                <?php
+                    }
+                ?>
+            </ul>
+            <div class="paging">
+                <ul class="pagination">
+                    <?php
+                        for($index = 1;$index < $pageNum + 1;$index++){
+                    ?>
+                    <li><a href="?page=<?php echo $index;?>"><?php echo $index;?></a></li>
+                    <?php } ?>
+                </ul>
+            </div>
+        </div>
     </div>
-</div>
 
     <footer>
         <div class="container">
@@ -196,39 +224,20 @@
         <div class="white-area"></div>
         <a class="goto-top" href="#top"></a>
     </footer>
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/wow.min.js"></script>
-<script src="js/jquery.lazyload.min.js"></script>
+<!--<script type="text/javascript" src="js/news.js"></script>-->
+<script type="text/javascript" src="js/all.js"></script>
 <script type="text/javascript" src="js/loadimg.js"></script>
-<script>setTimeout(function(){<?php echo $error;?>},300)</script>
+<script>
+    var href = window.location.href;
+    var page = parseInt((href.indexOf('=')!=-1)?href.substring(href.indexOf('=')+1):1);//当前页
+    var totalPage = <?php echo $pageNum;?>;//总页数
+    var nextPage = (page!=totalPage)?(page + 1):1;
+    $("ul.pagination li").eq(page-1).addClass('active');
+    $("ul.pagination").append('<li><a href=\"?page=' + nextPage + '\">&raquo;</a></li>');
+</script>
 </body>
 </html>
-<!-- 错误提示框（Modal） -->
-<div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false" style="top: 150px">
-    <div class="modal-dialog" style="width: 303px">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                    &times;
-                </button>
-                <h4 class="modal-title">
-                    出错了
-                </h4>
-            </div>
-            <div class="modal-body">
-                <div class="change-personal-psd" style="overflow: hidden">
-                    <img src="img/mark.png" style="width: 100px;float: left;display: block">
-                    <div style="float: right;margin-top: 31px;width: 152px;">抱歉，未查询到相关数据，请返回重新操作！</div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">
-                    确认
-                </button>
-                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                </button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal -->
-</div>

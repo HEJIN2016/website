@@ -1,10 +1,10 @@
-<?php
+﻿<?php
 
 require ("news.php");
 $servername = "localhost";
 $username = "root";
-//$password = "xuanyiadmin-1234";
-$password = "";
+$password = "xuanyiadmin-1234";
+//$password = "";
 $dbname = "news";
 
 $conn = new \mysqli($servername,$username,$password,$dbname);

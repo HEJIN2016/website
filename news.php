@@ -13,6 +13,7 @@ class news{
     public $content = "";
     public $number = 0;
     public $firstline = "";
+    public $img = "";
     function setTitle($title){
         $this->title = $title;
     }
@@ -30,6 +31,9 @@ class news{
     }
     function setFirstLine($line){
         $this->firstline = $line;
+    }
+    function setImg($img){
+        $this->img = $img;
     }
 }
 

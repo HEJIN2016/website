@@ -49,7 +49,7 @@
                         <a href="example.html">案例</a>
                     </li>
                     <li>
-                        <a href="news.html">新闻动态</a>
+                        <a href="newslist.php">新闻动态</a>
                     </li>
                     <li>
                         <a href="javascript:">关于我们
@@ -134,7 +134,7 @@
 						<textarea placeholder="留言 Message" class="form-control wow fadeInRight" data-wow-duration="500ms" data-wow-delay="900ms" required id="word"></textarea>
 					</div>
 					<div class="form-group">
-						<button class="btn wow fadeInRight submit" data-wow-duration="500ms" data-wow-delay="1200ms" value="留言">提交</button>
+						<button class="btn wow fadeInRight submit" data-wow-duration="500ms" data-wow-delay="1200ms" value="留言" id="submit">提交</button>
 					</div>
 				</form>
 			</div>
@@ -164,9 +164,9 @@
 			</div>
 			<div class="col-xs-12">
 				<h3>华中大区</h3>
-				<p>联系人：范宇</p>
-				<p>联系电话：15707491800</p>
-				<p>邮箱:15707491800@fastrender.cn</p>
+				<p>联系人：岳强华</p>
+				<p>联系电话：18711136809</p>
+				<p>邮箱:18711136809@fastrender.cn</p>
 			</div>
 		</div>
 	</div>
@@ -195,7 +195,7 @@
                             <a href="render-platform.html#software">渲染软件</a>
                         </li>
                         <li>
-                            <a href="news.html">渲一动态</a>
+                            <a href="newslist.php">渲一动态</a>
                         </li>
                         <li>
                             <a href="cooperative-partner.html#cooperative">合作伙伴</a>
@@ -264,3 +264,59 @@
 <script type="text/javascript" src="js/loadimg.js"></script>
 </body>
 </html>
+<!-- 错误提示框（Modal） -->
+<div class="modal fade" id="error-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top: 50%;margin-top: -180px">
+    <div class="modal-dialog" style="width: 303px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    出错了
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="change-personal-psd" style="overflow: hidden">
+                    <img src="img/mark.png" style="width: 100px;float: left;display: block">
+                    <div style="float: right;margin-top: 31px;width: 152px;" id="content">抱歉，该操作出错了，请返回重新操作！</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    确认
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
+<!-- 成功提示框（Modal） -->
+<div class="modal fade" id="success-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="top: 50%;margin-top: -180px">
+    <div class="modal-dialog" style="width: 303px">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    留言成功
+                </h4>
+            </div>
+            <div class="modal-body">
+                <div class="change-personal-psd" style="overflow: hidden">
+                    <img src="img/success.png" style="width: 100px;float: left;display: block">
+                    <div style="float: right;margin-top: 31px;width: 152px;">留言成功！</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
+                    确认
+                </button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal -->
+</div>
